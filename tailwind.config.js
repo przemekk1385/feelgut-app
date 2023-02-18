@@ -2,7 +2,23 @@
 module.exports = {
   content: [],
   theme: {
-    extend: {},
+    content: ["./pages/**/*.{html,js}", "./components/**/*.{html,js}"],
+    extend: {
+      backgroundImage: {
+        "header-image": "url('images/header.jpg')",
+      },
+      colors: {
+        primary: {
+          light: "#55B99A",
+          strong: "#547A71",
+        },
+        secondary: "#A6A6A6",
+      },
+      fontFamily: {
+        lato: ["Lato"],
+        "playfair-display": ["Playfair\\ Display"],
+      },
+    },
   },
   plugins: [],
-}
+};
