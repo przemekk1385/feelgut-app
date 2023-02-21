@@ -1,6 +1,6 @@
 <template>
   <div class="aspect-video w-full">
-    <div class="h-full w-full bg-header-image px-32">
+    <div class="h-full w-full bg-header-image bg-cover px-32">
       <!-- TODO: nav as component -->
       <nav class="flex items-center justify-between">
         <ul class="flex w-full items-center justify-between">
