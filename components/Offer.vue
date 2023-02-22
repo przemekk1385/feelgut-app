@@ -22,7 +22,6 @@
     </ul>
     <div class="col-span-2 grid">
       <div class="grid grid-cols-3 gap-12 py-12">
-        
         <div
           class="flex aspect-[3/2] w-full rounded-[10%/15%] bg-offer-card bg-cover p-8"
         >
@@ -157,18 +156,22 @@
             <img src="images/spine.svg" alt="Spine" class="h-full" />
           </div>
         </div>
-
       </div>
-      <div class="bg-primary-strong grid grid-cols-2 pt-16 pb-24 pl-16">
+      <div class="grid grid-cols-2 bg-primary-strong pt-16 pb-24 pl-16">
         <div>
-            <span class="text-white text-3xl font-medium">Poznaj szczegóły każdego<br />z masaży i sprawdź cennik</span>
+          <span class="text-3xl font-medium text-white">
+            Poznaj szczegóły każdego<br />z masaży i sprawdź cennik
+          </span>
         </div>
         <div class="pl-16">
-            <a
-              href="#"
-              class="mx-auto inline-block rounded-full p-[2px] font-medium bg-gradient-to-r from-[#FCCB00] via-[#C9961A] to-[#FFFAD2]"
-              ><div class="bg-primary-strong rounded-full px-8 py-4"><span class="text-white text-3xl">Kliknij tutaj</span></div></a
-            >
+          <a
+            href="#"
+            class="mx-auto inline-block rounded-full bg-gradient-to-r from-[#FCCB00] via-[#C9961A] to-[#FFFAD2] p-1 font-medium"
+          >
+            <div class="rounded-full bg-primary-strong px-8 py-4">
+              <span class="text-3xl text-white"> Kliknij tutaj </span>
+            </div>
+          </a>
         </div>
       </div>
     </div>
