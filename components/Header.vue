@@ -58,10 +58,8 @@
         </ul>
       </nav>
       <div class="mt-40">
-        <div class="drop-shadow-[0_4px_4px_rgba(22,31,54,.25)]">
-          <span class="text-6xl"
-            >Odzyskaj balans<br />i poczuj się GUT</span
-          >
+        <div class="drop-shadow-[0_4px_4px_rgba(22,31,54,0.75)]">
+          <span class="text-6xl">Odzyskaj balans<br />i poczuj się GUT</span>
         </div>
         <button
           type="button"
