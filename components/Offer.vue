@@ -160,7 +160,7 @@
         </div>
       </div>
     </div>
-    <div class="px-32 grid grid-cols-2 bg-primary-strong pt-16 pb-24">
+    <div class="grid grid-cols-2 bg-primary-strong px-32 pt-16 pb-24">
       <div>
         <span class="text-3xl font-medium text-white">
           Poznaj szczegóły każdego<br />z masaży i sprawdź cennik

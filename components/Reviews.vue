@@ -10,7 +10,9 @@
     </div>
     <div>
       <div class="mt-8 grid grid-cols-2 gap-12">
-        <div class="rounded-[10%/25%] bg-[#FFFCFC] px-8 pt-4 pb-8 drop-shadow-[5px_5px_20px_rgba(0,0,0,.25)]">
+        <div
+          class="rounded-[10%/25%] bg-[#FFFCFC] px-8 pt-4 pb-8 drop-shadow-[5px_5px_20px_rgba(0,0,0,.25)]"
+        >
           <div class="flex justify-center">
             <img src="images/star.svg" alt="Gwiazdka" class="mx-1" />
             <img src="images/star.svg" alt="Gwiazdka" class="mx-1" />
@@ -26,7 +28,9 @@
           </div>
         </div>
 
-        <div class="rounded-[10%/25%] bg-[#FFFCFC] px-8 pt-4 pb-8 drop-shadow-[5px_5px_20px_rgba(0,0,0,.25)]">
+        <div
+          class="rounded-[10%/25%] bg-[#FFFCFC] px-8 pt-4 pb-8 drop-shadow-[5px_5px_20px_rgba(0,0,0,.25)]"
+        >
           <div class="flex justify-center">
             <img src="images/star.svg" alt="Gwiazdka" class="mx-1" />
             <img src="images/star.svg" alt="Gwiazdka" class="mx-1" />
