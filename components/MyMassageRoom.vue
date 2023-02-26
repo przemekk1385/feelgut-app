@@ -1,6 +1,6 @@
 <template>
   <div
-    class="grid grid-cols-[repeat(20,_minmax(0,_1fr))] gap-6 bg-primary-strong px-16 py-6"
+    class="grid grid-cols-[repeat(20,_minmax(0,_1fr))] gap-6 bg-como px-16 py-6"
   >
     <div class="col-span-9">
       <div class="grid grid-cols-1 gap-y-6">
@@ -22,12 +22,12 @@
     </div>
     <div class="col-span-11 flex flex-col justify-end">
       <div class="flex grow items-center">
-        <div>
+        <div class="inline-block">
           <span class="text-8xl font-bold text-white opacity-30"
             >Mój gabinet</span
           >
           <div
-            class="relative -left-[15%] mt-6 h-1 w-[85%] bg-gradient-to-r from-[#FCCB00] via-[#C9961A] to-[#FFFAD2]"
+            class="relative -left-[15%] mt-6 h-1 w-[85%] bg-gradient-to-r from-supernova via-sahara to-mimosa"
           ></div>
         </div>
       </div>

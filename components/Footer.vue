@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-around bg-primary-strong px-32 py-12">
+  <div class="flex justify-around bg-como px-1/10 py-12">
     <div class="flex items-center">
       <div>
         <a href="/">
@@ -36,7 +36,7 @@
         <li>
           <a
             href="#"
-            class="flex h-10 w-10 items-center justify-center rounded-full border-2 border-[#FCCB00]"
+            class="flex h-12 w-12 items-center justify-center rounded-full border-2 border-supernova"
           >
             <img src="/images/fb.svg" alt="Facebook" />
           </a>
@@ -44,7 +44,7 @@
         <li>
           <a
             href="#"
-            class="flex h-10 w-10 items-center justify-center rounded-full border-2 border-[#FCCB00]"
+            class="flex h-12 w-12 items-center justify-center rounded-full border-2 border-supernova"
           >
             <img src="/images/insta.svg" alt="Instagram" />
           </a>

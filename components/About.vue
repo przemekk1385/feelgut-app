@@ -1,17 +1,18 @@
 <template>
-  <div class="grid grid-cols-2">
+  <div class="bg-como grid grid-cols-2 pr-1/10">
     <div>
-      <img src="/images/about.jpg" alt="Dariusz Gut - zdjęcie" class="w-full" />
+      <img src="/images/about.jpg" alt="Dariusz Gut - zdjęcie" class="w-full h-full object-cover" />
     </div>
-    <div class="bg-primary-strong">
-      <div class="mt-16">
-        <div class="pl-8">
+    <div class="pl-8 pt-16 pb-32">
+
+        <div class="inline-block">
           <span class="text-8xl font-bold text-white opacity-30">O mnie</span>
+          <div
+            class="relative -left-[60%] mt-4 h-1 w-[140%] bg-gradient-to-r from-supernova via-sahara to-mimosa"
+          ></div>
         </div>
-        <div
-          class="relative -left-[20%] mt-6 h-1 w-[60%] bg-gradient-to-r from-[#FCCB00] via-[#C9961A] to-[#FFFAD2]"
-        ></div>
-        <div class="mt-16 pl-8 pr-32">
+
+        <div class="mt-16">
           <span class="font-lato text-white">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -23,6 +24,5 @@
           </span>
         </div>
       </div>
-    </div>
   </div>
 </template>
