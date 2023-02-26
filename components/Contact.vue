@@ -54,17 +54,19 @@
     <div class="col-span-2 flex items-center justify-center">
       <div>
         <div>
-          <span class="text-8xl font-bold text-sherwood-green opacity-40"
+          <span
+            class="inline-block text-8xl font-bold text-sherwood-green opacity-40"
             >Dariusz</span
           >
         </div>
-        <div class="relative -top-6 left-64">
+        <div class="relative -top-6 left-64 inline-block">
           <span class="text-8xl font-bold text-sherwood-green opacity-40"
             >Gut</span
           >
         </div>
         <div>
-          <span class="text-7xl font-bold text-sherwood-green opacity-40"
+          <span
+            class="inline-block text-7xl font-bold text-sherwood-green opacity-40"
             >676 888 930</span
           >
         </div>
