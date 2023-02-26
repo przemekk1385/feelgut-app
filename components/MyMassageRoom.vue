@@ -6,14 +6,14 @@
       <div class="grid grid-cols-1 gap-y-6">
         <div class="aspect-[10/11]">
           <img
-            src="images/my_massage_room/1.jpeg"
+            src="/images/my_massage_room/1.jpeg"
             alt="Zdjęcie ilustracyjne"
             class="h-full w-full object-cover"
           />
         </div>
         <div class="aspect-[2/1]">
           <img
-            src="images/my_massage_room/2.jpeg"
+            src="/images/my_massage_room/2.jpeg"
             alt="Zdjęcie ilustracyjne"
             class="h-full w-full object-cover"
           />
@@ -34,14 +34,14 @@
       <div class="grid grid-cols-1 gap-y-6">
         <div class="aspect-[2/1]">
           <img
-            src="images/my_massage_room/2.jpeg"
+            src="/images/my_massage_room/2.jpeg"
             alt="Zdjęcie ilustracyjne"
             class="h-full w-full object-cover"
           />
         </div>
         <div class="aspect-[2/1]">
           <img
-            src="images/my_massage_room/3.jpeg"
+            src="/images/my_massage_room/3.jpeg"
             alt="Zdjęcie ilustracyjne"
             class="h-full w-full object-cover"
           />

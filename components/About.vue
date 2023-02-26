@@ -1,7 +1,7 @@
 <template>
   <div class="grid grid-cols-2">
     <div>
-      <img src="images/about.jpg" alt="Dariusz Gut - zdjęcie" class="w-full" />
+      <img src="/images/about.jpg" alt="Dariusz Gut - zdjęcie" class="w-full" />
     </div>
     <div class="bg-primary-strong">
       <div class="mt-16">

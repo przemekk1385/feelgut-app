@@ -5,9 +5,9 @@
       <nav class="flex items-center justify-between">
         <ul class="flex w-full items-center justify-between">
           <li>
-            <a href="/" class="font-medium"
-              ><img src="images/feelgut-logo.png" alt="Logo" class="h-28"
-            /></a>
+            <a href="/" class="font-medium">
+              <img src="/images/feelgut-logo.png" alt="Logo" class="h-28" />
+            </a>
           </li>
           <li><a href="#" class="font-medium">O mnie</a></li>
           <li><a href="#" class="font-medium">Usługi</a></li>

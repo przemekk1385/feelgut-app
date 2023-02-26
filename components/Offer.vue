@@ -34,7 +34,7 @@
               </div>
             </div>
             <div class="h-full">
-              <img src="images/spine.svg" alt="Spine" class="h-full" />
+              <img src="/images/spine.svg" alt="Spine" class="h-full" />
             </div>
           </div>
 
@@ -49,7 +49,7 @@
               </div>
             </div>
             <div class="h-full">
-              <img src="images/spine.svg" alt="Spine" class="h-full" />
+              <img src="/images/spine.svg" alt="Spine" class="h-full" />
             </div>
           </div>
 
@@ -64,7 +64,7 @@
               </div>
             </div>
             <div class="h-full">
-              <img src="images/spine.svg" alt="Spine" class="h-full" />
+              <img src="/images/spine.svg" alt="Spine" class="h-full" />
             </div>
           </div>
 
@@ -79,7 +79,7 @@
               </div>
             </div>
             <div class="h-full">
-              <img src="images/spine.svg" alt="Spine" class="h-full" />
+              <img src="/images/spine.svg" alt="Spine" class="h-full" />
             </div>
           </div>
 
@@ -94,7 +94,7 @@
               </div>
             </div>
             <div class="h-full">
-              <img src="images/spine.svg" alt="Spine" class="h-full" />
+              <img src="/images/spine.svg" alt="Spine" class="h-full" />
             </div>
           </div>
 
@@ -109,7 +109,7 @@
               </div>
             </div>
             <div class="h-full">
-              <img src="images/spine.svg" alt="Spine" class="h-full" />
+              <img src="/images/spine.svg" alt="Spine" class="h-full" />
             </div>
           </div>
 
@@ -124,7 +124,7 @@
               </div>
             </div>
             <div class="h-full">
-              <img src="images/spine.svg" alt="Spine" class="h-full" />
+              <img src="/images/spine.svg" alt="Spine" class="h-full" />
             </div>
           </div>
 
@@ -139,7 +139,7 @@
               </div>
             </div>
             <div class="h-full">
-              <img src="images/spine.svg" alt="Spine" class="h-full" />
+              <img src="/images/spine.svg" alt="Spine" class="h-full" />
             </div>
           </div>
 
@@ -154,7 +154,7 @@
               </div>
             </div>
             <div class="h-full">
-              <img src="images/spine.svg" alt="Spine" class="h-full" />
+              <img src="/images/spine.svg" alt="Spine" class="h-full" />
             </div>
           </div>
         </div>

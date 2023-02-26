@@ -3,7 +3,7 @@
     <div class="flex items-center">
       <div>
         <a href="/">
-          <img src="images/feelgut-logo-w.svg " alt="Logo" class="w-28" />
+          <img src="/images/feelgut-logo-w.svg " alt="Logo" class="w-28" />
         </a>
       </div>
     </div>
@@ -38,7 +38,7 @@
             href="#"
             class="flex h-10 w-10 items-center justify-center rounded-full border-2 border-[#FCCB00]"
           >
-            <img src="images/fb.svg" alt="Facebook" />
+            <img src="/images/fb.svg" alt="Facebook" />
           </a>
         </li>
         <li>
@@ -46,7 +46,7 @@
             href="#"
             class="flex h-10 w-10 items-center justify-center rounded-full border-2 border-[#FCCB00]"
           >
-            <img src="images/insta.svg" alt="Instagram" />
+            <img src="/images/insta.svg" alt="Instagram" />
           </a>
         </li>
       </ul>
