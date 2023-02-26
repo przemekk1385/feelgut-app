@@ -13,12 +13,12 @@
           </div>
         </div>
         <ul class="flex w-full items-center justify-around">
-          <li>
+          <li class="px-4">
             <a href="#" class="font-lato text-2xl text-como">
               Masaże relaksacyjne
             </a>
           </li>
-          <li>
+          <li class="px-4">
             <a href="#" class="font-lato text-2xl text-martini">
               Masaże terapeutyczne
             </a>
