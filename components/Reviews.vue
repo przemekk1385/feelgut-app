@@ -1,9 +1,11 @@
 <template>
-  <div class="bg-platinium px-1/10 pt-12 pb-16">
+  <div class="bg-platinium px-6 pt-12 pb-16 lg:px-1/10">
     <div class="flex justify-center">
       <div class="inline-block">
-        <span class="text-8xl font-bold text-white"> Opinie klientów </span>
-        <div class="relative left-[5%] mx-auto mt-4 h-1 w-[65%]">
+        <span class="text-6xl font-bold text-white md:text-8xl">
+          Opinie klientów
+        </span>
+        <div class="relative mx-auto mt-4 h-1 w-full lg:left-[5%] lg:w-[65%]">
           <div
             class="h-1 bg-gradient-to-r from-supernova via-sahara to-mimosa"
           ></div>
@@ -11,11 +13,11 @@
       </div>
     </div>
     <div>
-      <div class="mt-12 grid grid-cols-2 gap-16">
+      <div class="mt-12 grid grid-cols-1 gap-16 lg:grid-cols-2">
         <div
           v-for="{ author, stars, text } in reviews"
           :key="text"
-          class="flex aspect-[5/2] flex-col justify-around rounded-[8%/20%] bg-ceramic px-8 pt-4 pb-8 drop-shadow-[5px_5px_10px_rgba(0,0,0,.25)]"
+          class="flex aspect-[5/2] flex-col justify-around rounded-3xl bg-ceramic px-8 pt-4 pb-8 drop-shadow-[5px_5px_10px_rgba(0,0,0,.25)] md:rounded-[8%/20%]"
         >
           <div class="flex justify-center">
             <img

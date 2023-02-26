@@ -1,8 +1,8 @@
 <template>
   <div
-    class="grid grid-cols-[repeat(20,_minmax(0,_1fr))] gap-6 bg-como px-16 py-6"
+    class="grid grid-cols-1 gap-6 bg-como px-16 py-6 lg:grid-cols-2 xl:grid-cols-[repeat(20,_minmax(0,_1fr))]"
   >
-    <div class="col-span-9">
+    <div class="xl:col-span-9">
       <div class="grid grid-cols-1 gap-y-6">
         <div class="aspect-[10/11]">
           <img
@@ -20,14 +20,14 @@
         </div>
       </div>
     </div>
-    <div class="col-span-11 flex flex-col justify-end">
-      <div class="flex grow items-center">
+    <div class="flex flex-col justify-end xl:col-span-11">
+      <div class="mb-12 flex grow items-center xl:my-0">
         <div class="inline-block">
-          <span class="text-8xl font-bold text-white opacity-30"
+          <span class="text-6xl font-bold text-white opacity-30 md:text-8xl"
             >Mój gabinet</span
           >
           <div
-            class="relative -left-[15%] mt-6 h-1 w-[85%] bg-gradient-to-r from-supernova via-sahara to-mimosa"
+            class="relative mt-6 h-1 w-full bg-gradient-to-r from-supernova via-sahara to-mimosa lg:-left-[15%] lg:w-[85%]"
           ></div>
         </div>
       </div>

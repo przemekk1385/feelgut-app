@@ -1,12 +1,12 @@
 <template>
-  <div class="grid grid-cols-5 gap-6 px-1/10 pt-16 pb-28">
-    <div class="col-span-3">
+  <div class="grid-col-1 grid gap-6 px-6 pt-16 pb-28 lg:px-1/10 xl:grid-cols-5">
+    <div class="lg:col-span-3">
       <div class="inline-block">
-        <span class="text-8xl font-bold text-como opacity-30">
+        <span class="text-6xl font-bold text-como opacity-30 md:text-8xl">
           Umów wizytę
         </span>
         <div
-          class="relative left-[35%] mt-4 h-1 w-[85%] bg-gradient-to-r from-supernova via-sahara to-mimosa"
+          class="relative mt-4 h-1 w-full bg-gradient-to-r from-supernova via-sahara to-mimosa lg:left-[35%] lg:w-[85%]"
         ></div>
       </div>
       <div class="mt-24 grid grid-cols-1 gap-y-6">
@@ -51,22 +51,23 @@
         </div>
       </div>
     </div>
-    <div class="col-span-2 flex items-center justify-center">
+    <div class="flex items-center justify-center xl:col-span-2">
       <div>
         <div>
           <span
-            class="inline-block text-8xl font-bold text-sherwood-green opacity-40"
+            class="text-6xl font-bold text-sherwood-green opacity-40 md:text-8xl"
             >Dariusz</span
           >
         </div>
-        <div class="relative -top-6 left-64 inline-block">
-          <span class="text-8xl font-bold text-sherwood-green opacity-40"
+        <div class="relative -top-4 left-32 inline-block md:-top-6 md:left-64">
+          <span
+            class="text-6xl font-bold text-sherwood-green opacity-40 md:text-8xl"
             >Gut</span
           >
         </div>
         <div>
           <span
-            class="inline-block text-7xl font-bold text-sherwood-green opacity-40"
+            class="text-5xl font-bold text-sherwood-green opacity-40 md:text-7xl"
             >676 888 930</span
           >
         </div>
