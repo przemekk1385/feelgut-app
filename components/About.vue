@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-1 md:grid-cols-2 bg-como lg:pr-1/10">
+  <div class="grid grid-cols-1 bg-como md:grid-cols-2 lg:pr-1/10">
     <div>
       <img
         src="/images/about.jpg"
@@ -7,11 +7,13 @@
         class="h-full w-full object-cover"
       />
     </div>
-    <div class="px-8 lg:pr-0 pt-16 pb-32">
+    <div class="px-8 pt-16 pb-32 lg:pr-0">
       <div class="inline-block">
-        <span class="text-6xl md:text-8xl font-bold text-white opacity-30">O mnie</span>
+        <span class="text-6xl font-bold text-white opacity-30 md:text-8xl"
+          >O mnie</span
+        >
         <div
-          class="relative -left-[60%] mt-4 h-1 w-[140%] bg-gradient-to-r from-supernova via-sahara to-mimosa"
+          class="relative mt-4 h-1 w-full bg-gradient-to-r from-supernova via-sahara to-mimosa lg:-left-[60%] lg:w-[140%]"
         ></div>
       </div>
       <div class="mt-16">

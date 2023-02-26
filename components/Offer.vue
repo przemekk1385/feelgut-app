@@ -1,25 +1,33 @@
 <template>
   <div>
-    <div class="grid grid-cols-2 items-center py-16 px-1/10">
-      <div class="inline-block">
-        <span class="text-8xl font-bold text-como opacity-30"> Usługi </span>
-        <div
-          class="relative left-[10%] mt-4 h-1 w-[80%] bg-gradient-to-r from-supernova via-sahara to-mimosa"
-        ></div>
+    <div class="py-16 px-6 lg:px-1/10">
+      <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+        <div>
+          <div class="inline-block">
+            <span class="text-6xl font-bold text-como opacity-30 md:text-8xl">
+              Usługi
+            </span>
+            <div
+              class="relative mt-4 h-1 w-full bg-gradient-to-r from-supernova via-sahara to-mimosa lg:left-[20%] lg:w-[160%]"
+            ></div>
+          </div>
+        </div>
+        <ul class="flex w-full items-center justify-around">
+          <li>
+            <a href="#" class="font-lato text-2xl text-como">
+              Masaże relaksacyjne
+            </a>
+          </li>
+          <li>
+            <a href="#" class="font-lato text-2xl text-martini">
+              Masaże terapeutyczne
+            </a>
+          </li>
+        </ul>
       </div>
-      <ul class="flex justify-between">
-        <li>
-          <a href="#" class="font-lato text-2xl text-como">
-            Masaże relaksacyjne
-          </a>
-        </li>
-        <li>
-          <a href="#" class="font-lato text-2xl text-martini">
-            Masaże terapeutyczne
-          </a>
-        </li>
-      </ul>
-      <div class="col-span-2 grid grid-cols-3 gap-24 pt-12 pb-24">
+      <div
+        class="grid grid-cols-1 gap-12 py-12 md:grid-cols-2 md:pb-24 lg:grid-cols-3 xl:gap-24"
+      >
         <div
           v-for="text in offer"
           :key="text"
@@ -28,7 +36,7 @@
           <div class="flex h-full items-center justify-center pr-[10%]">
             <div class="text-center">
               <span
-                class="font-lato text-2xl font-medium text-martini"
+                class="font-lato text-3xl font-medium text-martini md:text-2xl"
                 v-html="text"
               >
               </span>
@@ -40,13 +48,18 @@
         </div>
       </div>
     </div>
-    <div class="flex justify-around bg-como px-1/10 pt-16 pb-24">
-      <div class="ml-16">
-        <span class="text-3xl font-medium text-white">
-          Poznaj szczegóły każdego<br />z masaży i sprawdź cennik
+    <div
+      class="flex flex-col justify-around bg-como px-6 pt-16 pb-24 md:flex-row lg:px-1/10"
+    >
+      <div class="xl:ml-16">
+        <span class="hidden text-3xl font-medium text-white md:inline">
+          Poznaj szczegóły każdego<br />z&nbsp;masaży i&nbsp;sprawdź cennik
+        </span>
+        <span class="text-3xl font-medium text-white md:hidden">
+          Poznaj szczegóły każdego z&nbsp;masaży i&nbsp;sprawdź cennik
         </span>
       </div>
-      <div class="mr-32">
+      <div class="mt-12 md:mt-0 xl:mr-32">
         <a
           href="#"
           class="mx-auto inline-block rounded-full bg-gradient-to-r from-supernova via-sahara to-mimosa p-1 font-medium"
