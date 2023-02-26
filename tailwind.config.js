@@ -10,7 +10,7 @@ module.exports = {
       },
       colors: {
         // color names by https://colors.artyclick.com/color-name-finder/
-        
+
         como: "#547A71",
         martini: "#A6A6A6",
         "silver-tree": "#55B99A",
@@ -18,7 +18,7 @@ module.exports = {
         mimosa: "#FFFAD2",
         sahara: "#C9961A",
         supernova: "#FCCB00",
-        
+
         ceramic: "#FFFCFC",
         platinium: "#E1E1E1",
 
@@ -31,7 +31,7 @@ module.exports = {
       },
       padding: {
         "1/10": "10%",
-      }
+      },
     },
   },
   plugins: [],

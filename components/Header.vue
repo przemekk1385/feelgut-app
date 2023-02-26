@@ -24,22 +24,27 @@
               href="#"
               class="flex h-12 w-12 items-center justify-center rounded-full border-2 border-supernova"
             >
-            <img src="/images/fb.svg" alt="Facebook" />
+              <img src="/images/fb.svg" alt="Facebook" />
             </a>
             <a
               href="#"
               class="flex h-12 w-12 items-center justify-center rounded-full border-2 border-supernova"
             >
-            <img src="/images/insta.svg" alt="Instagram" />
+              <img src="/images/insta.svg" alt="Instagram" />
             </a>
           </li>
         </ul>
       </nav>
       <div class="relative top-[15%]">
         <div class="drop-shadow-[0_4px_4px_rgba(22,31,54,0.75)]">
-          <span class="text-6xl leading-[5rem]">Odzyskaj balans<br />i poczuj się GUT</span>
+          <span class="text-6xl leading-[5rem]"
+            >Odzyskaj balans<br />i poczuj się GUT</span
+          >
         </div>
-        <a href="#" class="inline-block mt-8 rounded-full bg-silver-tree px-14 py-6">
+        <a
+          href="#"
+          class="mt-8 inline-block rounded-full bg-silver-tree px-14 py-6"
+        >
           <span class="font-lato text-4xl font-medium text-white">
             Oferta masaży
           </span>

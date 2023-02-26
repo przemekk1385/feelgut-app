@@ -2,9 +2,7 @@
   <div>
     <div class="grid grid-cols-2 items-center py-16 px-1/10">
       <div class="inline-block">
-        <span class="text-8xl font-bold text-como opacity-30">
-          Usługi
-        </span>
+        <span class="text-8xl font-bold text-como opacity-30"> Usługi </span>
         <div
           class="relative left-[10%] mt-4 h-1 w-[80%] bg-gradient-to-r from-supernova via-sahara to-mimosa"
         ></div>
@@ -23,15 +21,20 @@
       </ul>
       <div class="col-span-2 grid grid-cols-3 gap-24 pt-12 pb-24">
         <div
-          v-for="text in offer" :key="text" class="aspect-[3/2] w-full relative rounded-[10%/15%] bg-offer-card bg-cover drop-shadow-[5px_5px_10px_rgba(0,0,0,.25)]"
+          v-for="text in offer"
+          :key="text"
+          class="relative aspect-[3/2] w-full rounded-[10%/15%] bg-offer-card bg-cover drop-shadow-[5px_5px_10px_rgba(0,0,0,.25)]"
         >
-          <div class="pr-[10%] h-full flex items-center justify-center">
+          <div class="flex h-full items-center justify-center pr-[10%]">
             <div class="text-center">
-              <span class="font-lato text-2xl font-medium text-martini" v-html="text">
+              <span
+                class="font-lato text-2xl font-medium text-martini"
+                v-html="text"
+              >
               </span>
             </div>
           </div>
-          <div class="absolute right-[5%]  top-0 h-full py-2">
+          <div class="absolute right-[5%] top-0 h-full py-2">
             <img src="/images/spine.svg" alt="Spine" class="h-full" />
           </div>
         </div>
@@ -58,17 +61,15 @@
 </template>
 
 <script setup lang="ts">
-  const offer = ref([
-    "Masaż<br />całego<br />ciała",
-    "Masaż<br />częściowy",
-    "Masaż<br />balijski",
-    "Masaż<br />gorącymi<br />kamieniami",
-    "Japoński&nbsp;liftingujący<br />masaż&nbsp;twarzy<br />KOBIDO",
-    "Hawajski&nbsp;masaż<br />Lomi&nbsp;Lomi",
-    "Ajurwedyjski<br />masaż<br />Abhyanga",
-    "Hinduski<br />masaż<br />głowy",
-    "Masaż<br />świecą",
-  ])
-
-
+const offer = ref([
+  "Masaż<br />całego<br />ciała",
+  "Masaż<br />częściowy",
+  "Masaż<br />balijski",
+  "Masaż<br />gorącymi<br />kamieniami",
+  "Japoński&nbsp;liftingujący<br />masaż&nbsp;twarzy<br />KOBIDO",
+  "Hawajski&nbsp;masaż<br />Lomi&nbsp;Lomi",
+  "Ajurwedyjski<br />masaż<br />Abhyanga",
+  "Hinduski<br />masaż<br />głowy",
+  "Masaż<br />świecą",
+]);
 </script>

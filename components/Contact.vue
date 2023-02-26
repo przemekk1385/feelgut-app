@@ -59,7 +59,9 @@
           >
         </div>
         <div class="relative -top-6 left-64">
-          <span class="text-8xl font-bold text-sherwood-green opacity-40">Gut</span>
+          <span class="text-8xl font-bold text-sherwood-green opacity-40"
+            >Gut</span
+          >
         </div>
         <div>
           <span class="text-7xl font-bold text-sherwood-green opacity-40"
