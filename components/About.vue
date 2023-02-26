@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-2 bg-como pr-1/10">
+  <div class="grid grid-cols-1 md:grid-cols-2 bg-como lg:pr-1/10">
     <div>
       <img
         src="/images/about.jpg"
@@ -7,14 +7,13 @@
         class="h-full w-full object-cover"
       />
     </div>
-    <div class="pl-8 pt-16 pb-32">
+    <div class="px-8 lg:pr-0 pt-16 pb-32">
       <div class="inline-block">
-        <span class="text-8xl font-bold text-white opacity-30">O mnie</span>
+        <span class="text-6xl md:text-8xl font-bold text-white opacity-30">O mnie</span>
         <div
           class="relative -left-[60%] mt-4 h-1 w-[140%] bg-gradient-to-r from-supernova via-sahara to-mimosa"
         ></div>
       </div>
-
       <div class="mt-16">
         <span class="font-lato text-white">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
