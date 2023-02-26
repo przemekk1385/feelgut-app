@@ -5,8 +5,8 @@ module.exports = {
     content: ["./pages/**/*.{html,js}", "./components/**/*.{html,js}"],
     extend: {
       backgroundImage: {
-        "header-image": "url('images/header.jpg')",
-        "offer-card": "url('images/offer-card.jpeg')",
+        "header-image": "url('/images/header.jpg')",
+        "offer-card": "url('/images/offer-card.jpeg')",
       },
       colors: {
         primary: {
