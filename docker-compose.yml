@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  app:
+    build:
+      context: .
+    restart: always
+    environment:
+      - NUXT_PUBLIC_GA_MEASURMENT_ID
+      - NUXT_PUBLIC_RE_CAPTCHA_SITE_KEY
+      - NUXT_PUBLIC_X_API_KEY
+      - NUXT_MAIL_PASSWORD
+      - NUXT_MAIL_SERVER
+      - NUXT_MAIL_USERNAME
+      - NUXT_MAIL_TO
+      - NUXT_RE_CAPTCHA_SECRET_KEY
+    command: node .output/server/index.mjs
+    ports: ["${APP_SERVICE_PORT:-3000}:3000"]
