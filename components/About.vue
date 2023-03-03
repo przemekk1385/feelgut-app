@@ -7,13 +7,13 @@
         class="h-full w-full object-cover"
       />
     </div>
-    <div class="px-8 pt-16 pb-32 lg:pr-0">
+    <div class="px-8 pt-16 pb-24 lg:pr-0">
       <div class="inline-block">
         <span class="text-6xl font-bold text-white opacity-30 md:text-8xl"
           >O mnie</span
         >
         <div
-          class="relative mt-4 h-1 w-full bg-gradient-to-r from-supernova via-sahara to-mimosa lg:left-[-60%] lg:w-[140%]"
+          class="relative mt-4 h-[2px] w-full bg-gradient-to-r from-supernova via-sahara to-mimosa lg:left-[-60%] lg:w-[140%]"
         ></div>
       </div>
       <div class="mt-16">

@@ -8,7 +8,7 @@
           Umów wizytę
         </span>
         <div
-          class="relative mt-4 h-1 w-full bg-gradient-to-r from-supernova via-sahara to-mimosa lg:left-[35%] lg:w-[85%]"
+          class="relative mt-4 h-[2px] w-full bg-gradient-to-r from-supernova via-sahara to-mimosa lg:left-[35%] lg:w-[85%]"
         ></div>
       </div>
       <div class="mt-24 grid grid-cols-1 gap-y-6">
@@ -42,7 +42,7 @@
         </div>
         <div class="flex justify-end">
           <button
-            class="rounded-full bg-gradient-to-r from-supernova via-sahara to-mimosa p-1 font-medium"
+            class="rounded-full bg-gradient-to-r from-supernova via-sahara to-mimosa p-[2px] font-medium"
           >
             <div class="rounded-full bg-white px-12 py-2">
               <span class="text-xl font-medium text-sherwood-green opacity-40">
