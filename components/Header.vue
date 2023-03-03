@@ -22,7 +22,7 @@
               >Umów wizytę</a
             >
           </li>
-          <li class="flex lg:justify-between lg:w-32">
+          <li class="flex lg:w-32 lg:justify-between">
             <a
               href="#"
               class="relative mx-2 flex h-10 w-10 items-center justify-center rounded-full border-2 border-supernova lg:h-12 lg:w-12"

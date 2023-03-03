@@ -1,5 +1,7 @@
 <template>
-  <div class="grid-col-1 grid gap-6 px-6 pt-16 pb-28 lg:px-1/10 xl:grid-cols-5">
+  <div
+    class="grid grid-cols-1 gap-6 px-6 pt-16 pb-28 lg:px-1/10 xl:grid-cols-5"
+  >
     <div class="lg:col-span-3">
       <div class="inline-block">
         <span class="text-6xl font-bold text-como opacity-30 md:text-8xl">

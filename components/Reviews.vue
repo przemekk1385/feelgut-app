@@ -21,7 +21,8 @@
         >
           <div class="flex justify-center">
             <img
-              v-for="_ in stars"
+              v-for="n in stars"
+              :key="n"
               src="/images/star.svg"
               alt="Gwiazdka"
               class="mx-1"

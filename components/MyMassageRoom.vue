@@ -27,7 +27,7 @@
             >Mój gabinet</span
           >
           <div
-            class="relative mt-6 h-1 w-full bg-gradient-to-r from-supernova via-sahara to-mimosa lg:-left-[15%] lg:w-[85%]"
+            class="relative mt-6 h-1 w-full bg-gradient-to-r from-supernova via-sahara to-mimosa lg:left-[-15%] lg:w-[85%]"
           ></div>
         </div>
       </div>

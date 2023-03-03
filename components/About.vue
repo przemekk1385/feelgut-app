@@ -13,7 +13,7 @@
           >O mnie</span
         >
         <div
-          class="relative mt-4 h-1 w-full bg-gradient-to-r from-supernova via-sahara to-mimosa lg:-left-[60%] lg:w-[140%]"
+          class="relative mt-4 h-1 w-full bg-gradient-to-r from-supernova via-sahara to-mimosa lg:left-[-60%] lg:w-[140%]"
         ></div>
       </div>
       <div class="mt-16">
