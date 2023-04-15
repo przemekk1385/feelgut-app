@@ -6,7 +6,7 @@
     <Transition name="slide">
       <div v-if="show" class="flex h-full">
         <v-drawer-btn @click="show = !show" />
-        <div class="relative flex h-full items-center w-48 justify-center">
+        <div class="relative flex h-full w-48 items-center justify-center">
           <div class="absolute h-full w-full bg-como opacity-80"></div>
           <slot></slot>
         </div>
