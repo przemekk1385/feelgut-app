@@ -82,16 +82,7 @@
           >
             Odzyskaj balans<br />i poczuj się GUT
           </div>
-          <a
-            href="#"
-            class="inline-block rounded-full bg-silver-tree px-12 py-4 lg:px-14 xl:py-6 xl:px-16"
-          >
-            <span
-              class="font-lato text-xl font-medium text-white md:text-2xl lg:text-3xl"
-            >
-              Oferta masaży
-            </span>
-          </a>
+          <v-header-button> Oferta masaży </v-header-button>
         </div>
       </div>
     </div>
