@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative aspect-[3/2] max-h-[60rem] w-full min-w-[23rem] overflow-hidden xl:aspect-auto"
+    class="relative aspect-[3/2] max-h-[60rem] w-full overflow-hidden xl:aspect-auto"
   >
     <div class="h-full w-full overflow-hidden">
       <img

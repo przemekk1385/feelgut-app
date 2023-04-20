@@ -1,5 +1,5 @@
 <template>
-  <div class="grid min-w-[23rem] grid-cols-1 bg-como text-white lg:grid-cols-2">
+  <div class="grid grid-cols-1 bg-como text-white lg:grid-cols-2">
     <div>
       <div class="mb-6 px-6 lg:hidden">
         <div

@@ -1,12 +1,12 @@
 <template>
-  <div class="w-full font-playfair-display">
-    <Header />
-    <About />
-    <Offer />
-    <Reviews />
-    <Contact />
-    <MyMassageRoom />
-    <Map />
-    <Footer />
+  <div class="font-playfair-display min-w-[23rem]">
+    <v-header />
+    <v-about />
+    <v-offer />
+    <!-- <Reviews /> -->
+    <!-- <Contact /> -->
+    <!-- <MyMassageRoom /> -->
+    <!-- <Map /> -->
+    <!-- <Footer /> -->
   </div>
 </template>
