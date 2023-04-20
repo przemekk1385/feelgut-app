@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full">
+  <div>
     <v-offer-bar bg-color="platinium">
       Jak poprawnie przygotować się do masażu?
       <template #button>
@@ -11,18 +11,14 @@
 
     <div class="mx-auto my-12 max-w-[90rem] px-6 md:px-20 lg:px-28 xl:px-36">
       <div class="flex flex-col justify-between gap-6 md:flex-row">
-        <div>
-          <div>
-            <div
-              class="text-5xl font-bold text-como opacity-30 md:text-6xl lg:text-7xl xl:text-8xl"
-            >
-              Usługi
-            </div>
+        <v-h>
+          <span class="text-como opacity-30">Usługi</span>
+          <template #under>
             <div
               class="relative mt-6 h-[2px] w-full bg-gradient-to-r from-supernova via-sahara to-mimosa md:left-6 md:w-[15rem] lg:left-9 lg:w-[22rem] xl:left-12 xl:w-[29rem]"
             ></div>
-          </div>
-        </div>
+          </template>
+        </v-h>
         <ul class="flex items-center gap-x-12">
           <li>
             <a
