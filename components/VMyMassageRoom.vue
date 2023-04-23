@@ -4,7 +4,7 @@
       <v-h class="mb-6 block md:hidden">
         <span class="text-white opacity-30">Mój gabinet</span>
         <template #under>
-          <v-h-line />
+          <v-h-line class="sm:w-1/2" />
         </template>
       </v-h>
 
