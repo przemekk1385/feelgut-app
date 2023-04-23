@@ -14,9 +14,9 @@
         <v-h>
           <span class="text-como opacity-30">Usługi</span>
           <template #under>
-            <div
-              class="relative mt-6 h-[2px] w-full bg-gradient-to-r from-supernova via-sahara to-mimosa md:left-6 md:w-[15rem] lg:left-9 lg:w-[22rem] xl:left-12 xl:w-[29rem]"
-            ></div>
+            <v-h-line
+              class="relative sm:w-1/2 md:left-6 md:w-[15rem] lg:left-9 lg:w-[22rem] xl:left-12 xl:w-[29rem]"
+            />
           </template>
         </v-h>
         <ul class="flex items-center gap-x-12">

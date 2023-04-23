@@ -4,9 +4,9 @@
       <v-h>
         <div class="text-center text-white">Opinie klientów</div>
         <template #under>
-          <div
-            class="relative mx-auto mt-6 h-[2px] w-full bg-gradient-to-r from-supernova via-sahara to-mimosa md:left-4 md:w-[18rem] lg:left-9 lg:w-[22rem] xl:left-12 xl:w-[29rem]"
-          ></div>
+          <v-h-line
+            class="relative mx-auto sm:w-1/2 md:left-4 md:w-[18rem] lg:left-9 lg:w-[22rem] xl:left-12 xl:w-[29rem]"
+          />
         </template>
       </v-h>
       <div>
