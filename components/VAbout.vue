@@ -17,9 +17,7 @@
           <v-h>
             <span class="text-white opacity-30"> O mnie </span>
             <template #under>
-              <v-h-line
-                class="relative sm:w-1/2 lg:-left-40 lg:w-[22rem] xl:-left-48 xl:w-[29rem]"
-              />
+              <v-h-line class="relative md:left-16 lg:-left-40 xl:-left-48" />
             </template>
           </v-h>
         </div>

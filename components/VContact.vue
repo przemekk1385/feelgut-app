@@ -5,9 +5,7 @@
     <v-h>
       <span class="text-como opacity-30"> Umów wizytę </span>
       <template #under>
-        <v-h-line
-          class="relative sm:w-1/2 md:left-40 md:w-[15rem] lg:left-44 lg:w-[22rem] xl:left-48 xl:w-[29rem]"
-        />
+        <v-h-line class="relative md:left-40 lg:left-44 xl:left-48" />
       </template>
     </v-h>
     <div class="flex flex-col gap-12 lg:flex-row">

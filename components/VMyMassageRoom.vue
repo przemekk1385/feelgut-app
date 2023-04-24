@@ -4,7 +4,7 @@
       <v-h class="mb-6 block md:hidden">
         <span class="text-white opacity-30">Mój gabinet</span>
         <template #under>
-          <v-h-line class="sm:w-1/2" />
+          <v-h-line />
         </template>
       </v-h>
 
@@ -31,7 +31,7 @@
               <span class="text-white opacity-30">Mój gabinet</span>
               <template #under>
                 <v-h-line
-                  class="relative md:-left-16 md:w-[19rem] lg:-left-20 lg:w-[22rem] xl:-left-24 xl:w-[29rem]"
+                  class="relative md:-left-12 lg:-left-20 xl:-left-24"
                 />
               </template>
             </v-h>

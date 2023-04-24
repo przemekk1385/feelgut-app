@@ -4,9 +4,7 @@
       <v-h>
         <div class="text-center text-white">Opinie klientów</div>
         <template #under>
-          <v-h-line
-            class="relative mx-auto sm:w-1/2 md:left-4 md:w-[18rem] lg:left-9 lg:w-[22rem] xl:left-12 xl:w-[29rem]"
-          />
+          <v-h-line class="relative mx-auto md:left-4 lg:left-9 xl:left-12" />
         </template>
       </v-h>
       <div>

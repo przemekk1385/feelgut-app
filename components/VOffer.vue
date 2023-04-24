@@ -14,9 +14,7 @@
         <v-h>
           <span class="text-como opacity-30">Usługi</span>
           <template #under>
-            <v-h-line
-              class="relative sm:w-1/2 md:left-6 md:w-[15rem] lg:left-9 lg:w-[22rem] xl:left-12 xl:w-[29rem]"
-            />
+            <v-h-line class="relative md:left-6 lg:left-9 xl:left-12" />
           </template>
         </v-h>
         <ul class="flex items-center gap-x-12">
