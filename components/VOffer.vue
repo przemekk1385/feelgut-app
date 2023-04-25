@@ -29,7 +29,7 @@
           <li>
             <a
               href="#"
-              class="font-lato text-lg text-martini sm:text-xl lg:text-2xl"
+              class="font-lato text-lg text-[#A6A6A6] sm:text-xl lg:text-2xl"
             >
               Masaże terapeutyczne
             </a>
@@ -64,7 +64,7 @@
             <div>
               <a
                 href=""
-                class="inline-block rounded-full bg-silver-tree px-6 py-1 font-medium uppercase text-white"
+                class="inline-block rounded-full bg-[#55B99A] px-6 py-1 font-medium uppercase text-white"
               >
                 Sprawdź
               </a>

@@ -50,24 +50,16 @@
           </button>
         </div>
       </div>
-      <div class="flex flex-col items-center justify-center">
-        <div>
-          <div
-            class="text-7xl font-bold text-sherwood-green opacity-40 sm:text-8xl lg:text-7xl xl:text-8xl"
-          >
-            Dariusz
-          </div>
+      <div
+        class="flex flex-col items-center justify-center font-bold text-[#073F31] opacity-40"
+      >
+        <div class="text-7xl font-bold sm:text-8xl lg:text-7xl xl:text-8xl">
+          <div>Dariusz</div>
           <div class="relative -top-4 sm:-top-6 lg:-top-4 xl:-top-6">
-            <div
-              class="pl-48 text-7xl font-bold text-sherwood-green opacity-40 sm:pl-60 sm:text-8xl lg:pl-48 lg:text-7xl xl:pl-60 xl:text-8xl"
-            >
-              Gut
-            </div>
+            <div class="pl-48 sm:pl-60 lg:pl-48 xl:pl-60">Gut</div>
           </div>
         </div>
-        <div
-          class="text-6xl font-bold text-sherwood-green opacity-40 sm:text-7xl lg:text-6xl xl:text-7xl"
-        >
+        <div class="text-6xl sm:text-7xl lg:text-6xl xl:text-7xl">
           676 888 930
         </div>
       </div>

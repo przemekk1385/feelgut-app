@@ -12,7 +12,7 @@
           <div
             v-for="{ author, text } in reviews"
             :key="text"
-            class="mx-auto flex max-w-[28rem] flex-col justify-around rounded-3xl bg-ceramic p-6 drop-shadow-[5px_5px_10px_rgba(0,0,0,.25)] md:max-w-full lg:rounded-[3rem] lg:p-12"
+            class="mx-auto flex max-w-[28rem] flex-col justify-around rounded-3xl bg-[#FFFCFC] p-6 drop-shadow-[5px_5px_10px_rgba(0,0,0,.25)] md:max-w-full lg:rounded-[3rem] lg:p-12"
           >
             <span class="font-lato md:text-lg lg:text-xl xl:text-2xl"
               ><span class="font-medium">{{ text }}</span
