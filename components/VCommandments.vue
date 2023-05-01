@@ -65,6 +65,11 @@
               Zaufaj mi – masaż to moja praca i pasja w jednym, dlatego ważne
               jest wzajemne zaufanie na linii klient-masażysta.
             </li>
+            <li>
+              Nie lekceważ sygnałów wysyłanych przez swój organizm – jeśli nie
+              czujesz się pewnie czy Twój stan zdrowia pozwala Ci na
+              skorzystanie z masażu poinformuj mnie o tym :)
+            </li>
           </ul>
         </div>
       </div>
