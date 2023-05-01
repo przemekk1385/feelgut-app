@@ -1,6 +1,6 @@
 <template>
   <div class="bg-como">
-    <div class="mx-auto max-w-[90rem] py-6 px-12">
+    <div class="mx-auto max-w-[90rem] px-12 py-6">
       <v-h class="mb-6 block md:hidden">
         <span class="text-white opacity-30">Mój gabinet</span>
         <template #under>

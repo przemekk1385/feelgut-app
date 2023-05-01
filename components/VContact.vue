@@ -1,6 +1,6 @@
 <template>
   <div
-    class="mx-auto max-w-[90rem] px-6 pt-16 pb-28 md:px-20 lg:px-28 xl:px-36"
+    class="mx-auto max-w-[90rem] px-6 pb-28 pt-16 md:px-20 lg:px-28 xl:px-36"
   >
     <v-h>
       <span class="text-como opacity-30"> Umów wizytę </span>
@@ -13,16 +13,16 @@
         <input
           type="text"
           placeholder="Imię i nazwisko"
-          class="rounded-full border border-dark py-4 px-6 text-lg font-bold text-dark"
+          class="rounded-full border border-dark px-6 py-4 text-lg font-bold text-dark"
         />
         <input
           type="text"
           placeholder="Adres email"
-          class="rounded-full border border-dark py-4 px-6 text-lg font-bold text-dark"
+          class="rounded-full border border-dark px-6 py-4 text-lg font-bold text-dark"
         />
         <textarea
           placeholder="Treść wiadomości"
-          class="aspect-[5/2] rounded-[5%/12.5%] border border-dark py-4 px-6 text-lg font-bold text-dark"
+          class="aspect-[5/2] rounded-[5%/12.5%] border border-dark px-6 py-4 text-lg font-bold text-dark"
         ></textarea>
         <div class="flex items-center">
           <div class="pr-4">

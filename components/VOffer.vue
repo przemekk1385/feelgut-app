@@ -19,20 +19,14 @@
         </v-h>
         <ul class="flex items-center gap-x-12">
           <li>
-            <a
-              href="#"
-              class="font-lato text-lg text-como sm:text-xl lg:text-2xl"
-            >
+            <v-offer-link active to="/?category=relaksacyjne">
               Masaże relaksacyjne
-            </a>
+            </v-offer-link>
           </li>
           <li>
-            <a
-              href="#"
-              class="font-lato text-lg text-[#A6A6A6] sm:text-xl lg:text-2xl"
-            >
+            <v-offer-link to="/?category=terapeutyczne">
               Masaże terapeutyczne
-            </a>
+            </v-offer-link>
           </li>
         </ul>
       </div>
@@ -40,27 +34,18 @@
       <div
         class="grid grid-cols-1 gap-12 pt-12 sm:grid-cols-2 lg:pb-24 xl:grid-cols-3"
       >
-        <div v-for="{ name, image } in offer" :key="name">
-          <div
-            class="relative aspect-[3/2] overflow-hidden rounded-[10%/15%] drop-shadow-[5px_5px_10px_rgba(0,0,0,.25)]"
-          >
+        <div v-for="{ title, image } in items" :key="title">
+          <v-img :src="image" :alt="`${title} - grafika ilustracyjna`">
             <img
-              :src="image || defaultImage"
-              :alt="`${name} - grafika ilustracyjna`"
-              class="h-full w-full object-cover"
+              src="/images/spine.svg"
+              alt="Grafika ilustracyjna"
+              class="h-full"
             />
-            <div class="absolute top-0 right-0 h-full p-4">
-              <img
-                src="/images/spine.svg"
-                alt="Kręgosług - grafika ilustracyjna"
-                class="h-full"
-              />
-            </div>
-          </div>
+          </v-img>
           <div
             class="flex items-center justify-between gap-x-4 px-6 pt-6 font-lato"
           >
-            <div class="text-center">{{ name }}</div>
+            <div class="text-center">{{ title }}</div>
             <div>
               <a
                 href=""
@@ -86,41 +71,25 @@
 </template>
 
 <script setup lang="ts">
-const defaultImage = "/images/offer-card.jpg";
-const offer = ref([
-  {
-    name: "Masaż całego ciała",
-    image: "/images/masaz-calego-ciala.jpg",
-  },
-  {
-    name: "Masaż częściowy",
-    image: "/images/masaz-czesciowy.jpg",
-  },
-  {
-    name: "Masaż balijski",
-    image: "/images/masaz-balijski.jpg",
-  },
-  {
-    name: "Masaż gorącymi kamieniami",
-  },
-  {
-    name: "Japoński liftingujący masaż twarzy KOBIDO",
-    image: "/images/japonski-liftingujacy-masaz-twarzy-kobido.jpg",
-  },
-  {
-    name: "Hawajski masaż Lomi Lomi",
-    image: "/images/hawajski-masaz-lomi-lomi.jpg",
-  },
-  {
-    name: "Ajurwedyjski masaż Abhyanga",
-    image: "/images/ajuwerdyjski-masaz-abhyanga.jpg",
-  },
-  {
-    name: "Hinduski masaż głowy",
-    image: "/images/hinduski-masaz-glowy.jpg",
-  },
-  {
-    name: "Masaż świecą",
-  },
-]);
+import type { Massage } from "~~/types";
+
+const route = useRoute();
+const items: Ref<Massage[]> = ref([]);
+
+const fetch = async (category: string): Promise<void> => {
+  items.value = (await queryContent("offer")
+    .where({ category })
+    .find()) as unknown as Massage[];
+};
+fetch("relaksacyjne");
+
+watch(
+  () => route.query,
+  async (query) => {
+    const { category } = query;
+    if (category) {
+      fetch(category.toString());
+    }
+  }
+);
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-platinium pt-12 pb-16">
+  <div class="bg-platinium pb-16 pt-12">
     <div class="mx-auto max-w-[90rem] px-6 md:px-20 lg:px-28 xl:px-36">
       <v-h>
         <div class="text-center text-white">Opinie klientów</div>

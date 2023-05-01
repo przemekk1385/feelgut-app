@@ -5,7 +5,7 @@
   >
     <div
       :class="`bg-${props.bgColor} text-${props.textColor}`"
-      class="rounded-full px-12 py-4 lg:px-16 xl:py-6 xl:px-20"
+      class="rounded-full px-12 py-4 lg:px-16 xl:px-20 xl:py-6"
     >
       <div class="text-xl font-medium sm:text-2xl lg:text-3xl">
         <slot></slot>
@@ -18,7 +18,7 @@
 const props = withDefaults(
   defineProps<{
     bgColor: string;
-    textColor: string;
+    textColor?: string;
     to: string;
   }>(),
   {
