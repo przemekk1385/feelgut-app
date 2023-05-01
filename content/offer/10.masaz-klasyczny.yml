@@ -1,0 +1,44 @@
+title: Masaż klasyczny
+category: terapeutyczne
+price:
+  - time: 60
+    amount: 120
+  - time: 90
+    amount: 150
+image: /images/offer/masaz-klasyczny.jpg
+text: >
+  To najpopularniejsza forma masażu, która ma na celu poprawienie psychofizycznego stanu pacjenta. 
+  Może być wykonywany jako zabieg całościowy lub częściowy. Masaż klasyczny stosuje się głównie w 
+  celach leczniczych, ale może być również traktowany jako masaż relaksacyjny bądź pobudzający. 
+  Sam masaż działa przeciwbólowo, polepsza odżywianie tkanek, poprawia wygląd skóry, która jest 
+  lepiej dotleniona i ukrwiona, regeneruje mięśnie, zwiększa elastyczność i sprężystość stawów i 
+  aparatu więzadłowego, przyspiesza przemianę materii, uaktywnia przepływ krwi i limfy.
+indications:
+  - pobudzenie fizjologicznych funkcji skóry
+  - zwiększenie miejscowego ukrwienia
+  - usunięcie zastojów żylnych i limfatycznych
+  - usunięcie zmęczenia mięśni
+  - przyśpieszenie ich regeneracji
+  - zwiększenie siły i sprawności mięśni
+  - zrównoważenie napięcia układu nerwowego
+  - uśmierzenie bólu
+  - rozluźnienie tkanki bliznowatej
+  - pobudzanie procesów przemiany materii
+  - odprężenie psychiczne
+contraindications:
+  - wszelkie stany gorączkowe
+  - ostre stany zapalne stawów i ścięgien
+  - silne krwiaki wewnątrzmięśniowe w początkowym okresie leczenia
+  - wylewy pourazowe w stawach i mięśniach do 2-3 dni po urazie
+  - choroby skóry, którym towarzyszą pęcherze, wypryski i przerwanie ciągłości skóry
+  - III i IV stadium choroby Burgera
+  - wczesne stany po złamaniu kości
+  - choroba wrzodowa z krwawieniami, kamica wątrobowa i nerkowa
+  - stany zapalne dróg żółciowych
+  - choroby jelit przebiegające z owrzodzeniami oraz przepukliny (dotyczy masażu powłok brzusznych)
+  - niewyrównane wady serca
+  - okres menstruacji
+  - nowotwory złośliwe i niezłośliwe
+  - okres ciąży
+  - świeże zakrzepy w naczyniach obwodowych, zapalenie żył, duże żylaki i tętniaki
+  - wszystkie jednostki chorobowe przebiegające w stanie zapalnym i ostrym

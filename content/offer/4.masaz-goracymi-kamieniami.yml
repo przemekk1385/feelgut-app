@@ -1,0 +1,33 @@
+title: Masaż gorącymi kamieniami
+category: relaksacyjne
+price:
+  - time: 60
+    amount: 100
+  - time: 90
+    amount: 150
+image:
+text: >
+  Wspaniały zabieg w szczególności dla ciepłolubnych. Specjalne kamienie wykorzystywane do tego 
+  masażu wykonane są z bazaltu pochodzenia wulkanicznego. Ciepło, które płynie z kamieni, 
+  rozluźnia napięte mięśnie, dzięki czemu krew zaczyna szybciej krążyć. Organizm pozbywa się 
+  toksyn, skóra jest dobrze dotleniona i robi się bardziej elastyczna.
+indications:
+  - choroby stawów, bóle szyi i kręgosłupa
+  - przemęczenie oraz stres
+  - bezsenność
+  - bóle pochodzenia mięśniowego
+  - stany zapalne oraz przeciążeniowe
+  - problemy z przemianą materii
+contraindications:
+  - stany zapalne i alergiczne skóry
+  - rany, oparzenia, otarcia i inne uszkodzenia skóry
+  - zapalenia węzłów chłonnych
+  - zakrzepy
+  - świeże zapalenie żył
+  - wszelkie postacie nowotworu
+  - gorączka
+  - owrzodzenie podudzi
+  - tętniaki
+  - zaburzenia czucia
+  - niewydolność serca
+  - wszystkie przeciwwskazania jak przy masażu klasycznym

@@ -1,0 +1,34 @@
+title: Masaż relaksacyjny (całego ciała)
+category: relaksacyjne
+price:
+  - time: 60
+    amount: 100
+  - time: 90
+    amount: 150
+image: /images/offer/masaz-relaksacyjny-calego-ciala.jpg
+text: >
+  Relaksacyjny masaż całego ciała pobudza skórę i mięśnie (zmniejszając ich napięcie), przywraca 
+  prawidłowy rytm serca, jak również poprawia krążenie krwi. Masaż ten niweluje stres oraz 
+  związane z nim dolegliwości takie jak: różnego rodzaju bóle głowy i pleców, jak również 
+  zaburzenia koncentracji, depresję czy też ogólne wycieńczenie organizmu. Ponadto pozwala 
+  wytworzyć endorfiny (hormony szczęścia) w skórze, które działają uspokajająco i przeciwbólowo, 
+  a także przyśpieszają spalanie tłuszczów.
+indications:
+  - długotrwały wysiłek fizyczny lub psychiczny
+  - stres, depresja
+  - napięcie nerwowe, nerwica
+  - napięcie mięśniowe
+  - ogólne przemęczenie organizmu
+contraindications:
+  - ciąża (pierwszy i ostatni trymestr)
+  - zmiany skórne (rozsiane i ropne)
+  - nowotwory
+  - krwawienia, krwotoki lub możliwość ich wystąpienia
+  - hemofilia
+  - żylaki
+  - skaza naczyniowa
+  - nadciśnienie
+  - miażdżyca
+  - wszelkie stany zapalne (RZS w okresie zaostrzenia choroby)
+  - choroby o podłożu bakteryjnym, wirusowym i pasożytniczym
+  - wysoka temperatura ciała (powyżej 38°C)
