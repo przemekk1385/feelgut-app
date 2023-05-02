@@ -84,7 +84,7 @@ import { Collapse } from "vue-collapsed";
 const props = withDefaults(
   defineProps<{
     dark: boolean;
-    image: string;
+    image?: string;
     title: string;
     price: Price[];
   }>(),
