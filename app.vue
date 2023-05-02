@@ -5,3 +5,7 @@ import { NuxtPage } from './.nuxt/components';
     <NuxtPage />
   </div>
 </template>
+
+<script setup lang="ts">
+useSmoothScroll();
+</script>
