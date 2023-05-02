@@ -4,6 +4,7 @@ interface Price {
 }
 
 interface Massage {
+  id: string;
   title: string;
   category: string;
   price: Price[];
