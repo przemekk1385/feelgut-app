@@ -55,7 +55,7 @@
 <script setup lang="ts">
 const items: Ref<{ description: string; to: string }[]> = ref([
   { description: "O mnie", to: "/?goto=o-mnie" },
-  { description: "Przygotowanie", to: "/cennik/?goto=10-przykazan" },
+  { description: "Przygotowanie", to: "/cennik?goto=10-przykazan" },
   { description: "Usługi", to: "/?goto=uslugi" },
   { description: "Gabinet", to: "/?goto=moj-gabinet" },
   { description: "Cennik", to: "/cennik?goto=cennik" },

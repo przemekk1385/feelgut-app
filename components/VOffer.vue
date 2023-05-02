@@ -3,7 +3,7 @@
     <v-offer-bar bg-color="platinium">
       Jak poprawnie przygotować się do masażu?
       <template #button>
-        <v-offer-bar-button bg-color="platinium" to="#">
+        <v-offer-bar-button bg-color="platinium" to="/cennik?goto=10-przykazan">
           Zobacz
         </v-offer-bar-button>
       </template>
@@ -65,7 +65,11 @@
     <v-offer-bar bg-color="como" text-color="white">
       Sprawdź cennik masaży
       <template #button>
-        <v-offer-bar-button bg-color="como" text-color="white" to="#">
+        <v-offer-bar-button
+          bg-color="como"
+          text-color="white"
+          to="/cennik?goto=cennik"
+        >
           Kliknij tutaj
         </v-offer-bar-button>
       </template>

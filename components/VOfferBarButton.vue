@@ -1,5 +1,5 @@
 <template>
-  <a
+  <NuxtLink
     :href="props.to"
     class="mx-auto inline-block rounded-full bg-gradient-to-r from-supernova via-sahara to-mimosa p-[2px] font-medium"
   >
@@ -11,7 +11,7 @@
         <slot></slot>
       </div>
     </div>
-  </a>
+  </NuxtLink>
 </template>
 
 <script setup lang="ts">
