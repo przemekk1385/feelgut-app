@@ -20,7 +20,7 @@
           >
             Odzyskaj balans<br />i poczuj się GUT
           </div>
-          <v-header-button to="#"> Oferta masaży </v-header-button>
+          <v-header-button to="/?goto=uslugi"> Oferta masaży </v-header-button>
         </div>
       </div>
     </div>

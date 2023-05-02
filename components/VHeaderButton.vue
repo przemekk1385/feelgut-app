@@ -1,6 +1,6 @@
 <template>
-  <a
-    :href="to"
+  <NuxtLink
+    :to="to"
     class="inline-block rounded-full bg-[#55B99A] px-12 py-4 lg:px-14 xl:px-16 xl:py-6"
   >
     <div
@@ -8,7 +8,7 @@
     >
       <slot></slot>
     </div>
-  </a>
+  </NuxtLink>
 </template>
 
 <script setup lang="ts">
