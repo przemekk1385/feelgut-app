@@ -3,20 +3,32 @@
     <div class="mx-auto max-w-[90rem] px-12 lg:px-28 xl:px-36">
       <div class="flex flex-col justify-center gap-6 md:flex-row md:flex-wrap">
         <ul class="my-3 flex flex-col gap-y-4 self-center font-lato text-white">
-          <li class="text-center md:text-left"><a href="#">O mnie</a></li>
-          <li class="text-center md:text-left"><a href="#">Usługi</a></li>
-          <li class="text-center md:text-left"><a href="#">Gabinet</a></li>
-          <li class="text-center md:text-left"><a href="#">Umów wizytę</a></li>
+          <li class="text-center md:text-left">
+            <NuxtLink to="/?goto=o-mnie">O mnie</NuxtLink>
+          </li>
+          <li class="text-center md:text-left">
+            <NuxtLink to="/?goto=uslugi">Usługi</NuxtLink>
+          </li>
+          <li class="text-center md:text-left">
+            <NuxtLink to="/?goto=moj-gabinet">Gabinet</NuxtLink>
+          </li>
+          <li class="text-center md:text-left">
+            <NuxtLink to="/?goto=kontakt">Umów wizytę</NuxtLink>
+          </li>
         </ul>
 
         <div class="h-[2px] w-full bg-white md:h-auto md:w-[2px]">&nbsp;</div>
 
         <ul class="my-3 flex flex-col gap-y-4 self-center font-lato text-white">
           <li class="text-center md:text-left">
-            <a href="#">Masaże relaksacyjne</a>
+            <NuxtLink to="/?goto=uslugi&category=relaksacyjne"
+              >Masaże relaksacyjne</NuxtLink
+            >
           </li>
           <li class="text-center md:text-left">
-            <a href="#">Masaże terapeutyczne</a>
+            <NuxtLink to="?goto=uslugi&category=terapeutyczne"
+              >Masaże terapeutyczne</NuxtLink
+            >
           </li>
         </ul>
 

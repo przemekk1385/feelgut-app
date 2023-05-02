@@ -3,9 +3,9 @@
     <div
       class="items-top relative flex h-full justify-between pl-6 md:pl-20 lg:hidden"
     >
-      <a href="/">
+      <NuxtLink to="/">
         <img src="/images/feelgut-logo.png" alt="Logo" class="h-20 sm:h-28" />
-      </a>
+      </NuxtLink>
       <v-drawer>
         <ul
           class="relative z-10 grid gap-y-3 text-sm text-white sm:gap-y-6 sm:text-base"
@@ -30,9 +30,9 @@
     <div class="hidden w-full items-center px-28 lg:flex xl:px-36">
       <ul class="flex w-full items-center justify-between">
         <li>
-          <a href="/" class="font-medium">
+          <NuxtLink href="/" class="font-medium">
             <img src="/images/feelgut-logo.png" alt="Logo" class="h-28" />
-          </a>
+          </NuxtLink>
         </li>
         <li v-for="{ description, to } in items" :key="to">
           <NuxtLink :to="to"> {{ description }} </NuxtLink>
@@ -54,12 +54,12 @@
 
 <script setup lang="ts">
 const items: Ref<{ description: string; to: string }[]> = ref([
-  { description: "O mnie", to: "#" },
-  { description: "Przygotowanie", to: "#" },
-  { description: "Usługi", to: "#" },
-  { description: "Gabinet", to: "#" },
-  { description: "Cennik", to: "#" },
-  { description: "Umów wizytę", to: "#" },
+  { description: "O mnie", to: "/?goto=o-mnie" },
+  { description: "Przygotowanie", to: "/cennik/?goto=10-przykazan" },
+  { description: "Usługi", to: "/?goto=uslugi" },
+  { description: "Gabinet", to: "/?goto=moj-gabinet" },
+  { description: "Cennik", to: "/cennik?goto=cennik" },
+  { description: "Umów wizytę", to: "/?goto=kontakt" },
 ]);
 
 const social: Ref<{ href: string; icon: string; name: string }[]> = ref([
