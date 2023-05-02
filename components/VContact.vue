@@ -1,5 +1,6 @@
 <template>
   <div
+    id="kontakt"
     class="mx-auto max-w-[90rem] px-6 pb-28 pt-16 md:px-20 lg:px-28 xl:px-36"
   >
     <v-h>

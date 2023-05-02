@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col-reverse bg-platinium lg:flex-row">
+  <div id="10-przykazan" class="flex flex-col-reverse bg-platinium lg:flex-row">
     <div class="lg:flex-1 lg:overflow-hidden">
       <div class="h-full">
         <img

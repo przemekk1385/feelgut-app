@@ -1,5 +1,8 @@
 <template>
-  <div class="mx-auto my-24 max-w-[90rem] px-6 md:px-20 lg:px-28 xl:px-36">
+  <div
+    id="cennik"
+    class="mx-auto max-w-[90rem] px-6 py-24 md:px-20 lg:px-28 xl:px-36"
+  >
     <v-h>
       <span class="text-como opacity-30"> Cennik </span>
       <template #under>
@@ -9,8 +12,9 @@
     <div class="mt-12 pl-0 lg:pl-16">
       <v-accordion
         v-for="(
-          { title, price, image, text, indications, contraindications }, i
+          { id, title, price, image, text, indications, contraindications }, i
         ) in items"
+        :id="id"
         :key="title"
         :dark="i % 2 === 1"
         :image="image"
@@ -34,8 +38,6 @@
 </template>
 
 <script setup lang="ts">
-import type { Massage } from "~~/types";
-
-const items: Ref<Massage[]> = ref([]);
-items.value = (await queryContent("offer").find()) as unknown as Massage[];
+const { items, fetch } = useOffer();
+fetch();
 </script>

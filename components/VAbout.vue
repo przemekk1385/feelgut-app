@@ -1,5 +1,6 @@
 <template>
   <div
+    id="o-mnie"
     class="flex flex-col-reverse bg-como text-white lg:max-h-[44.5rem] lg:flex-row"
   >
     <div class="lg:overflow-hidden xl:flex-1">

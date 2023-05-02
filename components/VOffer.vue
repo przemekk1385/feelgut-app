@@ -9,7 +9,10 @@
       </template>
     </v-offer-bar>
 
-    <div class="mx-auto my-12 max-w-[90rem] px-6 md:px-20 lg:px-28 xl:px-36">
+    <div
+      id="uslugi"
+      class="mx-auto max-w-[90rem] px-6 py-12 md:px-20 lg:px-28 xl:px-36"
+    >
       <div class="flex flex-col justify-between gap-6 md:flex-row">
         <v-h>
           <span class="text-como opacity-30">Usługi</span>
@@ -34,7 +37,7 @@
       <div
         class="grid grid-cols-1 gap-12 pt-12 sm:grid-cols-2 lg:pb-24 xl:grid-cols-3"
       >
-        <div v-for="{ title, image } in items" :key="title">
+        <div v-for="{ id, title, image } in items" :key="title">
           <v-img :src="image" :alt="`${title} - grafika ilustracyjna`">
             <img
               src="/images/spine.svg"
@@ -47,12 +50,12 @@
           >
             <div class="text-center">{{ title }}</div>
             <div>
-              <a
-                href=""
+              <NuxtLink
+                :to="`/cennik?goto=${id}`"
                 class="inline-block rounded-full bg-[#55B99A] px-6 py-1 font-medium uppercase text-white"
               >
                 Sprawdź
-              </a>
+              </NuxtLink>
             </div>
           </div>
         </div>
@@ -71,25 +74,6 @@
 </template>
 
 <script setup lang="ts">
-import type { Massage } from "~~/types";
-
-const route = useRoute();
-const items: Ref<Massage[]> = ref([]);
-
-const fetch = async (category: string): Promise<void> => {
-  items.value = (await queryContent("offer")
-    .where({ category })
-    .find()) as unknown as Massage[];
-};
+const { items, fetch } = useOffer();
 fetch("relaksacyjne");
-
-watch(
-  () => route.query,
-  async (query) => {
-    const { category } = query;
-    if (category) {
-      fetch(category.toString());
-    }
-  }
-);
 </script>
