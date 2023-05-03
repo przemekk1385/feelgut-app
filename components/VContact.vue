@@ -10,47 +10,82 @@
       </template>
     </v-h>
     <div class="flex flex-col gap-12 lg:flex-row">
-      <div class="mt-24 flex grow flex-col gap-y-6">
-        <input
+      <FormKit
+        id="contact-form"
+        :actions="false"
+        type="form"
+        form-class="mt-24 flex grow flex-col gap-y-6"
+        messages-class="mt-4"
+        message-class="mt-6 rounded-3xl bg-red-600 p-6 text-center text-base font-medium text-white"
+        @submit="submitHandler"
+      >
+        <FormKit
           type="text"
+          name="name"
           placeholder="Imię i nazwisko"
-          class="rounded-full border border-dark px-6 py-4 text-lg font-bold text-dark"
+          validation="required"
+          input-class="w-full rounded-full border border-dark px-6 py-4 text-lg font-bold text-dark"
+          messages-class="mt-4"
+          message-class="text-sm text-red-600"
+          validation-visibility="submit"
+          :validation-messages="{ required: 'To pole jest wymagane.' }"
         />
-        <input
+        <FormKit
           type="text"
+          name="name"
           placeholder="Adres email"
-          class="rounded-full border border-dark px-6 py-4 text-lg font-bold text-dark"
+          validation="required|email"
+          input-class="w-full rounded-full border border-dark px-6 py-4 text-lg font-bold text-dark"
+          messages-class="mt-4"
+          message-class="text-sm text-red-600"
+          validation-visibility="submit"
+          :validation-messages="{ required: 'To pole jest wymagane.' }"
         />
-        <textarea
+        <FormKit
+          type="textarea"
+          name="body"
           placeholder="Treść wiadomości"
-          class="aspect-[5/2] rounded-[5%/12.5%] border border-dark px-6 py-4 text-lg font-bold text-dark"
-        ></textarea>
-        <div class="flex items-center">
-          <div class="pr-4">
-            <input
-              type="checkbox"
-              class="h-4 w-4 text-gray-400 accent-gray-400"
-            />
-          </div>
-          <div>
-            <span class="font-lato text-xs font-light"
-              >Wyrażam zgodę na przetwarzanie danych osobowych -
-              <a href="#" class="uppercase underline">czytaj więcej</a></span
-            >
-          </div>
-        </div>
-        <div class="flex justify-end">
-          <button
-            class="rounded-full bg-gradient-to-r from-supernova via-sahara to-mimosa p-[2px] font-medium"
-          >
-            <div class="rounded-full bg-white px-12 py-2">
-              <span class="text-xl font-medium text-dark opacity-40">
-                wyślij
-              </span>
+          validation="required"
+          input-class="aspect-[5/2] w-full rounded-[5%/12.5%] border border-dark px-6 py-4 text-lg font-bold text-dark"
+          messages-class="mt-4"
+          message-class="text-sm text-red-600"
+          validation-visibility="submit"
+          :validation-messages="{ required: 'To pole jest wymagane.' }"
+        />
+        <FormKit
+          label="consent"
+          type="checkbox"
+          name="consent"
+          validation="accepted"
+          wrapper-class="flex items-center gap-x-4"
+          inner-class="flex"
+          input-class="h-5 w-5 border-myGray grayscale"
+          messages-class="mt-4"
+          message-class="text-sm text-red-400"
+          validation-visibility="submit"
+          :validation-messages="{
+            accepted:
+              'Proszę zaakceptować zgodę na przetwarzanie danych osobowych.',
+          }"
+        >
+          <template #label>
+            <div class="font-lato text-xs font-light">
+              Wyrażam zgodę na przetwarzanie danych osobowych -
+              <NuxtLink href="/polityka-prywatnosci" class="uppercase underline"
+                >czytaj więcej</NuxtLink
+              >
             </div>
-          </button>
-        </div>
-      </div>
+          </template>
+        </FormKit>
+        <FormKit
+          type="submit"
+          outer-class="flex justify-end"
+          wrapper-class="rounded-full bg-gradient-to-r from-supernova via-sahara to-mimosa p-[2px]"
+          input-class="rounded-full bg-white px-12 py-2"
+        >
+          <span class="text-xl font-medium text-dark opacity-40">wyślij</span>
+        </FormKit>
+      </FormKit>
       <div
         class="flex flex-col items-center justify-center font-bold text-[#073F31] opacity-40"
       >
@@ -67,3 +102,42 @@
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import { reset } from "@formkit/core";
+import { useReCaptcha } from "vue-recaptcha-v3";
+
+const reCaptcha = useReCaptcha();
+
+const kind: Ref<string> = ref("");
+const message: Ref<string> = ref("");
+
+const submitHandler = async (data: object): Promise<void> => {
+  kind.value = "";
+  message.value = "";
+
+  if (reCaptcha) {
+    const { executeRecaptcha, recaptchaLoaded } = reCaptcha;
+    await recaptchaLoaded();
+
+    const response = await executeRecaptcha("submit_contact_form");
+
+    const { refresh } = await useFetch("/api/mail", {
+      body: Object.assign(data, { response }),
+      key: String(Date.now()),
+      method: "POST",
+      onResponse({ response: { status } }) {
+        if (status === 202) {
+          message.value = "Wiadomość wysłana pomyślnie.";
+          reset("contact-form");
+        }
+      },
+      onResponseError() {
+        kind.value = "error";
+        message.value = "Nie udało się wysłać wiadomości.";
+        refresh();
+      },
+    });
+  }
+};
+</script>
