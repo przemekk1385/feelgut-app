@@ -8,7 +8,7 @@
       </NuxtLink>
       <v-drawer>
         <ul
-          class="relative z-10 grid gap-y-3 text-sm text-white sm:gap-y-6 sm:text-base"
+          class="relative z-10 grid gap-y-2 text-sm text-white sm:gap-y-6 sm:text-base"
         >
           <li v-for="{ description, to } in items" :key="to">
             <NuxtLink :to="to"> {{ description }} </NuxtLink>

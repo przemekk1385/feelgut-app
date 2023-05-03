@@ -4,9 +4,11 @@
       <v-drawer-btn v-if="!show" @click="show = !show" />
     </Transition>
     <Transition name="slide">
-      <div v-if="show" class="flex h-full">
+      <div v-if="show" class="absolute right-0 top-0 flex h-full">
         <v-drawer-btn @click="show = !show" />
-        <div class="relative flex h-full w-48 items-center justify-center">
+        <div
+          class="relative flex h-full min-h-[15rem] w-48 items-center justify-center sm:min-h-[25rem]"
+        >
           <div class="absolute h-full w-full bg-como opacity-80"></div>
           <slot></slot>
         </div>
