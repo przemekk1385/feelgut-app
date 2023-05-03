@@ -20,6 +20,7 @@ const props = withDefaults(
 );
 
 const route = useRoute();
+
 const isActive = computed(() => {
   const { category } = route.query;
   if (category) {

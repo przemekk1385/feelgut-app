@@ -22,7 +22,7 @@
             </template>
           </v-h>
         </div>
-        <div class="flex flex-grow flex-col justify-around gap-4 font-lato">
+        <div class="flex grow flex-col justify-around gap-4 font-lato">
           <p>
             Cześć, nazywam się Darek Gut. Jestem dyplomowanym masażystą, a z
             wykształcenia absolwentem Wydziału Wychowania Fizycznego AWF w

@@ -16,7 +16,7 @@
 </template>
 
 <script setup lang="ts">
-const show: Ref<boolean> = ref(false);
+const show = ref(false);
 </script>
 
 <style type="text/css">

@@ -1,6 +1,6 @@
 <template>
   <NuxtLink
-    :to="to"
+    :to="props.to"
     class="inline-block rounded-full bg-[#55B99A] px-12 py-4 lg:px-14 xl:px-16 xl:py-6"
   >
     <div

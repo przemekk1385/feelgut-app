@@ -78,6 +78,10 @@
 </template>
 
 <script setup lang="ts">
+const route = useRoute();
 const { items, fetch } = useOffer();
-fetch("relaksacyjne");
+
+const { category } = route.query;
+
+items.value = await fetch(category?.toString() || "relaksacyjne");
 </script>

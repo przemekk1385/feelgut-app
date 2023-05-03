@@ -1,16 +1,17 @@
-import type { Massage } from "~~/types";
+import type { OfferItem } from "~~/types";
 
 export function useOffer() {
-  const route = useRoute();
-  const items: Ref<Massage[]> = ref([]);
+  const items: Ref<OfferItem[]> = ref([]);
 
-  const fetch = async (category?: string): Promise<void> => {
+  const route = useRoute();
+
+  const fetch = async (category?: string): Promise<OfferItem[]> => {
     let where = {};
     if (category) {
       where = { category };
     }
 
-    items.value = (await queryContent("offer").where(where).find()).map(
+    return (await queryContent("offer").where(where).find()).map(
       ({
         _id,
         title,
@@ -30,7 +31,7 @@ export function useOffer() {
         indications,
         contraindications,
       })
-    ) as Massage[];
+    ) as OfferItem[];
   };
 
   watch(
@@ -38,7 +39,7 @@ export function useOffer() {
     async (query) => {
       const { category } = query;
       if (category) {
-        fetch(category.toString());
+        items.value = await fetch(category.toString());
       }
     }
   );

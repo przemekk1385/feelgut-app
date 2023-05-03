@@ -19,7 +19,7 @@
             </template>
           </v-h>
         </div>
-        <div class="flex flex-grow flex-col justify-around gap-4 font-lato">
+        <div class="flex grow flex-col justify-around gap-4 font-lato">
           <span class="text-2xl">Jak przygotować się do masażu?</span>
           <ul class="flex list-outside list-decimal flex-col gap-4 pl-6">
             <li>

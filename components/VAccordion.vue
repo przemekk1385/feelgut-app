@@ -11,22 +11,24 @@
         <div class="flex flex-col gap-3 font-lato sm:flex-row">
           <div
             v-for="{ time, amount } in props.price"
+            :key="time"
             class="min-w-[8rem] rounded-full border border-black px-3 py-1 text-center text-sm"
           >
             {{ time }} min - {{ amount }} zł
           </div>
           <button
             type="button"
-            @click="isExpanded = !isExpanded"
             :class="{ ['bg-[#ccd8d5]']: !props.dark, ['bg-white']: props.dark }"
             class="min-w-[8rem] rounded-full py-1 text-center text-sm"
+            @click="emit('update:modelValue', !modelValue)"
           >
             rozwiń szczegóły
           </button>
         </div>
       </div>
     </div>
-    <Collapse :when="isExpanded" class="v-collapse">
+    <!-- eslint-disable-next-line tailwindcss/no-custom-classname -->
+    <Collapse :when="modelValue" class="v-collapse">
       <div class="mb-6 mt-12 flex flex-col gap-y-12 pl-6">
         <div class="flex flex-col-reverse gap-12 lg:flex-row">
           <div class="flex grow flex-col justify-between gap-12">
@@ -37,16 +39,16 @@
               <button
                 type="button"
                 :class="{ ['underline']: showIndications }"
-                @click="showIndications = true"
                 class="flex-1 rounded-full bg-como p-3 text-center text-sm text-white sm:min-w-[11rem] sm:flex-none sm:text-base"
+                @click="showIndications = true"
               >
                 Wskazania
               </button>
               <button
                 type="button"
                 :class="{ ['underline']: !showIndications }"
-                @click="showIndications = false"
                 class="flex-1 rounded-full bg-[#820000] p-3 text-center text-sm text-white sm:min-w-[11rem] sm:flex-none sm:text-base"
+                @click="showIndications = false"
               >
                 Przeciwwskazania
               </button>
@@ -87,13 +89,15 @@ const props = withDefaults(
     image?: string;
     title: string;
     price: Price[];
+    modelValue: boolean;
   }>(),
   {
     dark: false,
+    image: undefined,
   }
 );
+const emit = defineEmits(["update:modelValue"]);
 
-const isExpanded: Ref<boolean> = ref(false);
 const showIndications: Ref<boolean> = ref(true);
 </script>
 

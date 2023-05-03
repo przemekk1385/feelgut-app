@@ -1,7 +1,7 @@
 <template>
   <nav class="mx-auto max-w-[90rem]">
     <div
-      class="items-top relative flex h-full justify-between pl-6 md:pl-20 lg:hidden"
+      class="relative flex h-full items-start justify-between pl-6 md:pl-20 lg:hidden"
     >
       <NuxtLink to="/">
         <img src="/images/feelgut-logo.png" alt="Logo" class="h-20 sm:h-28" />

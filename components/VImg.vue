@@ -18,6 +18,7 @@ const props = withDefaults(
   }>(),
   {
     alt: "Grafika ilustracyjna",
+    src: undefined,
   }
 );
 

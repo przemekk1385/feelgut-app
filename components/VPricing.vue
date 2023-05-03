@@ -16,6 +16,7 @@
         ) in items"
         :id="id"
         :key="title"
+        v-model="items[i].isExpanded"
         :dark="i % 2 === 1"
         :image="image"
         :title="title"
@@ -24,12 +25,12 @@
         {{ text }}
         <template #indications>
           <ul class="list-disc pl-6">
-            <li v-for="item in indications">{{ item }}</li>
+            <li v-for="item in indications" :key="item">{{ item }}</li>
           </ul>
         </template>
         <template #contraindications>
           <ul class="list-disc pl-6">
-            <li v-for="item in contraindications">{{ item }}</li>
+            <li v-for="item in contraindications" :key="item">{{ item }}</li>
           </ul>
         </template>
       </v-accordion>
@@ -38,6 +39,19 @@
 </template>
 
 <script setup lang="ts">
-const { items, fetch } = useOffer();
-fetch();
+import type { OfferItem } from "~~/types";
+
+const route = useRoute();
+const { fetch } = useOffer();
+
+const items: Ref<({ isExpanded: boolean } & OfferItem)[]> = ref([]);
+items.value = (await fetch()).map((item) => ({ isExpanded: false, ...item }));
+
+watch(
+  () => route.hash,
+  (hash) => {
+    const i = items.value.findIndex(({ id }) => `#${id}` === hash);
+    items.value[i].isExpanded = true;
+  }
+);
 </script>

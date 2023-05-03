@@ -3,7 +3,7 @@ interface Price {
   amount: number;
 }
 
-interface Massage {
+interface OfferItem {
   id: string;
   title: string;
   category: string;
@@ -11,7 +11,7 @@ interface Massage {
   image: string;
   text: string;
   indications: string[];
-  contraindications: string[;]
+  contraindications: string[];
 }
 
-export type { Massage, Price };
+export type { OfferItem, Price };
