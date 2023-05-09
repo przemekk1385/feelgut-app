@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="z-10">
     <Transition>
       <v-drawer-btn v-if="!show" @click="show = !show" />
     </Transition>
@@ -9,7 +9,9 @@
         <div
           class="relative flex h-full min-h-[15rem] w-48 items-center justify-center sm:min-h-[25rem]"
         >
-          <div class="absolute h-full w-full bg-como opacity-80"></div>
+          <div
+            class="absolute h-full w-full rounded-bl-3xl bg-como opacity-80"
+          ></div>
           <slot></slot>
         </div>
       </div>

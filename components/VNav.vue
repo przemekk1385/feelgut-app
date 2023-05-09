@@ -18,7 +18,7 @@
               v-for="{ icon, href, name } in social"
               :key="href"
               :href="href"
-              class="flex h-10 w-10 items-center justify-center rounded-full border-2 border-white bg-gradient-to-r from-supernova via-sahara to-mimosa p-2"
+              class="flex h-10 w-10 items-center justify-center rounded-full border-2 border-white p-2"
             >
               <img :src="`/images/${icon}.svg`" :alt="name" class="h-full" />
             </a>
@@ -42,7 +42,7 @@
             v-for="{ icon, href, name } in social"
             :key="href"
             :href="href"
-            class="flex h-12 w-12 items-center justify-center rounded-full border-2 border-white bg-gradient-to-r from-supernova via-sahara to-mimosa p-2"
+            class="flex h-12 w-12 items-center justify-center rounded-full border-2 border-white bg-como p-2"
           >
             <img :src="`/images/${icon}.svg`" :alt="name" class="h-full" />
           </a>
