@@ -40,13 +40,13 @@
         <div class="h-[2px] w-full bg-white md:h-auto md:w-[2px]">&nbsp;</div>
 
         <ul class="my-3 flex flex-row gap-4 self-center md:flex-col">
-          <li v-for="{ icon, href, name } in social" :key="href">
-            <a
+          <li v-for="{ alt, src, href } in social" :key="href">
+            <v-social-button
+              :alt="alt"
+              :src="src"
               :href="href"
-              class="flex h-12 w-12 items-center justify-center rounded-full border-2 border-supernova"
-            >
-              <img :src="`/images/${icon}.svg`" :alt="name" />
-            </a>
+              class="h-12 w-12"
+            />
           </li>
         </ul>
       </div>
@@ -62,8 +62,8 @@ const items: Ref<{ description: string; to: string }[]> = ref([
   { description: "Umów wizytę", to: "/?goto=kontakt" },
 ]);
 
-const social: Ref<{ href: string; icon: string; name: string }[]> = ref([
-  { icon: "fb", href: "#", name: "Facebook" },
-  { icon: "insta", href: "#", name: "Instagram" },
+const social: Ref<{ alt: string; src: string; href: string }[]> = ref([
+  { alt: "Facebook", src: "/images/fb.svg", href: "#" },
+  { alt: "Instagram", src: "/images/insta.svg", href: "#" },
 ]);
 </script>

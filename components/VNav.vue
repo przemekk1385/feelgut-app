@@ -14,14 +14,14 @@
             <NuxtLink :to="to"> {{ description }} </NuxtLink>
           </li>
           <li class="flex gap-x-4">
-            <a
-              v-for="{ icon, href, name } in social"
+            <v-social-button
+              v-for="{ alt, src, href } in social"
               :key="href"
+              :alt="alt"
+              :src="src"
               :href="href"
-              class="flex h-10 w-10 items-center justify-center rounded-full border-2 border-white p-2"
-            >
-              <img :src="`/images/${icon}.svg`" :alt="name" class="h-full" />
-            </a>
+              class="h-10 w-10"
+            />
           </li>
         </ul>
       </v-drawer>
@@ -38,14 +38,14 @@
           <NuxtLink :to="to"> {{ description }} </NuxtLink>
         </li>
         <li class="flex gap-x-6">
-          <a
-            v-for="{ icon, href, name } in social"
+          <v-social-button
+            v-for="{ alt, src, href } in social"
             :key="href"
+            :alt="alt"
+            :src="src"
             :href="href"
-            class="flex h-12 w-12 items-center justify-center rounded-full border-2 border-white bg-como p-2"
-          >
-            <img :src="`/images/${icon}.svg`" :alt="name" class="h-full" />
-          </a>
+            class="h-12 w-12 drop-shadow-[5px_5px_10px_rgba(0,0,0,.25)]"
+          />
         </li>
       </ul>
     </div>
@@ -62,8 +62,8 @@ const items: Ref<{ description: string; to: string }[]> = ref([
   { description: "Umów wizytę", to: "/?goto=kontakt" },
 ]);
 
-const social: Ref<{ href: string; icon: string; name: string }[]> = ref([
-  { icon: "fb", href: "#", name: "Facebook" },
-  { icon: "insta", href: "#", name: "Instagram" },
+const social: Ref<{ alt: string; src: string; href: string }[]> = ref([
+  { alt: "Facebook", src: "/images/fb.svg", href: "#" },
+  { alt: "Instagram", src: "/images/insta.svg", href: "#" },
 ]);
 </script>
