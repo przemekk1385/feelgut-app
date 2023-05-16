@@ -4,16 +4,17 @@ module.exports = {
   theme: {
     content: ["./pages/**/*.{html,js}", "./components/**/*.{html,js}"],
     extend: {
-      backgroundImage: {
-        "header-image": "url('/images/header.jpg')",
-        "offer-card": "url('/images/offer-card.jpeg')",
-      },
       colors: {
-        primary: {
-          light: "#55B99A",
-          strong: "#547A71",
-        },
-        secondary: "#A6A6A6",
+        // color names by https://colors.artyclick.com/color-name-finder/
+
+        como: "#547A71",
+
+        mimosa: "#FFFAD2",
+        sahara: "#C9961A",
+        supernova: "#FCCB00",
+
+        platinium: "#E1E1E1",
+        dark: "#161F36",
       },
       fontFamily: {
         lato: ["Lato"],

@@ -1,0 +1,37 @@
+title: Masaż sportowy
+category: terapeutyczne
+price:
+  - time: 60
+    amount: 120
+image:
+text: >
+  Polecany najczęściej osobom aktywnym fizycznie, ale nie tylko. Przeprowadza się go w celu 
+  regeneracji organizmu po wzmożonym wysiłku fizycznym. Wykonuje się go bardzo intensywnie na 
+  partiach grup mięśniowych, które są poddawane największym obciążeniom podczas treningu lub pracy.
+indications:
+  - przeciążenia
+  - stłuczenia, skręcenia, zwichnięcia
+  - stany po operacjach związanych z aparatem ruchu
+  - choroby stawów, kości bądź inne powodujące przykurcze mięśniowe
+  - stany po zdjęciu gipsu
+  - >
+    miejsca po przewlekłych stanach zapalnych: ścięgien, więzadeł, mięśni, torebek
+  - stany obniżonego ciśnienia krwi
+  - wszelkiego rodzaju nerwobóle
+  - stany po urazach tkanek mięśniowych
+  - stany po niedokrwieniu
+contraindications:
+  - stan chorobowy z gorączką powyżej 38°C
+  - skłonności do występowania krwotoków
+  - ostre bądź podostre stany zapalne
+  - rany, otarcia naskórka w miejscu masowanym
+  - zbyt wczesny okres po złamaniu, zwichnięciu
+  - zapalenie szpiku kostnego
+  - choroba skóry (łuszczyca, egzema, owrzodzenia, itp.)
+  - świeże zakrzepy
+  - choroby krwi (np. hemofilia)
+  - wady serca
+  - choroby zakaźne
+  - tętniaki
+  - ciąża
+  - nowotwory, choroby wrzodowe z krwawieniem, żylaki ud i podudzi

@@ -1,0 +1,29 @@
+title: Masaż aromatyczną świecą
+category: relaksacyjne
+price:
+  - time: 60
+    amount: 100
+  - time: 90
+    amount: 150
+image:
+text: >
+  Masaż ten łączy w sobie elementy ciepłolecznictwa oraz aromaterapii. To znakomity sposób na 
+  odprężenie i relaks. Cały masaż wykonywany jest ciepłym olejkiem ze świec, składających się 
+  całkowicie z naturalnych wosków z domieszką aromatów. Poza właściwościami wynikającymi z 
+  temperatury wosku, masaż poprawia kondycję skóry. Staje się ona odżywiona i uelastyczniona a 
+  także poprawia się jej nawilżenie, dzięki czemu staje się miękka i przyjemna w dotyku.
+indications:
+  - przeciążenia psychiczne jak i fizyczne
+  - poprawa kondycji skóry
+  - cellulit, rozstępy, sucha skóra
+  - oczyszczenie organizmu z toksyn
+contraindications:
+  - ciąża (pierwszy i ostatni trymestr)
+  - alergia na którykolwiek składnik wosku
+  - depilacja w ostatnich 48 godzinach
+  - zmiany skórne
+  - ostre stany zapalne
+  - zaburzenia czucia powierzchownego
+  - niewydolność układu sercowo - naczyniowego
+  - zakrzepowo - zatorowe zapalenie żył
+  - pozostałe jak w masażu klasycznym
