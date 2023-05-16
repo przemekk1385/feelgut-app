@@ -12,3 +12,11 @@
     <v-footer />
   </div>
 </template>
+
+<script setup lang="ts">
+const { titleTemplate } = useTitle();
+
+useHead({
+  titleTemplate: titleTemplate("Home"),
+});
+</script>
