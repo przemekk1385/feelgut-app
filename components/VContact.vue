@@ -17,7 +17,7 @@
         form-class="mt-24 flex grow flex-col gap-y-6"
         messages-class="mt-4"
         message-class="mt-6 rounded-3xl bg-red-600 p-6 text-center text-base font-medium text-white"
-        @submit="submitHandler"
+        @submit="handleSubmit"
       >
         <FormKit
           type="text"
@@ -100,21 +100,22 @@
         </div>
       </div>
     </div>
+    <VInfo v-model="show" :is-error="isError">{{ message }}</VInfo>
   </div>
 </template>
 
 <script setup lang="ts">
 import { reset } from "@formkit/core";
+import { nanoid } from "nanoid/non-secure";
 import { useReCaptcha } from "vue-recaptcha-v3";
 
-const reCaptcha = useReCaptcha();
-
-const kind: Ref<string> = ref("");
+const isError: Ref<boolean> = ref(false);
 const message: Ref<string> = ref("");
+const show: Ref<boolean> = ref(false);
 
-const submitHandler = async (data: object): Promise<void> => {
-  kind.value = "";
-  message.value = "";
+const reCaptcha = useReCaptcha();
+const handleSubmit = async (data: object): Promise<void> => {
+  isError.value = false;
 
   if (reCaptcha) {
     const { executeRecaptcha, recaptchaLoaded } = reCaptcha;
@@ -124,17 +125,19 @@ const submitHandler = async (data: object): Promise<void> => {
 
     const { refresh } = await useFetch("/api/mail", {
       body: Object.assign(data, { response }),
-      key: String(Date.now()),
+      key: nanoid(),
       method: "POST",
       onResponse({ response: { status } }) {
         if (status === 202) {
           message.value = "Wiadomość wysłana pomyślnie.";
+          show.value = true;
           reset("contact-form");
         }
       },
       onResponseError() {
-        kind.value = "error";
+        isError.value = true;
         message.value = "Nie udało się wysłać wiadomości.";
+        show.value = true;
         refresh();
       },
     });

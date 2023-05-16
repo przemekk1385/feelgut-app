@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "@formkit/nuxt": "^0.16.5",
+    "nanoid": "^4.0.2",
     "nodemailer": "^6.9.1",
     "vue-collapsed": "^1.1.3",
     "vue-gtag": "^2.0.1",
