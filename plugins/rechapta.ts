@@ -5,5 +5,5 @@ export default defineNuxtPlugin((nuxtApp) => {
     public: { reCaptchaSiteKey: siteKey },
   } = useRuntimeConfig();
 
-  nuxtApp.vueApp.use(VueReCaptcha, { siteKey });
+  nuxtApp.vueApp.use(VueReCaptcha, { siteKey, loaderOptions: {} });
 });
