@@ -37,11 +37,9 @@ export default defineNuxtConfig({
       reCaptchaSiteKey: "",
     },
     reCaptchaSecretKey: "",
-    mailPassword: "",
-    mailPort: 587,
-    mailServer: "",
+    mailFrom: "",
     mailTo: "",
-    mailUsername: "",
+    postmarkServerToken: "",
   },
   tailwindcss: {
     // options

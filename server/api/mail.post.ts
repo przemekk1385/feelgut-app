@@ -1,16 +1,14 @@
-import nodemailer from "nodemailer";
+import postmark from "postmark";
 
 export default defineEventHandler(async (event) => {
   const {
     reCaptchaSecretKey: secret,
-    mailPassword: pass,
-    mailPort: port,
-    mailServer: host,
-    mailTo: to,
-    mailUsername: user,
+    mailFrom: From,
+    mailTo: To,
+    postmarkServerToken,
   } = useRuntimeConfig();
 
-  const { name, email, text, consent, response } = await readBody(event);
+  const { name, email, text: TextBody, consent, response } = await readBody(event);
 
   const { score }: any = await $fetch(
     "https://www.google.com/recaptcha/api/siteverify",
@@ -27,26 +25,16 @@ export default defineEventHandler(async (event) => {
   );
 
   if (score > 0.5 && consent) {
-    const transporter = nodemailer.createTransport({
-      host,
-      port,
-      secure: false,
-      auth: {
-        user,
-        pass,
-      },
-    });
+    const client = new postmark.ServerClient(postmarkServerToken);
 
-    const info = await transporter.sendMail({
-      from: user,
-      replyTo: `"${name}" <${email}>`,
-      to,
-      subject: "Wiadomość z serwisu 'feelgut.pl'",
-      text,
+    client.sendEmail({
+      From,
+      To,
+      ReplyTo: `"${name}" <${email}>`,
+      Subject: "Wiadomość z serwisu 'feelgut.pl'",
+      TextBody,
+      MessageStream: "outbound"
     });
-
-    console.log("Message sent: %s", info.messageId);
-    console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
 
     event.node.res.statusCode = 202;
     await send(event);
