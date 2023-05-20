@@ -122,7 +122,7 @@ const handleSubmit = async (data: object): Promise<void> => {
     await recaptchaLoaded();
 
     const response = await executeRecaptcha("submit_contact_form");
-    
+
     const { refresh } = await useFetch("/api/mail", {
       body: Object.assign(data, { response }),
       key: nanoid(),

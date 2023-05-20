@@ -8,7 +8,13 @@ export default defineEventHandler(async (event) => {
     postmarkServerToken,
   } = useRuntimeConfig();
 
-  const { name, email, text: TextBody, consent, response } = await readBody(event);
+  const {
+    name,
+    email,
+    text: TextBody,
+    consent,
+    response,
+  } = await readBody(event);
 
   const { score }: any = await $fetch(
     "https://www.google.com/recaptcha/api/siteverify",
@@ -33,7 +39,7 @@ export default defineEventHandler(async (event) => {
       ReplyTo: `"${name}" <${email}>`,
       Subject: "Wiadomość z serwisu 'feelgut.pl'",
       TextBody,
-      MessageStream: "outbound"
+      MessageStream: "outbound",
     });
 
     event.node.res.statusCode = 202;
