@@ -96,7 +96,7 @@
           </div>
         </div>
         <div class="text-6xl sm:text-7xl lg:text-6xl xl:text-7xl">
-          676 888 930
+          788 139 475
         </div>
       </div>
     </div>

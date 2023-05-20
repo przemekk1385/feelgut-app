@@ -31,9 +31,9 @@
 
         <ul class="my-3 flex flex-col gap-y-4 self-center font-lato text-white">
           <li class="text-center md:text-left">Telefon: 788 139 475</li>
-          <li class="text-center md:text-left">Mail: gut.darek@gmail.com</li>
+          <li class="text-center md:text-left">Mail: <a href="mailto:kontakt@feelgut.pl">kontakt@feelgut.pl</a></li>
           <li class="text-center md:text-left">
-            Adres: Kolanowska 123, Bochnia
+            Adres: ul. Marii Currie-Skłodowskiej 9/5, Kraków
           </li>
         </ul>
 
@@ -63,7 +63,7 @@ const items: Ref<{ description: string; to: string }[]> = ref([
 ]);
 
 const social: Ref<{ alt: string; src: string; href: string }[]> = ref([
-  { alt: "Facebook", src: "/images/fb.svg", href: "#" },
-  { alt: "Instagram", src: "/images/insta.svg", href: "#" },
+  { alt: "Facebook", src: "/images/fb.svg", href: "https://www.facebook.com/masazysta.feelgut" },
+  // { alt: "Instagram", src: "/images/insta.svg", href: "#" },
 ]);
 </script>
