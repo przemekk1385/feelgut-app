@@ -32,7 +32,7 @@
         />
         <FormKit
           type="text"
-          name="name"
+          name="email"
           placeholder="Adres email"
           validation="required|email"
           input-class="w-full rounded-full border border-dark px-6 py-4 text-lg font-bold text-dark"
@@ -43,7 +43,7 @@
         />
         <FormKit
           type="textarea"
-          name="body"
+          name="text"
           placeholder="Treść wiadomości"
           validation="required"
           input-class="aspect-[5/2] w-full rounded-[5%/12.5%] border border-dark px-6 py-4 text-lg font-bold text-dark"
@@ -122,7 +122,7 @@ const handleSubmit = async (data: object): Promise<void> => {
     await recaptchaLoaded();
 
     const response = await executeRecaptcha("submit_contact_form");
-
+    
     const { refresh } = await useFetch("/api/mail", {
       body: Object.assign(data, { response }),
       key: nanoid(),
