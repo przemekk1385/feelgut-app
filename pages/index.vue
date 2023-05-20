@@ -4,9 +4,9 @@
     <main>
       <v-about />
       <v-offer />
-      <v-reviews />
+      <!-- <v-reviews /> -->
       <v-contact />
-      <v-my-massage-room />
+      <!-- <v-my-massage-room /> -->
       <v-map />
     </main>
     <v-footer />
