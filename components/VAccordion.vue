@@ -30,7 +30,7 @@
     <!-- eslint-disable-next-line tailwindcss/no-custom-classname -->
     <Collapse :when="modelValue" class="v-collapse">
       <div class="mb-6 mt-12 flex flex-col gap-y-12 pl-6">
-        <div class="flex flex-col-reverse gap-12 lg:flex-row">
+        <div class="flex flex-col-reverse gap-12 xl:flex-row">
           <div class="flex grow flex-col justify-between gap-12">
             <div>
               <slot></slot>
@@ -54,9 +54,9 @@
               </button>
             </div>
           </div>
-          <div class="max-w-full shrink lg:max-w-[28rem]">
+          <div class="max-w-full shrink xl:min-w-[28rem]">
             <div
-              class="relative aspect-[2/1] overflow-hidden rounded-3xl drop-shadow-[5px_5px_10px_rgba(0,0,0,.25)] lg:aspect-square xl:aspect-[3/2]"
+              class="relative aspect-[2/1] rounded-3xl drop-shadow-[5px_5px_10px_rgba(0,0,0,.25)] xl:aspect-[3/2]"
             >
               <v-img
                 :src="image"
