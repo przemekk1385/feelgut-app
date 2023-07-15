@@ -24,7 +24,12 @@ export default defineNuxtConfig({
       ],
     },
   },
-  modules: ["@formkit/nuxt", "@nuxt/content", "@nuxtjs/tailwindcss"],
+  modules: [
+    "@formkit/nuxt",
+    "@nuxt/content",
+    "@nuxt/image",
+    "@nuxtjs/tailwindcss",
+  ],
   postcss: {
     plugins: {
       tailwindcss: {},
