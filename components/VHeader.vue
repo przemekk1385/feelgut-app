@@ -5,6 +5,8 @@
     <div class="h-full w-full overflow-hidden">
       <NuxtImg
         src="/images/header.jpg"
+        alt="Nagłówek - grafika ilustracyjna"
+        sizes="xs:100%"
         class="h-full w-full scale-[1.175] object-cover object-center"
       />
     </div>
