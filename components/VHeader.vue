@@ -3,7 +3,7 @@
     class="relative aspect-[3/2] max-h-[60rem] w-full overflow-hidden xl:aspect-auto"
   >
     <div class="h-full w-full overflow-hidden">
-      <img
+      <NuxtImg
         src="/images/header.jpg"
         class="h-full w-full scale-[1.175] object-cover object-center"
       />

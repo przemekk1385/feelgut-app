@@ -5,7 +5,7 @@
   >
     <div class="lg:overflow-hidden xl:flex-1">
       <div class="aspect-[2/1] lg:aspect-[3/4] xl:aspect-square">
-        <img
+        <NuxtImg
           src="/images/about.jpg"
           alt="Dariusz Gut - zdjęcie"
           class="h-full w-full object-cover object-top"

@@ -39,7 +39,7 @@
       >
         <div v-for="{ id, title, image } in items" :key="title">
           <v-img :src="image" :alt="`${title} - grafika ilustracyjna`">
-            <img
+            <NuxtImg
               src="/images/spine.svg"
               alt="Grafika ilustracyjna"
               class="h-full"
