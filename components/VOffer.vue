@@ -42,6 +42,7 @@
             <NuxtImg
               src="/images/spine.svg"
               alt="Grafika ilustracyjna"
+              sizes="xs:25vw sm:25vw md:25vw lg:25vw xl:25vw"
               class="h-full"
             />
           </v-img>
