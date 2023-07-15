@@ -14,6 +14,7 @@
             <NuxtImg
               src="/images/my_massage_room/1.jpeg"
               alt="Zdjęcie ilustracyjne"
+              sizes="xs:100wv sm:100vw md:100vw lg:50vw xl:50vw"
               class="h-full w-full object-cover"
             />
           </div>
@@ -21,6 +22,7 @@
             <NuxtImg
               src="/images/my_massage_room/2.jpeg"
               alt="Zdjęcie ilustracyjne"
+              sizes="xs:100wv sm:100vw md:100vw lg:50vw xl:50vw"
               class="h-full w-full object-cover"
             />
           </div>
@@ -41,6 +43,7 @@
             <NuxtImg
               src="/images/my_massage_room/2.jpeg"
               alt="Zdjęcie ilustracyjne"
+              sizes="xs:100wv sm:100vw md:100vw lg:50vw xl:50vw"
               class="h-full w-full object-cover"
             />
           </div>
@@ -48,6 +51,7 @@
             <NuxtImg
               src="/images/my_massage_room/3.jpeg"
               alt="Zdjęcie ilustracyjne"
+              sizes="xs:100wv sm:100vw md:100vw lg:50vw xl:50vw"
               class="h-full w-full object-cover"
             />
           </div>
