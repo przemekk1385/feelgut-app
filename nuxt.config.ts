@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       htmlAttrs: {
-        lang: "pl"
+        lang: "pl",
       },
       link: [
         {
