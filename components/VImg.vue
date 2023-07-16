@@ -5,7 +5,6 @@
     <NuxtImg
       :src="src"
       :alt="props.alt"
-      preload
       sizes="xs:100vw sm:100vw md:50vw lg:50vw xl:25vw"
       class="h-full w-full object-cover"
     />
