@@ -2,6 +2,9 @@
 export default defineNuxtConfig({
   app: {
     head: {
+      htmlAttrs: {
+        lang: "pl",
+      },
       link: [
         {
           rel: "apple-touch-icon",
@@ -24,7 +27,12 @@ export default defineNuxtConfig({
       ],
     },
   },
-  modules: ["@formkit/nuxt", "@nuxt/content", "@nuxtjs/tailwindcss"],
+  modules: [
+    "@formkit/nuxt",
+    "@nuxt/content",
+    "@nuxt/image",
+    "@nuxtjs/tailwindcss",
+  ],
   postcss: {
     plugins: {
       tailwindcss: {},

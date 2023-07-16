@@ -11,16 +11,18 @@
       <div class="flex flex-col gap-6 sm:flex-row">
         <div class="flex grow-[4] basis-0 flex-col gap-6">
           <div class="aspect-[9/10] overflow-hidden">
-            <img
+            <NuxtImg
               src="/images/my_massage_room/1.jpeg"
               alt="Zdjęcie ilustracyjne"
+              sizes="xs:100wv sm:100vw md:100vw lg:50vw xl:50vw"
               class="h-full w-full object-cover"
             />
           </div>
           <div class="aspect-[2/1] overflow-hidden bg-red-100">
-            <img
+            <NuxtImg
               src="/images/my_massage_room/2.jpeg"
               alt="Zdjęcie ilustracyjne"
+              sizes="xs:100wv sm:100vw md:100vw lg:50vw xl:50vw"
               class="h-full w-full object-cover"
             />
           </div>
@@ -38,16 +40,18 @@
           </div>
 
           <div class="aspect-[2/1] overflow-hidden">
-            <img
+            <NuxtImg
               src="/images/my_massage_room/2.jpeg"
               alt="Zdjęcie ilustracyjne"
+              sizes="xs:100wv sm:100vw md:100vw lg:50vw xl:50vw"
               class="h-full w-full object-cover"
             />
           </div>
           <div class="aspect-[2/1] overflow-hidden">
-            <img
+            <NuxtImg
               src="/images/my_massage_room/3.jpeg"
               alt="Zdjęcie ilustracyjne"
+              sizes="xs:100wv sm:100vw md:100vw lg:50vw xl:50vw"
               class="h-full w-full object-cover"
             />
           </div>

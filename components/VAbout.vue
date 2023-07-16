@@ -3,11 +3,13 @@
     id="o-mnie"
     class="flex flex-col-reverse bg-como text-white lg:max-h-[44.5rem] lg:flex-row"
   >
-    <div class="lg:overflow-hidden xl:flex-1">
+    <div class="lg:min-w-[32rem] lg:overflow-hidden xl:flex-1">
       <div class="aspect-[2/1] lg:aspect-[3/4] xl:aspect-square">
-        <img
+        <NuxtImg
           src="/images/about.jpg"
           alt="Dariusz Gut - zdjęcie"
+          preload
+          sizes="xs:100wv sm:100vw md:100vw lg:50vw xl:50vw"
           class="h-full w-full object-cover object-top"
         />
       </div>
