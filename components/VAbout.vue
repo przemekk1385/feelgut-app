@@ -3,7 +3,7 @@
     id="o-mnie"
     class="flex flex-col-reverse bg-como text-white lg:max-h-[44.5rem] lg:flex-row"
   >
-    <div class="lg:overflow-hidden xl:flex-1">
+    <div class="lg:min-w-[32rem] lg:overflow-hidden xl:flex-1">
       <div class="aspect-[2/1] lg:aspect-[3/4] xl:aspect-square">
         <NuxtImg
           src="/images/about.jpg"
