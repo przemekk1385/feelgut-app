@@ -38,7 +38,6 @@
             Adres:
             <ul>
               <li>ul. Marii Currie-Skłodowskiej 9/5, Kraków</li>
-              <li>ul. Aleja Pokoju 20, Kraków</li>
             </ul>
           </li>
         </ul>
