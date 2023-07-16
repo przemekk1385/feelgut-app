@@ -5,6 +5,7 @@
         <NuxtImg
           src="/images/commandments.jpg"
           alt="Grafika ilustracyjna"
+          preload
           sizes="xs:100wv sm:100vw md:100vw lg:50vw xl:50vw"
           class="h-full w-full object-cover object-center"
         />
