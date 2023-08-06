@@ -16,7 +16,7 @@ const props = withDefaults(
   }>(),
   {
     active: false,
-  }
+  },
 );
 
 const route = useRoute();

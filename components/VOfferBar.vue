@@ -23,6 +23,6 @@ const props = withDefaults(
   {
     bgColor: "white",
     textColor: "black",
-  }
+  },
 );
 </script>

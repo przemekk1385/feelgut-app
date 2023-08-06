@@ -54,6 +54,6 @@ watch(
     if (i != -1) {
       items.value[i].isExpanded = true;
     }
-  }
+  },
 );
 </script>

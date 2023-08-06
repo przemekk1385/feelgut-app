@@ -26,7 +26,7 @@ const props = withDefaults(
   {
     alt: "Grafika ilustracyjna",
     src: undefined,
-  }
+  },
 );
 
 const src = computed<string>(() => props.src || "/images/offer-card.jpg");

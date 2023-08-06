@@ -1,4 +1,8 @@
 module.exports = {
-  attributeGroups: ["$DEFAULT", "$CLASS", "^(@[a-z]+)$", "^(v-html)$"],
+  attributeGroups: ["$DEFAULT", "$CLASS", "^(v-html)$"],
   tailwindConfig: "./tailwind.config.js",
+  plugins: [
+    "prettier-plugin-organize-attributes",
+    "prettier-plugin-tailwindcss",
+  ],
 };

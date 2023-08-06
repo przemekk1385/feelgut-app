@@ -24,7 +24,7 @@ const props = withDefaults(
   }>(),
   {
     isError: false,
-  }
+  },
 );
 const emit = defineEmits(["update:modelValue"]);
 
@@ -34,7 +34,7 @@ watch(
     if (val) {
       setTimeout(() => emit("update:modelValue", false), 5000);
     }
-  }
+  },
 );
 </script>
 

@@ -27,7 +27,7 @@ export default defineEventHandler(async (event) => {
         secret,
         response,
       }),
-    }
+    },
   );
 
   if (score > 0.5 && consent) {
@@ -50,7 +50,7 @@ export default defineEventHandler(async (event) => {
       createError({
         statusCode: 400,
         statusMessage: "data processing consent is missing",
-      })
+      }),
     );
   } else {
     sendError(
@@ -58,7 +58,7 @@ export default defineEventHandler(async (event) => {
       createError({
         statusCode: 400,
         statusMessage: "reCAPTCHA failed",
-      })
+      }),
     );
   }
 });

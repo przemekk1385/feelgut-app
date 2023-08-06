@@ -22,7 +22,7 @@ export function useSmoothScroll() {
           });
         }
       }
-    }
+    },
   );
 
   return {};

@@ -30,7 +30,7 @@ export function useOffer() {
         text,
         indications,
         contraindications,
-      })
+      }),
     ) as OfferItem[];
   };
 
@@ -41,7 +41,7 @@ export function useOffer() {
       if (category) {
         items.value = await fetch(category.toString());
       }
-    }
+    },
   );
 
   return { fetch, items };

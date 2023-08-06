@@ -19,8 +19,8 @@
           <button
             type="button"
             :class="{ ['bg-[#ccd8d5]']: !props.dark, ['bg-white']: props.dark }"
-            class="min-w-[8rem] rounded-full py-1 text-center text-sm"
             @click="emit('update:modelValue', !modelValue)"
+            class="min-w-[8rem] rounded-full py-1 text-center text-sm"
           >
             rozwiń szczegóły
           </button>
@@ -39,16 +39,16 @@
               <button
                 type="button"
                 :class="{ ['underline']: showIndications }"
-                class="flex-1 rounded-full bg-como p-3 text-center text-sm text-white sm:min-w-[11rem] sm:flex-none sm:text-base"
                 @click="showIndications = true"
+                class="flex-1 rounded-full bg-como p-3 text-center text-sm text-white sm:min-w-[11rem] sm:flex-none sm:text-base"
               >
                 Wskazania
               </button>
               <button
                 type="button"
                 :class="{ ['underline']: !showIndications }"
-                class="flex-1 rounded-full bg-[#820000] p-3 text-center text-sm text-white sm:min-w-[11rem] sm:flex-none sm:text-base"
                 @click="showIndications = false"
+                class="flex-1 rounded-full bg-[#820000] p-3 text-center text-sm text-white sm:min-w-[11rem] sm:flex-none sm:text-base"
               >
                 Przeciwwskazania
               </button>
@@ -94,7 +94,7 @@ const props = withDefaults(
   {
     dark: false,
     image: undefined,
-  }
+  },
 );
 const emit = defineEmits(["update:modelValue"]);
 
