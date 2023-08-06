@@ -7,6 +7,7 @@
         src="/images/header.jpg"
         alt="Nagłówek - grafika ilustracyjna"
         preload
+        quality="70"
         sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:100vw"
         class="h-full w-full scale-[1.175] object-cover object-center"
       />

@@ -5,6 +5,8 @@
     <NuxtImg
       :src="src"
       :alt="props.alt"
+      loading="lazy"
+      quality="70"
       sizes="xs:100vw sm:100vw md:50vw lg:50vw xl:25vw"
       class="h-full w-full object-cover"
     />

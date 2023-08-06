@@ -27,6 +27,15 @@ export default defineNuxtConfig({
       ],
     },
   },
+  image: {
+    screens: {
+      xs: 639,
+      sm: 767,
+      md: 1023,
+      lg: 1279,
+      xl: 1535,
+    },
+  },
   modules: [
     "@formkit/nuxt",
     "@nuxt/content",
