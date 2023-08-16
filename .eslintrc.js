@@ -6,14 +6,13 @@ module.exports = {
   parserOptions: {
     parser: "@typescript-eslint/parser",
   },
-  plugins: ["tailwindcss", "vue", "@typescript-eslint"],
+  plugins: ["tailwindcss", "vue"],
   extends: [
-    "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:vue/vue3-essential",
     "plugin:vue/vue3-strongly-recommended",
     "plugin:vue/vue3-recommended",
-    "@nuxt/eslint-config",
+    "@nuxtjs/eslint-config-typescript",
     "plugin:tailwindcss/recommended",
     "prettier",
   ],

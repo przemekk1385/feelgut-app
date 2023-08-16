@@ -12,6 +12,9 @@
 <script setup lang="ts">
 const { titleTemplate } = useTitle();
 
+definePageMeta({
+  documentDriven: false,
+});
 useHead({
   titleTemplate: titleTemplate("Cennik"),
 });

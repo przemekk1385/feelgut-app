@@ -1,12 +1,12 @@
 <template>
   <a
-    :href="href"
+    :href="props.href"
     class="block rounded-full bg-gradient-to-r from-supernova via-sahara to-mimosa p-[2px]"
   >
     <div
       class="flex h-full w-full items-center justify-center rounded-full bg-como p-2"
     >
-      <NuxtImg :src="src" :alt="alt" class="h-full" />
+      <NuxtImg :src="props.src" :alt="props.alt" class="h-full" />
     </div>
   </a>
 </template>

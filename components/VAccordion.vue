@@ -19,8 +19,8 @@
           <button
             type="button"
             :class="{ ['bg-[#ccd8d5]']: !props.dark, ['bg-white']: props.dark }"
-            @click="emit('update:modelValue', !modelValue)"
             class="min-w-[8rem] rounded-full py-1 text-center text-sm"
+            @click="emit('update:modelValue', !modelValue)"
           >
             rozwiń szczegóły
           </button>
@@ -39,16 +39,16 @@
               <button
                 type="button"
                 :class="{ ['underline']: showIndications }"
-                @click="showIndications = true"
                 class="flex-1 rounded-full bg-como p-3 text-center text-sm text-white sm:min-w-[11rem] sm:flex-none sm:text-base"
+                @click="showIndications = true"
               >
                 Wskazania
               </button>
               <button
                 type="button"
                 :class="{ ['underline']: !showIndications }"
-                @click="showIndications = false"
                 class="flex-1 rounded-full bg-[#820000] p-3 text-center text-sm text-white sm:min-w-[11rem] sm:flex-none sm:text-base"
+                @click="showIndications = false"
               >
                 Przeciwwskazania
               </button>
@@ -79,9 +79,9 @@
 </template>
 
 <script setup lang="ts">
-import type { Price } from "~~/types";
-
 import { Collapse } from "vue-collapsed";
+
+import type { Price } from "~~/types";
 
 const props = withDefaults(
   defineProps<{

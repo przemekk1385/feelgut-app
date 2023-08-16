@@ -24,7 +24,7 @@ const route = useRoute();
 const isActive = computed(() => {
   const { category } = route.query;
   if (category) {
-    return props.to.indexOf(category.toString()) !== -1;
+    return props.to.includes(category.toString());
   }
   return props.active;
 });

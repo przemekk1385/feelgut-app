@@ -51,7 +51,7 @@ watch(
   () => route.hash,
   (hash) => {
     const i = items.value.findIndex(({ id }) => `#${id}` === hash);
-    if (i != -1) {
+    if (i !== -1) {
       items.value[i].isExpanded = true;
     }
   },

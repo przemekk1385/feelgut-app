@@ -1,7 +1,7 @@
 export function useSmoothScroll() {
   const route = useRoute();
 
-  const smoothScroll: any = inject("smoothScroll"); // eslint-disable-line @typescript-eslint/no-explicit-any
+  const smoothScroll: any = inject("smoothScroll");
 
   const delay = (timeout: number): Promise<void> =>
     new Promise((resolve) => setTimeout(resolve, timeout));
