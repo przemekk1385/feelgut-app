@@ -28,7 +28,7 @@
       </div>
     </div>
     <!-- eslint-disable-next-line tailwindcss/no-custom-classname -->
-    <Collapse :when="modelValue" class="v-collapse">
+    <Collapse :when="modelValue">
       <div class="mb-6 mt-12 flex flex-col gap-y-12 pl-6">
         <div class="flex flex-col-reverse gap-12 xl:flex-row">
           <div class="flex grow flex-col justify-between gap-12">
@@ -102,12 +102,6 @@ const showIndications: Ref<boolean> = ref(true);
 </script>
 
 <style type="text/css">
-.v-collapse {
-  @apply transition-[height];
-  @apply duration-[var(--vc-auto-duration)];
-  @apply ease-in-out;
-}
-
 .v-fade-enter-active,
 .v-fade-leave-active {
   @apply transition-all;
