@@ -27,21 +27,21 @@ export default defineNuxtConfig({
       ],
     },
   },
-  image: {
-    screens: {
-      xs: 639,
-      sm: 767,
-      md: 1023,
-      lg: 1279,
-      xl: 1535,
-    },
+  css: ["~/assets/css/tailwind.css"],
+  formkit: {
+    // autoImport: true,
   },
   modules: [
     "@formkit/nuxt",
     "@nuxt/content",
-    "@nuxt/image",
+    "@nuxtjs/robots",
     "@nuxtjs/tailwindcss",
   ],
+  nitro: {
+    compressPublicAssets: {
+      brotli: true,
+    },
+  },
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -57,8 +57,5 @@ export default defineNuxtConfig({
     mailFrom: "",
     mailTo: "",
     postmarkServerToken: "",
-  },
-  tailwindcss: {
-    // options
   },
 });
