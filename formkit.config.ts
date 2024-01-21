@@ -18,8 +18,7 @@ const config: DefaultConfigOptions = {
         input: "size-5 border-myGray grayscale",
       },
       submit: {
-        input:
-          "rounded-full bg-white px-12 py-2 text-xl font-medium text-dark",
+        input: "rounded-full bg-white px-12 py-2 text-xl font-medium text-dark",
         wrapper:
           "rounded-full bg-gradient-to-r from-supernova via-sahara to-mimosa p-[2px]",
       },

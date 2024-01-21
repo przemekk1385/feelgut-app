@@ -64,7 +64,9 @@
             </div>
           </template>
         </FormKit>
-        <FormKit type="submit" outer-class="flex justify-end"> <span class="opacity-40">wyślij</span> </FormKit>
+        <FormKit type="submit" outer-class="flex justify-end">
+          <span class="opacity-40">wyślij</span>
+        </FormKit>
       </FormKit>
       <div
         class="flex flex-col items-center justify-center font-bold text-[#073F31] opacity-40"
