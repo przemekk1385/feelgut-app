@@ -15,8 +15,6 @@
         :actions="false"
         type="form"
         form-class="mt-24 flex grow flex-col gap-y-6"
-        messages-class="mt-4"
-        message-class="mt-6 rounded-3xl bg-red-600 p-6 text-center text-base font-medium text-white"
         @submit="handleSubmit"
       >
         <FormKit
@@ -24,9 +22,6 @@
           name="name"
           placeholder="Imię i nazwisko"
           validation="required"
-          input-class="w-full rounded-full border border-dark px-6 py-4 text-lg font-bold text-dark"
-          messages-class="mt-4"
-          message-class="text-sm text-red-600"
           validation-visibility="submit"
           :validation-messages="{ required: 'To pole jest wymagane.' }"
         />
@@ -35,9 +30,6 @@
           name="email"
           placeholder="Adres email"
           validation="required|email"
-          input-class="w-full rounded-full border border-dark px-6 py-4 text-lg font-bold text-dark"
-          messages-class="mt-4"
-          message-class="text-sm text-red-600"
           validation-visibility="submit"
           :validation-messages="{ required: 'To pole jest wymagane.' }"
         />
@@ -46,9 +38,7 @@
           name="text"
           placeholder="Treść wiadomości"
           validation="required"
-          input-class="aspect-[5/2] w-full rounded-[5%/12.5%] border border-dark px-6 py-4 text-lg font-bold text-dark"
-          messages-class="mt-4"
-          message-class="text-sm text-red-600"
+          input-class="aspect-[5/2] w-full"
           validation-visibility="submit"
           :validation-messages="{ required: 'To pole jest wymagane.' }"
         />
@@ -59,9 +49,6 @@
           validation="accepted"
           wrapper-class="flex items-center gap-x-4"
           inner-class="flex"
-          input-class="h-5 w-5 border-myGray grayscale"
-          messages-class="mt-4"
-          message-class="text-sm text-red-400"
           validation-visibility="submit"
           :validation-messages="{
             accepted:
@@ -77,14 +64,7 @@
             </div>
           </template>
         </FormKit>
-        <FormKit
-          type="submit"
-          outer-class="flex justify-end"
-          wrapper-class="rounded-full bg-gradient-to-r from-supernova via-sahara to-mimosa p-[2px]"
-          input-class="rounded-full bg-white px-12 py-2"
-        >
-          <span class="text-xl font-medium text-dark opacity-40">wyślij</span>
-        </FormKit>
+        <FormKit type="submit" outer-class="flex justify-end"> <span class="opacity-40">wyślij</span> </FormKit>
       </FormKit>
       <div
         class="flex flex-col items-center justify-center font-bold text-[#073F31] opacity-40"
@@ -123,7 +103,7 @@ const handleSubmit = async (data: object): Promise<void> => {
 
     const response = await executeRecaptcha("submit_contact_form");
 
-    const { refresh } = await useFetch("/api/mail", {
+    await $fetch("/api/mail", {
       body: Object.assign(data, { response }),
       key: nanoid(),
       method: "POST",
@@ -138,9 +118,8 @@ const handleSubmit = async (data: object): Promise<void> => {
         isError.value = true;
         message.value = "Nie udało się wysłać wiadomości.";
         show.value = true;
-        refresh();
       },
-    });
+    }).catch(() => {});
   }
 };
 </script>
