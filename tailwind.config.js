@@ -1,8 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  content: [
+    "./formkit.config.{js,mjs,ts}",
+    "./components/**/*.{html,js}",
+    "./pages/**/*.{html,js}",
+  ],
   theme: {
-    content: ["./pages/**/*.{html,js}", "./components/**/*.{html,js}"],
     extend: {
       colors: {
         // color names by https://colors.artyclick.com/color-name-finder/

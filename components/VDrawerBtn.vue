@@ -1,12 +1,12 @@
 <template>
   <div
-    class="flex h-10 w-10 cursor-pointer items-center justify-center bg-como opacity-80 sm:h-12 sm:w-12 md:h-14 md:w-14"
+    class="flex size-10 cursor-pointer items-center justify-center bg-como opacity-80 sm:size-12 md:size-14"
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       fill="currentColor"
-      class="h-full w-full fill-white"
+      class="size-full fill-white"
     >
       <path
         fill-rule="evenodd"

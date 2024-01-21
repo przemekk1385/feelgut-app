@@ -2,17 +2,14 @@
   <div
     class="relative aspect-[3/2] max-h-[60rem] w-full overflow-hidden xl:aspect-auto"
   >
-    <div class="h-full w-full overflow-hidden">
-      <NuxtImg
+    <div class="size-full overflow-hidden">
+      <img
         src="/images/header.jpg"
         alt="Nagłówek - grafika ilustracyjna"
-        preload
-        quality="70"
-        sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:100vw"
-        class="h-full w-full scale-[1.175] object-cover object-center"
+        class="size-full scale-[1.175] object-cover object-center"
       />
     </div>
-    <div class="absolute top-0 h-full w-full">
+    <div class="absolute top-0 size-full">
       <div class="mx-auto h-full max-w-[90rem]">
         <v-nav class="h-full" />
 

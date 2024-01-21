@@ -1,4 +1,13 @@
 import * as postmark from "postmark";
+import { z } from "zod";
+
+const mailSchema = z.object({
+  name: z.string(),
+  email: z.string().email(),
+  text: z.string(),
+  consent: z.boolean(),
+  response: z.string(),
+});
 
 export default defineEventHandler(async (event) => {
   const {
@@ -8,13 +17,23 @@ export default defineEventHandler(async (event) => {
     postmarkServerToken,
   } = useRuntimeConfig();
 
+  const result = await readValidatedBody(event, (body) =>
+    mailSchema.safeParse(body),
+  );
+
+  if (!result.success)
+    sendError(
+      event,
+      createError({
+        statusCode: 400,
+        statusMessage: "Bad request",
+        data: result.error.issues,
+      }),
+    );
+
   const {
-    name,
-    email,
-    text: TextBody,
-    consent,
-    response,
-  } = await readBody(event);
+    data: { name, email, text: TextBody, consent, response },
+  } = result;
 
   const { score }: any = await $fetch(
     "https://www.google.com/recaptcha/api/siteverify",
@@ -49,7 +68,8 @@ export default defineEventHandler(async (event) => {
       event,
       createError({
         statusCode: 400,
-        statusMessage: "data processing consent is missing",
+        statusMessage: "Bad request",
+        data: { detail: "data processing consent is missing" },
       }),
     );
   } else {
@@ -57,7 +77,8 @@ export default defineEventHandler(async (event) => {
       event,
       createError({
         statusCode: 400,
-        statusMessage: "reCAPTCHA failed",
+        statusMessage: "Bad request",
+        data: { detail: "reCAPTCHA failed" },
       }),
     );
   }

@@ -4,11 +4,7 @@
       class="relative flex h-full items-start justify-between pl-6 md:pl-20 lg:hidden"
     >
       <NuxtLink to="/">
-        <NuxtImg
-          src="/images/feelgut-logo.png"
-          alt="Logo"
-          class="h-20 sm:h-28"
-        />
+        <img src="/images/feelgut-logo.png" alt="Logo" class="h-20 sm:h-28" />
       </NuxtLink>
       <v-drawer>
         <ul
@@ -24,7 +20,7 @@
               :alt="alt"
               :src="src"
               :href="href"
-              class="h-10 w-10"
+              class="size-10"
             />
           </li>
         </ul>
@@ -35,7 +31,7 @@
       <ul class="flex w-full items-center justify-between">
         <li>
           <NuxtLink href="/" class="font-medium">
-            <NuxtImg src="/images/feelgut-logo.png" alt="Logo" class="h-28" />
+            <img src="/images/feelgut-logo.png" alt="Logo" class="h-28" />
           </NuxtLink>
         </li>
         <li v-for="{ description, to } in items" :key="to">
@@ -48,7 +44,7 @@
             :alt="alt"
             :src="src"
             :href="href"
-            class="h-12 w-12 drop-shadow-[5px_5px_10px_rgba(0,0,0,.25)]"
+            class="size-12 drop-shadow-[5px_5px_10px_rgba(0,0,0,.25)]"
           />
         </li>
       </ul>
