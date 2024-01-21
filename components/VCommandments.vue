@@ -2,12 +2,9 @@
   <div id="10-przykazan" class="flex flex-col-reverse bg-platinium lg:flex-row">
     <div class="lg:flex-1 lg:overflow-hidden">
       <div class="h-full">
-        <NuxtImg
+        <img
           src="/images/commandments.jpg"
           alt="Grafika ilustracyjna"
-          preload
-          quality="70"
-          sizes="xs:100wv sm:100vw md:100vw lg:50vw xl:50vw"
           class="h-full w-full object-cover object-center"
         />
       </div>

@@ -6,7 +6,7 @@
     <div
       class="flex h-full w-full items-center justify-center rounded-full bg-como p-2"
     >
-      <NuxtImg :src="props.src" :alt="props.alt" class="h-full" />
+      <img :src="props.src" :alt="props.alt" class="h-full" />
     </div>
   </a>
 </template>

@@ -5,12 +5,9 @@
   >
     <div class="lg:min-w-[32rem] lg:overflow-hidden xl:flex-1">
       <div class="aspect-[2/1] lg:aspect-[3/4] xl:aspect-square">
-        <NuxtImg
+        <img
           src="/images/about.jpg"
           alt="Dariusz Gut - zdjęcie"
-          preload
-          quality="70"
-          sizes="xs:100wv sm:100vw md:100vw lg:50vw xl:50vw"
           class="h-full w-full object-cover object-top"
         />
       </div>
