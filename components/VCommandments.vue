@@ -5,7 +5,7 @@
         <img
           src="/images/commandments.jpg"
           alt="Grafika ilustracyjna"
-          class="h-full w-full object-cover object-center"
+          class="size-full object-cover object-center"
         />
       </div>
     </div>

@@ -14,14 +14,14 @@
             <img
               src="/images/my_massage_room/1.jpeg"
               alt="Zdjęcie ilustracyjne"
-              class="h-full w-full object-cover"
+              class="size-full object-cover"
             />
           </div>
           <div class="aspect-[2/1] overflow-hidden bg-red-100">
             <img
               src="/images/my_massage_room/2.jpeg"
               alt="Zdjęcie ilustracyjne"
-              class="h-full w-full object-cover"
+              class="size-full object-cover"
             />
           </div>
         </div>
@@ -41,14 +41,14 @@
             <img
               src="/images/my_massage_room/2.jpeg"
               alt="Zdjęcie ilustracyjne"
-              class="h-full w-full object-cover"
+              class="size-full object-cover"
             />
           </div>
           <div class="aspect-[2/1] overflow-hidden">
             <img
               src="/images/my_massage_room/3.jpeg"
               alt="Zdjęcie ilustracyjne"
-              class="h-full w-full object-cover"
+              class="size-full object-cover"
             />
           </div>
         </div>

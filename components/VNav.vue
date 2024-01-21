@@ -20,7 +20,7 @@
               :alt="alt"
               :src="src"
               :href="href"
-              class="h-10 w-10"
+              class="size-10"
             />
           </li>
         </ul>
@@ -44,7 +44,7 @@
             :alt="alt"
             :src="src"
             :href="href"
-            class="h-12 w-12 drop-shadow-[5px_5px_10px_rgba(0,0,0,.25)]"
+            class="size-12 drop-shadow-[5px_5px_10px_rgba(0,0,0,.25)]"
           />
         </li>
       </ul>

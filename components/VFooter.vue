@@ -50,7 +50,7 @@
               :alt="alt"
               :src="src"
               :href="href"
-              class="h-12 w-12"
+              class="size-12"
             />
           </li>
         </ul>

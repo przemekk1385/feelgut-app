@@ -10,7 +10,7 @@
           class="relative flex h-full min-h-[15rem] w-48 items-center justify-center sm:min-h-[25rem]"
         >
           <div
-            class="absolute h-full w-full rounded-bl-3xl bg-como opacity-80"
+            class="absolute size-full rounded-bl-3xl bg-como opacity-80"
           ></div>
           <slot></slot>
         </div>

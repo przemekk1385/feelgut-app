@@ -8,7 +8,7 @@
         <img
           src="/images/about.jpg"
           alt="Dariusz Gut - zdjęcie"
-          class="h-full w-full object-cover object-top"
+          class="size-full object-cover object-top"
         />
       </div>
     </div>
