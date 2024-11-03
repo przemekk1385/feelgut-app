@@ -4,7 +4,7 @@
     class="flex flex-col-reverse bg-como text-white lg:max-h-[44.5rem] lg:flex-row"
   >
     <div class="lg:min-w-[32rem] lg:overflow-hidden xl:flex-1">
-      <div class="aspect-[2/1] lg:aspect-[3/4] xl:aspect-square">
+      <div class="aspect-square lg:aspect-[3/4] xl:aspect-square">
         <img
           src="/images/about.jpg"
           alt="Dariusz Gut - zdjęcie"

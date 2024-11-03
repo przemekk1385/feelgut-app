@@ -27,8 +27,7 @@
         </div>
       </div>
     </div>
-    <!-- eslint-disable-next-line tailwindcss/no-custom-classname -->
-    <Collapse :when="modelValue">
+    <Collapse as="section" :when="modelValue">
       <div class="mb-6 mt-12 flex flex-col gap-y-12 pl-6">
         <div class="flex flex-col-reverse gap-12 xl:flex-row">
           <div class="flex grow flex-col justify-between gap-12">

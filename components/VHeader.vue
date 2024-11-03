@@ -6,7 +6,7 @@
       <img
         src="/images/header.jpg"
         alt="Nagłówek - grafika ilustracyjna"
-        class="size-full scale-[1.175] object-cover object-center"
+        class="size-full object-cover"
       />
     </div>
     <div class="absolute top-0 size-full">
