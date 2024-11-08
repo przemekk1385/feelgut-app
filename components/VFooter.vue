@@ -1,6 +1,6 @@
 <template>
   <div class="bg-como py-12">
-    <div class="mx-auto max-w-[90rem] px-12 lg:px-28 xl:px-36">
+    <div class="mx-auto px-12 lg:px-28 xl:px-36">
       <div class="flex flex-col justify-center gap-6 md:flex-row md:flex-wrap">
         <ul class="my-3 flex flex-col gap-y-4 self-center font-lato text-white">
           <li

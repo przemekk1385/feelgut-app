@@ -12,14 +12,14 @@
           <div
             v-for="{ time, amount } in props.price"
             :key="time"
-            class="min-w-[8rem] rounded-full border border-black px-3 py-1 text-center text-sm"
+            class="min-w-32 rounded-full border border-black px-3 py-1 text-center text-sm"
           >
             {{ time }} min - {{ amount }} zł
           </div>
           <button
             type="button"
             :class="{ ['bg-[#ccd8d5]']: !props.dark, ['bg-white']: props.dark }"
-            class="min-w-[8rem] rounded-full py-1 text-center text-sm"
+            class="min-w-32 rounded-full py-1 text-center text-sm"
             @click="emit('update:modelValue', !modelValue)"
           >
             rozwiń szczegóły
@@ -38,7 +38,7 @@
               <button
                 type="button"
                 :class="{ ['underline']: showIndications }"
-                class="flex-1 rounded-full bg-como p-3 text-center text-sm text-white sm:min-w-[11rem] sm:flex-none sm:text-base"
+                class="flex-1 rounded-full bg-como p-3 text-center text-sm text-white sm:min-w-44 sm:flex-none sm:text-base"
                 @click="showIndications = true"
               >
                 Wskazania
@@ -46,7 +46,7 @@
               <button
                 type="button"
                 :class="{ ['underline']: !showIndications }"
-                class="flex-1 rounded-full bg-[#820000] p-3 text-center text-sm text-white sm:min-w-[11rem] sm:flex-none sm:text-base"
+                class="flex-1 rounded-full bg-[#820000] p-3 text-center text-sm text-white sm:min-w-44 sm:flex-none sm:text-base"
                 @click="showIndications = false"
               >
                 Przeciwwskazania

@@ -16,7 +16,7 @@
       <div class="flex grow flex-col p-6 lg:pr-28 xl:max-w-[45rem] xl:pr-36">
         <div class="mb-6">
           <v-h>
-            <span class="text-white opacity-30"> O mnie </span>
+            <h2 class="text-white opacity-30">O mnie</h2>
             <template #under>
               <v-h-line class="relative md:left-16 lg:-left-40 xl:-left-48" />
             </template>

@@ -7,7 +7,7 @@
       <div v-if="show" class="absolute right-0 top-0 flex h-full">
         <v-drawer-btn @click="show = !show" />
         <div
-          class="relative flex h-full min-h-[15rem] w-48 items-center justify-center sm:min-h-[25rem]"
+          class="relative flex h-full min-h-60 w-48 items-center justify-center sm:min-h-[25rem]"
         >
           <div
             class="absolute size-full rounded-bl-3xl bg-como opacity-80"

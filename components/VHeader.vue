@@ -10,7 +10,7 @@
       />
     </div>
     <div class="absolute top-0 size-full">
-      <div class="mx-auto h-full max-w-[90rem]">
+      <div class="mx-auto h-full">
         <v-nav class="h-full" />
 
         <div
