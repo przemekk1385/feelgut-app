@@ -47,7 +47,7 @@
             się bardziej wydajnym środowiskiem. Oferuję zarówno stałą współpracę
             w formie cyklicznych masaży wykonywanych regularnie raz w tygodniu
             (lub raz na miesiąc) jak i jednorazową usługę dostosowaną do potrzeb
-            klienta :-)
+            klienta&nbsp;&#128578;
           </p>
 
           <h3 class="text-2xl">Event masażu biurowego</h3>
@@ -67,7 +67,7 @@
           </p>
           <p>
             Szczegóły oferty i formy współpracy ustalam indywidualnie według
-            preferencji i potrzeb klienta :-)
+            preferencji i potrzeb klienta&nbsp;&#128578;
           </p>
 
           <h3 class="text-2xl">Masaż na stole</h3>
