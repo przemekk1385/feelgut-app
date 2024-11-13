@@ -19,9 +19,12 @@ useHead({
     {
       name: "description",
       content:
-        "Sprawdź cennik masaży. Wybierz odpowiedni masaż dla siebie &#11106; relaksacyjny, leczniczy lub kosmetyczny i umów się na wizytę. Zapraszam!",
+        "Masaż biurowy w Twojej firmie! Wybierz najkorzystniejszą formę profilaktyki prozdrowotnej w miejscu pracy. Wystarczy 15-minutowy masaż na specjalnym krześle aby poprawić stan zdrowia, efektywność i samopoczucie pracowników.",
     },
-    { name: "title", content: "Cennik | Masażysta | Gabinet masażu Kraków" },
+    {
+      name: "title",
+      content: "Masaż biurowy | FeelGUT | Najlepszy benefit pracowniczy",
+    },
   ],
   titleTemplate: titleTemplate("Cennik"),
 });
