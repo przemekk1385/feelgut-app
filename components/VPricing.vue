@@ -1,10 +1,7 @@
 <template>
-  <div
-    id="cennik"
-    class="mx-auto max-w-[90rem] px-6 py-24 md:px-20 lg:px-28 xl:px-36"
-  >
+  <div id="cennik" class="mx-auto px-6 py-24 md:px-20 lg:px-28 xl:px-36">
     <v-h>
-      <span class="text-como opacity-30"> Cennik </span>
+      <h2 class="text-como opacity-30">Cennik</h2>
       <template #under>
         <v-h-line class="relative md:left-6 lg:left-9 xl:left-12" />
       </template>

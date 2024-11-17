@@ -21,7 +21,7 @@ definePageMeta({
 });
 useHead({
   meta: [
-    { name: "title", content: "Masaż Kraków | Masażysta | Gabinet masażu" },
+    { name: "title", content: "Masaż Kraków | FeelGUT | Gabinet masażu" },
     {
       name: "description",
       content:

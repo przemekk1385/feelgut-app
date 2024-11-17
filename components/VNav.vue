@@ -1,5 +1,5 @@
 <template>
-  <nav class="mx-auto max-w-[90rem]">
+  <nav>
     <div
       class="relative flex h-full items-start justify-between pl-6 md:pl-20 lg:hidden"
     >
@@ -27,8 +27,11 @@
       </v-drawer>
     </div>
 
-    <div class="hidden w-full items-center px-28 lg:flex xl:px-36">
-      <ul class="flex w-full items-center justify-between">
+    <div class="relative hidden w-full items-center px-28 lg:flex xl:px-36">
+      <div
+        class="absolute left-0 top-0 -z-0 size-full bg-gradient-to-r from-transparent via-white to-transparent opacity-60"
+      ></div>
+      <ul class="relative z-0 flex w-full items-center justify-between">
         <li>
           <NuxtLink href="/" class="font-medium">
             <img src="/images/feelgut-logo.png" alt="Logo" class="h-28" />
@@ -55,10 +58,9 @@
 <script setup lang="ts">
 const items: Ref<{ description: string; to: string }[]> = ref([
   { description: "O mnie", to: "/?goto=o-mnie" },
-  { description: "Przygotowanie", to: "/cennik?goto=10-przykazan" },
   { description: "Usługi", to: "/?goto=uslugi" },
-  { description: "Gabinet", to: "/?goto=moj-gabinet" },
   { description: "Cennik", to: "/cennik?goto=cennik" },
+  { description: "Masaż dla firm", to: "/masaz-dla-firm?goto=masaz-dla-firm" },
   { description: "Umów wizytę", to: "/?goto=kontakt" },
 ]);
 
