@@ -43,13 +43,13 @@
             />
           </v-img>
           <div
-            class="flex items-center justify-between gap-x-4 px-6 pt-6 font-lato"
+            class="font-lato flex items-center justify-between gap-x-4 px-6 pt-6"
           >
             <div class="text-center">{{ title }}</div>
             <div>
               <NuxtLink
                 :to="`/cennik?goto=${id}`"
-                class="inline-block rounded-full bg-[#55B99A] px-6 py-1 font-medium uppercase text-white"
+                class="inline-block rounded-full bg-[#55B99A] px-6 py-1 font-medium text-white uppercase"
               >
                 Sprawdź
               </NuxtLink>

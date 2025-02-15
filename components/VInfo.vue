@@ -2,7 +2,7 @@
   <Transition name="v-fade">
     <div
       v-if="modelValue"
-      class="fixed left-0 top-0 z-20 w-full px-6 md:px-12 lg:px-24 xl:px-36"
+      class="fixed top-0 left-0 z-20 w-full px-6 md:px-12 lg:px-24 xl:px-36"
     >
       <div
         :class="{ ['bg-teal-700']: !isError, ['bg-rose-700']: isError }"

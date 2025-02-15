@@ -1,7 +1,7 @@
 <template>
   <div
     id="masaz-dla-firm"
-    class="flex flex-col-reverse bg-platinium lg:flex-row"
+    class="bg-platinium flex flex-col-reverse lg:flex-row"
   >
     <div class="lg:flex-1 lg:overflow-hidden">
       <div class="h-full">
@@ -22,7 +22,7 @@
             </template>
           </v-h>
         </div>
-        <div class="flex grow flex-col justify-around gap-4 font-lato">
+        <div class="font-lato flex grow flex-col justify-around gap-4">
           <h3 class="text-2xl">Masaż w biurze</h3>
           <p>
             To najbardziej efektywna a zarazem możliwa do realizacji w miejscu

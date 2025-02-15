@@ -1,10 +1,10 @@
 <template>
   <a
     :href="props.href"
-    class="block rounded-full bg-gradient-to-r from-supernova via-sahara to-mimosa p-[2px]"
+    class="from-supernova via-sahara to-mimosa block rounded-full bg-gradient-to-r p-[2px]"
   >
     <div
-      class="flex size-full items-center justify-center rounded-full bg-como p-2"
+      class="bg-como flex size-full items-center justify-center rounded-full p-2"
     >
       <img :src="props.src" :alt="props.alt" class="h-full" />
     </div>

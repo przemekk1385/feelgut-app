@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex size-10 cursor-pointer items-center justify-center bg-como opacity-80 sm:size-12 md:size-14"
+    class="bg-como flex size-10 cursor-pointer items-center justify-center opacity-80 sm:size-12 md:size-14"
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"

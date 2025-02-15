@@ -29,7 +29,7 @@
 
     <div class="relative hidden w-full items-center px-28 lg:flex xl:px-36">
       <div
-        class="absolute left-0 top-0 -z-0 size-full bg-gradient-to-r from-transparent via-white to-transparent opacity-60"
+        class="absolute top-0 left-0 -z-0 size-full bg-gradient-to-r from-transparent via-white to-transparent opacity-60"
       ></div>
       <ul class="relative z-0 flex w-full items-center justify-between">
         <li>

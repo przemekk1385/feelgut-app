@@ -1,7 +1,7 @@
 <template>
   <div
     id="o-mnie"
-    class="flex flex-col-reverse bg-como text-white lg:max-h-[44.5rem] lg:flex-row"
+    class="bg-como flex flex-col-reverse text-white lg:max-h-[44.5rem] lg:flex-row"
   >
     <div class="lg:min-w-[32rem] lg:overflow-hidden xl:flex-1">
       <div class="aspect-square lg:aspect-[3/4] xl:aspect-square">
@@ -22,7 +22,7 @@
             </template>
           </v-h>
         </div>
-        <div class="flex grow flex-col justify-around gap-4 font-lato">
+        <div class="font-lato flex grow flex-col justify-around gap-4">
           <p>
             Cześć, nazywam się Darek Gut. Jestem dyplomowanym masażystą, a z
             wykształcenia absolwentem Wydziału Wychowania Fizycznego AWF w

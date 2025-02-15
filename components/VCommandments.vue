@@ -1,5 +1,5 @@
 <template>
-  <div id="10-przykazan" class="flex flex-col-reverse bg-platinium lg:flex-row">
+  <div id="10-przykazan" class="bg-platinium flex flex-col-reverse lg:flex-row">
     <div class="lg:flex-1 lg:overflow-hidden">
       <div class="h-full">
         <img
@@ -19,7 +19,7 @@
             </template>
           </v-h>
         </div>
-        <div class="flex grow flex-col justify-around gap-4 font-lato">
+        <div class="font-lato flex grow flex-col justify-around gap-4">
           <span class="text-2xl">Jak przygotować się do masażu?</span>
           <ul class="flex list-outside list-decimal flex-col gap-4 pl-6">
             <li>
