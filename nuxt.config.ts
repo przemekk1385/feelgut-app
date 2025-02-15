@@ -33,6 +33,18 @@ export default defineNuxtConfig({
   formkit: {
     // autoImport: true,
   },
+  gtag: {
+    config: {
+      initCommands: [
+        "consent",
+        "default",
+        {
+          analytics_storage: "granted",
+          wait_for_update: 500,
+        },
+      ],
+    },
+  },
   modules: ["@nuxtjs/robots", "@nuxt/content", "@formkit/nuxt", "nuxt-gtag"],
   nitro: {
     compressPublicAssets: {
