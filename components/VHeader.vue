@@ -17,7 +17,7 @@
           class="absolute hidden md:top-40 md:block md:px-20 lg:top-48 lg:px-28 xl:top-56 xl:px-36"
         >
           <div
-            class="mb-8 text-4xl leading-snug text-dark lg:text-5xl lg:leading-snug xl:text-6xl xl:leading-snug"
+            class="text-dark mb-8 text-4xl leading-snug lg:text-5xl lg:leading-snug xl:text-6xl xl:leading-snug"
           >
             Odzyskaj balans<br />i poczuj się GUT
           </div>

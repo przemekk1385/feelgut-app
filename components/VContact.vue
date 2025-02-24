@@ -13,7 +13,7 @@
             </template>
           </v-h>
         </div>
-        <div class="flex grow flex-col justify-around gap-4 font-lato">
+        <div class="font-lato flex grow flex-col justify-around gap-4">
           <FormKit
             id="contact-form"
             :actions="false"

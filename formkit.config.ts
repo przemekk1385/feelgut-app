@@ -20,7 +20,7 @@ const config: DefaultConfigOptions = {
       submit: {
         input: "rounded-full bg-white px-12 py-2 text-xl font-medium text-dark",
         wrapper:
-          "rounded-full bg-gradient-to-r from-supernova via-sahara to-mimosa p-[2px]",
+          "rounded-full bg-linear-to-r from-supernova via-sahara to-mimosa p-[2px]",
       },
       text: {
         input:

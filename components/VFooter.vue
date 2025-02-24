@@ -2,7 +2,7 @@
   <div class="bg-como py-12">
     <div class="mx-auto px-12 lg:px-28 xl:px-36">
       <div class="flex flex-col justify-center gap-6 md:flex-row md:flex-wrap">
-        <ul class="my-3 flex flex-col gap-y-4 self-center font-lato text-white">
+        <ul class="font-lato my-3 flex flex-col gap-y-4 self-center text-white">
           <li
             v-for="{ description, to } in items"
             :key="to"
@@ -14,7 +14,7 @@
 
         <div class="h-[2px] w-full bg-white md:h-auto md:w-[2px]">&nbsp;</div>
 
-        <ul class="my-3 flex flex-col gap-y-4 self-center font-lato text-white">
+        <ul class="font-lato my-3 flex flex-col gap-y-4 self-center text-white">
           <li class="text-center md:text-left">
             <NuxtLink to="/?goto=uslugi&category=relaksacyjne"
               >Masaże relaksacyjne</NuxtLink
@@ -29,7 +29,7 @@
 
         <div class="h-[2px] w-full bg-white md:h-auto md:w-[2px]">&nbsp;</div>
 
-        <ul class="my-3 flex flex-col gap-y-4 self-center font-lato text-white">
+        <ul class="font-lato my-3 flex flex-col gap-y-4 self-center text-white">
           <li class="text-center md:text-left">Telefon: 788 139 475</li>
           <li class="text-center md:text-left">
             Mail: <a href="mailto:kontakt@feelgut.pl">kontakt@feelgut.pl</a>

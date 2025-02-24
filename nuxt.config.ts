@@ -1,3 +1,5 @@
+import tailwindcss from "@tailwindcss/vite";
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
@@ -31,21 +33,22 @@ export default defineNuxtConfig({
   formkit: {
     // autoImport: true,
   },
-  modules: [
-    "@formkit/nuxt",
-    "@nuxt/content",
-    "@nuxtjs/robots",
-    "@nuxtjs/tailwindcss",
-  ],
+  gtag: {
+    config: {
+      initCommands: [
+        "consent",
+        "default",
+        {
+          analytics_storage: "granted",
+          wait_for_update: 500,
+        },
+      ],
+    },
+  },
+  modules: ["@nuxtjs/robots", "@nuxt/content", "@formkit/nuxt", "nuxt-gtag"],
   nitro: {
     compressPublicAssets: {
       brotli: true,
-    },
-  },
-  postcss: {
-    plugins: {
-      tailwindcss: {},
-      autoprefixer: {},
     },
   },
   runtimeConfig: {
@@ -57,5 +60,10 @@ export default defineNuxtConfig({
     mailFrom: "",
     mailTo: "",
     postmarkServerToken: "",
+  },
+  compatibilityDate: "2025-02-03",
+  devtools: { enabled: true },
+  vite: {
+    plugins: [tailwindcss()],
   },
 });

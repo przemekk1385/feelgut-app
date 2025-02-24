@@ -4,7 +4,7 @@
   >
     <img :src="src" :alt="props.alt" class="size-full object-cover" />
 
-    <div v-if="$slots.default" class="absolute right-0 top-0 h-full p-4">
+    <div v-if="$slots.default" class="absolute top-0 right-0 h-full p-4">
       <slot></slot>
     </div>
   </div>
