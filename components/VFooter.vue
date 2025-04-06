@@ -34,12 +34,6 @@
           <li class="text-center md:text-left">
             Mail: <a href="mailto:kontakt@feelgut.pl">kontakt@feelgut.pl</a>
           </li>
-          <li class="text-center md:text-left">
-            Adres:
-            <ul>
-              <li>ul. Marii Currie-Skłodowskiej 9/5, Kraków</li>
-            </ul>
-          </li>
         </ul>
 
         <div class="h-[2px] w-full bg-white md:h-auto md:w-[2px]">&nbsp;</div>
