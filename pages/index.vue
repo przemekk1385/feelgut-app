@@ -7,7 +7,7 @@
       <!-- <v-reviews /> -->
       <v-contact />
       <!-- <v-my-massage-room /> -->
-      <v-map />
+      <!-- <v-map /> -->
     </main>
     <v-footer />
   </div>
