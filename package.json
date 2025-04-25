@@ -5,11 +5,10 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "format": "prettier --write .",
-    "lint": "eslint --ext .js,.ts,.vue ."
+    "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.9.4",
     "@nuxt/content": "^3.5.1",
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
     "@nuxtjs/tailwindcss": "^6.11.0",
