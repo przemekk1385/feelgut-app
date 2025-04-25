@@ -75,5 +75,5 @@
 </template>
 
 <script setup lang="ts">
-const { items, fetch } = useOffer();
+const { items } = useOffer();
 </script>

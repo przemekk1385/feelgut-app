@@ -19,7 +19,7 @@
         :title="title"
         :price="price"
       >
-        {{ text }}
+        {{ text.replace("\\n", "") }}
         <template #indications>
           <ul class="list-disc pl-6">
             <li v-for="item in indications" :key="item">{{ item }}</li>
@@ -39,10 +39,17 @@
 import type { OfferItem } from "~~/types";
 
 const route = useRoute();
-const { fetch } = useOffer();
+const { items: offerItems } = useOffer();
 
-const items: Ref<({ isExpanded: boolean } & OfferItem)[]> = ref([]);
-items.value = (await fetch()).map((item) => ({ isExpanded: false, ...item }));
+const items = ref([]);
+
+onMounted(() => {
+  console.log("xxx", offerItems);
+  items.value = offerItems.value.map((item) => ({
+    ...item,
+    isExpanded: false,
+  }));
+});
 
 watch(
   () => route.hash,
