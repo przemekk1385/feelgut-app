@@ -18,9 +18,8 @@ const props = withDefaults(
     active: false,
   },
 );
-
 const route = useRoute();
 const isActive = computed(
-  () => props.category === route.query.category.toString(),
+  () => props.category === route.query.category?.toString(),
 );
 </script>

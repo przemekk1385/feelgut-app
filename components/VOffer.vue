@@ -19,7 +19,7 @@
         </v-h>
         <ul class="flex items-center gap-x-12">
           <li>
-            <v-offer-link active category="relaksacyjne">
+            <v-offer-link category="relaksacyjne">
               Masaże relaksacyjne
             </v-offer-link>
           </li>
