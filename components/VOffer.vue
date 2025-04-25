@@ -19,12 +19,12 @@
         </v-h>
         <ul class="flex items-center gap-x-12">
           <li>
-            <v-offer-link active to="/?category=relaksacyjne">
+            <v-offer-link active category="relaksacyjne">
               Masaże relaksacyjne
             </v-offer-link>
           </li>
           <li>
-            <v-offer-link to="/?category=terapeutyczne">
+            <v-offer-link category="terapeutyczne">
               Masaże terapeutyczne
             </v-offer-link>
           </li>
@@ -75,10 +75,5 @@
 </template>
 
 <script setup lang="ts">
-const route = useRoute();
 const { items, fetch } = useOffer();
-
-const { category } = route.query;
-
-items.value = await fetch(category?.toString() || "relaksacyjne");
 </script>
