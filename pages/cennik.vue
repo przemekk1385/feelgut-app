@@ -13,17 +13,17 @@
 const { titleTemplate } = useTitle();
 
 definePageMeta({
-  documentDriven: false,
+	documentDriven: false,
 });
 useHead({
-  meta: [
-    {
-      name: "description",
-      content:
-        "Sprawdź cennik masaży. Wybierz odpowiedni masaż dla siebie &#11106; relaksacyjny, leczniczy lub kosmetyczny i umów się na wizytę. Zapraszam!",
-    },
-    { name: "title", content: "Cennik | FeelGUT | Gabinet masażu Kraków" },
-  ],
-  titleTemplate: titleTemplate("Cennik"),
+	meta: [
+		{
+			name: "description",
+			content:
+				"Sprawdź cennik masaży. Wybierz odpowiedni masaż dla siebie &#11106; relaksacyjny, leczniczy lub kosmetyczny i umów się na wizytę. Zapraszam!",
+		},
+		{ name: "title", content: "Cennik | FeelGUT | Gabinet masażu Kraków" },
+	],
+	titleTemplate: titleTemplate("Cennik"),
 });
 </script>

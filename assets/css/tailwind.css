@@ -1,20 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@100;200;300;400;500;600;700&display=swap")
-layer(base);
+	layer(base);
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500;600;700&display=swap")
-layer(base);
+	layer(base);
 
 @import "tailwindcss";
 
 @theme {
-  --color-como: #547a71;
-  --color-mimosa: #fffad2;
-  --color-sahara: #c9961a;
-  --color-supernova: #fccb00;
-  --color-platinium: #e1e1e1;
-  --color-dark: #161f36;
+	--color-como: #547a71;
+	--color-mimosa: #fffad2;
+	--color-sahara: #c9961a;
+	--color-supernova: #fccb00;
+	--color-platinium: #e1e1e1;
+	--color-dark: #161f36;
 
-  --font-lato: Lato;
-  --font-playfair-display: "Playfair Display";
+	--font-lato: Lato;
+	--font-playfair-display: "Playfair Display";
 }
 
 /*
@@ -26,11 +26,11 @@ layer(base);
   color utility to any element that depends on these defaults.
 */
 @layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
-    border-color: var(--color-gray-200, currentColor);
-  }
+	*,
+	::after,
+	::before,
+	::backdrop,
+	::file-selector-button {
+		border-color: var(--color-gray-200, currentColor);
+	}
 }

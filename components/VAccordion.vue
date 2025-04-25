@@ -89,17 +89,17 @@ import { Collapse } from "vue-collapsed";
 import type { Price } from "~~/types";
 
 const props = withDefaults(
-  defineProps<{
-    dark: boolean;
-    image?: string;
-    title: string;
-    price: Price[];
-    modelValue: boolean;
-  }>(),
-  {
-    dark: false,
-    image: undefined,
-  },
+	defineProps<{
+		dark: boolean;
+		image?: string;
+		title: string;
+		price: Price[];
+		modelValue: boolean;
+	}>(),
+	{
+		dark: false,
+		image: undefined,
+	},
 );
 const emit = defineEmits(["update:modelValue"]);
 

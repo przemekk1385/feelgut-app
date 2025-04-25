@@ -12,14 +12,14 @@
 
 <script setup lang="ts">
 const props = withDefaults(
-  defineProps<{
-    alt?: string;
-    src?: string;
-  }>(),
-  {
-    alt: "Grafika ilustracyjna",
-    src: undefined,
-  },
+	defineProps<{
+		alt?: string;
+		src?: string;
+	}>(),
+	{
+		alt: "Grafika ilustracyjna",
+		src: undefined,
+	},
 );
 
 const src = computed<string>(() => props.src || "/images/offer-card.jpg");

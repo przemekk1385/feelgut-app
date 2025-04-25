@@ -18,23 +18,23 @@
 
 <script setup lang="ts">
 const props = withDefaults(
-  defineProps<{
-    isError?: boolean;
-    modelValue: boolean;
-  }>(),
-  {
-    isError: false,
-  },
+	defineProps<{
+		isError?: boolean;
+		modelValue: boolean;
+	}>(),
+	{
+		isError: false,
+	},
 );
 const emit = defineEmits(["update:modelValue"]);
 
 watch(
-  () => props.modelValue,
-  (val: boolean) => {
-    if (val) {
-      setTimeout(() => emit("update:modelValue", false), 5000);
-    }
-  },
+	() => props.modelValue,
+	(val: boolean) => {
+		if (val) {
+			setTimeout(() => emit("update:modelValue", false), 5000);
+		}
+	},
 );
 </script>
 

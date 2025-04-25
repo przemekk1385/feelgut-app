@@ -13,8 +13,8 @@
 
 <script setup lang="ts">
 const props = defineProps<{
-  alt: string;
-  src: string;
-  href: string;
+	alt: string;
+	src: string;
+	href: string;
 }>();
 </script>

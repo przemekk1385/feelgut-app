@@ -44,20 +44,20 @@ const { items: offerItems } = useOffer();
 const items = ref([]);
 
 onMounted(() => {
-  console.log("xxx", offerItems);
-  items.value = offerItems.value.map((item) => ({
-    ...item,
-    isExpanded: false,
-  }));
+	console.log("xxx", offerItems);
+	items.value = offerItems.value.map((item) => ({
+		...item,
+		isExpanded: false,
+	}));
 });
 
 watch(
-  () => route.hash,
-  (hash) => {
-    const i = items.value.findIndex(({ id }) => `#${id}` === hash);
-    if (i !== -1) {
-      items.value[i].isExpanded = true;
-    }
-  },
+	() => route.hash,
+	(hash) => {
+		const i = items.value.findIndex(({ id }) => `#${id}` === hash);
+		if (i !== -1) {
+			items.value[i].isExpanded = true;
+		}
+	},
 );
 </script>

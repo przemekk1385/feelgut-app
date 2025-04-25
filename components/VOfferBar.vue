@@ -16,13 +16,13 @@
 
 <script setup lang="ts">
 const props = withDefaults(
-  defineProps<{
-    bgColor: string;
-    textColor?: string;
-  }>(),
-  {
-    bgColor: "white",
-    textColor: "black",
-  },
+	defineProps<{
+		bgColor: string;
+		textColor?: string;
+	}>(),
+	{
+		bgColor: "white",
+		textColor: "black",
+	},
 );
 </script>

@@ -10,16 +10,16 @@
 
 <script setup lang="ts">
 const props = withDefaults(
-  defineProps<{
-    active?: boolean;
-    category: string;
-  }>(),
-  {
-    active: false,
-  },
+	defineProps<{
+		active?: boolean;
+		category: string;
+	}>(),
+	{
+		active: false,
+	},
 );
 const route = useRoute();
 const isActive = computed(
-  () => props.category === route.query.category?.toString(),
+	() => props.category === route.query.category?.toString(),
 );
 </script>

@@ -17,17 +17,17 @@
 const { titleTemplate } = useTitle();
 
 definePageMeta({
-  documentDriven: false,
+	documentDriven: false,
 });
 useHead({
-  meta: [
-    { name: "title", content: "Masaż Kraków | FeelGUT | Gabinet masażu" },
-    {
-      name: "description",
-      content:
-        "Umów się na upragniony masaż! &#11088; FeelGUT to gabinet masażu z szeroką ofertą usług w samym centrum Krakowa. Poczuj się zdecydowanie lepiej!",
-    },
-  ],
-  titleTemplate: titleTemplate("Home"),
+	meta: [
+		{ name: "title", content: "Masaż Kraków | FeelGUT | Gabinet masażu" },
+		{
+			name: "description",
+			content:
+				"Umów się na upragniony masaż! &#11088; FeelGUT to gabinet masażu z szeroką ofertą usług w samym centrum Krakowa. Poczuj się zdecydowanie lepiej!",
+		},
+	],
+	titleTemplate: titleTemplate("Home"),
 });
 </script>

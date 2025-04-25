@@ -55,18 +55,18 @@
 
 <script setup lang="ts">
 const items: Ref<{ description: string; to: string }[]> = ref([
-  { description: "O mnie", to: "/?goto=o-mnie" },
-  { description: "Usługi", to: "/?goto=uslugi" },
-  { description: "Gabinet", to: "/?goto=moj-gabinet" },
-  { description: "Umów wizytę", to: "/?goto=kontakt" },
+	{ description: "O mnie", to: "/?goto=o-mnie" },
+	{ description: "Usługi", to: "/?goto=uslugi" },
+	{ description: "Gabinet", to: "/?goto=moj-gabinet" },
+	{ description: "Umów wizytę", to: "/?goto=kontakt" },
 ]);
 
 const social: Ref<{ alt: string; src: string; href: string }[]> = ref([
-  {
-    alt: "Facebook",
-    src: "/images/fb.svg",
-    href: "https://www.facebook.com/masazysta.feelgut",
-  },
-  // { alt: "Instagram", src: "/images/insta.svg", href: "#" },
+	{
+		alt: "Facebook",
+		src: "/images/fb.svg",
+		href: "https://www.facebook.com/masazysta.feelgut",
+	},
+	// { alt: "Instagram", src: "/images/insta.svg", href: "#" },
 ]);
 </script>
