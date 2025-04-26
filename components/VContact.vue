@@ -100,31 +100,31 @@ const show: Ref<boolean> = ref(false);
 
 const reCaptcha = useReCaptcha();
 const handleSubmit = async (data: object): Promise<void> => {
-  isError.value = false;
+	isError.value = false;
 
-  if (reCaptcha) {
-    const { executeRecaptcha, recaptchaLoaded } = reCaptcha;
-    await recaptchaLoaded();
+	if (reCaptcha) {
+		const { executeRecaptcha, recaptchaLoaded } = reCaptcha;
+		await recaptchaLoaded();
 
-    const response = await executeRecaptcha("submit_contact_form");
+		const response = await executeRecaptcha("submit_contact_form");
 
-    await $fetch("/api/mail", {
-      body: Object.assign(data, { response }),
-      key: nanoid(),
-      method: "POST",
-      onResponse({ response: { status } }) {
-        if (status === 202) {
-          message.value = "Wiadomość wysłana pomyślnie.";
-          show.value = true;
-          reset("contact-form");
-        }
-      },
-      onResponseError() {
-        isError.value = true;
-        message.value = "Nie udało się wysłać wiadomości.";
-        show.value = true;
-      },
-    }).catch(() => {});
-  }
+		await $fetch("/api/mail", {
+			body: Object.assign(data, { response }),
+			key: nanoid(),
+			method: "POST",
+			onResponse({ response: { status } }) {
+				if (status === 202) {
+					message.value = "Wiadomość wysłana pomyślnie.";
+					show.value = true;
+					reset("contact-form");
+				}
+			},
+			onResponseError() {
+				isError.value = true;
+				message.value = "Nie udało się wysłać wiadomości.";
+				show.value = true;
+			},
+		}).catch(() => {});
+	}
 };
 </script>

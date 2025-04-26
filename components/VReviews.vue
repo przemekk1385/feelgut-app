@@ -27,13 +27,13 @@
 
 <script setup lang="ts">
 const reviews = ref([
-  {
-    text: "Masaż był super, polecam każdemu",
-    author: "Paweł",
-  },
-  {
-    text: "Masaż był super, polecam każdemu",
-    author: "Paweł",
-  },
+	{
+		text: "Masaż był super, polecam każdemu",
+		author: "Paweł",
+	},
+	{
+		text: "Masaż był super, polecam każdemu",
+		author: "Paweł",
+	},
 ]);
 </script>
