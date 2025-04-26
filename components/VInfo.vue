@@ -1,5 +1,10 @@
 <template>
-  <Transition name="v-fade">
+  <Transition
+  enter-active-class="transition-all duration-500 ease-out"
+          leave-active-class="transition-all duration-500 ease-out"
+          enter-from-class="opacity-0"
+          leave-to-class="opacity-0"
+  >
     <div
       v-if="modelValue"
       class="fixed top-0 left-0 z-20 w-full px-6 md:px-12 lg:px-24 xl:px-36"
@@ -37,17 +42,3 @@ watch(
 	},
 );
 </script>
-
-<style type="text/css">
-.v-fade-enter-active,
-.v-fade-leave-active {
-  @apply transition-all;
-  @apply duration-500;
-  @apply ease-out;
-}
-
-.v-fade-enter-from,
-.v-fade-leave-to {
-  @apply opacity-0;
-}
-</style>

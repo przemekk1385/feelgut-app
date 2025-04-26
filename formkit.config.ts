@@ -16,20 +16,21 @@ const config: DefaultConfigOptions = {
 					"mt-6 rounded-3xl bg-red-600 p-6 text-center text-base font-medium text-white",
 			},
 			checkbox: {
-				input: "size-5 border-myGray grayscale",
+				input: "size-5 grayscale",
 			},
 			submit: {
-				input: "rounded-full bg-white px-12 py-2 text-xl font-medium text-dark",
+				input:
+					"text-dark cursor-pointer rounded-full bg-white px-12 py-2 text-xl font-medium",
 				wrapper:
-					"rounded-full bg-linear-to-r from-supernova via-sahara to-mimosa p-[2px]",
+					"from-supernova via-sahara to-mimosa rounded-full bg-linear-to-r p-[2px]",
 			},
 			text: {
 				input:
-					"w-full rounded-full border border-dark px-6 py-4 text-lg font-bold text-dark",
+					"border-dark text-dark w-full rounded-full border px-6 py-4 text-lg font-bold",
 			},
 			textarea: {
 				input:
-					"rounded-[5%/12.5%] border border-dark px-6 py-4 text-lg font-bold text-dark",
+					"border-dark text-dark rounded-[5%/12.5%] border px-6 py-4 text-lg font-bold",
 			},
 		}),
 	},

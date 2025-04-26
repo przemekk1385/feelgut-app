@@ -45,7 +45,13 @@ export default defineNuxtConfig({
 			],
 		},
 	},
-	modules: ["@nuxtjs/robots", "@nuxt/content", "@formkit/nuxt", "nuxt-gtag"],
+	modules: [
+		"@nuxtjs/robots",
+		"@nuxt/content",
+		"@nuxtjs/turnstile",
+		"@formkit/nuxt",
+		"nuxt-gtag",
+	],
 	nitro: {
 		compressPublicAssets: {
 			brotli: true,
@@ -54,12 +60,17 @@ export default defineNuxtConfig({
 	runtimeConfig: {
 		public: {
 			gaMeasurmentId: "", // Google Analytics
-			reCaptchaSiteKey: "",
 		},
-		reCaptchaSecretKey: "",
 		mailFrom: "",
 		mailTo: "",
 		postmarkServerToken: "",
+		turnstile: {
+			secretKey: "",
+		},
+	},
+	turnstile: {
+		addValidateEndpoint: true,
+		siteKey: "",
 	},
 	compatibilityDate: "2025-02-03",
 	devtools: { enabled: true },

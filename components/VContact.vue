@@ -1,8 +1,6 @@
 <template>
-  <div
-    id="kontakt"
-    class="flex flex-col-reverse gap-12 lg:max-h-[50rem] lg:flex-row"
-  >
+  <div id="kontakt" class="flex flex-col-reverse gap-12 lg:flex-row">
+    <VInfo v-model="show" :is-error="isError">{{ message }}</VInfo>
     <div class="flex">
       <div class="flex grow flex-col p-6 lg:grow-0 lg:pl-28 xl:pl-36">
         <div class="mb-6 lg:min-w-[36.5rem]">
@@ -14,11 +12,14 @@
           </v-h>
         </div>
         <div class="font-lato flex grow flex-col justify-around gap-4">
+          <div class="mt-6 text-center">
+            <NuxtTurnstile v-model="token" :options="{ size: 'flexible', theme: 'light' }" />
+          </div>
           <FormKit
             id="contact-form"
             :actions="false"
             type="form"
-            form-class="mt-12 flex grow flex-col gap-y-6"
+            form-class="mt-6 flex grow flex-col gap-y-6"
             @submit="handleSubmit"
           >
             <FormKit
@@ -92,39 +93,58 @@
 <script setup lang="ts">
 import { reset } from "@formkit/core";
 import { nanoid } from "nanoid/non-secure";
-import { useReCaptcha } from "vue-recaptcha-v3";
+
+const token: Ref<string | undefined> = ref(undefined);
 
 const isError: Ref<boolean> = ref(false);
 const message: Ref<string> = ref("");
 const show: Ref<boolean> = ref(false);
 
-const reCaptcha = useReCaptcha();
-const handleSubmit = async (data: object): Promise<void> => {
+const handleSubmit = async (body: object): Promise<void> => {
 	isError.value = false;
 
-	if (reCaptcha) {
-		const { executeRecaptcha, recaptchaLoaded } = reCaptcha;
-		await recaptchaLoaded();
+	if (!token.value) {
+		isError.value = true;
+		message.value = "Nie można wysłać wiadomości.";
+		show.value = true;
+		return;
+	}
 
-		const response = await executeRecaptcha("submit_contact_form");
+	const method = "POST";
+
+	try {
+		const { success } = await $fetch<{ success: boolean }>(
+			"/_turnstile/validate",
+			{
+				body: { token: token.value },
+				method,
+			},
+		);
+
+		if (!success) {
+			throw new Error("Turnstile validation error");
+		}
 
 		await $fetch("/api/mail", {
-			body: Object.assign(data, { response }),
-			key: nanoid(),
-			method: "POST",
+			body,
+			method,
 			onResponse({ response: { status } }) {
 				if (status === 202) {
 					message.value = "Wiadomość wysłana pomyślnie.";
 					show.value = true;
 					reset("contact-form");
+				} else {
+					throw new Error(`Unexpected status: ${status}`);
 				}
 			},
 			onResponseError() {
-				isError.value = true;
-				message.value = "Nie udało się wysłać wiadomości.";
-				show.value = true;
+				throw new Error("Mail API response error");
 			},
-		}).catch(() => {});
+		});
+	} catch (error) {
+		isError.value = true;
+		message.value = "Nie udało się wysłać wiadomości.";
+		show.value = true;
 	}
 };
 </script>
