@@ -6,54 +6,41 @@ const mailSchema = z.object({
 	email: z.string().email(),
 	text: z.string(),
 	consent: z.boolean(),
-	response: z.string(),
 });
 
 export default defineEventHandler(async (event) => {
 	const {
-		reCaptchaSecretKey: secret,
 		mailFrom: From,
 		mailTo: To,
 		postmarkServerToken,
 	} = useRuntimeConfig();
 
-	const result = await readValidatedBody(event, (body) =>
-		mailSchema.safeParse(body),
-	);
-
-	if (!result.success)
-		sendError(
-			event,
-			createError({
-				statusCode: 400,
-				statusMessage: "Bad request",
-				data: result.error.issues,
-			}),
+	try {
+		const { data, error } = await readValidatedBody(event, (body) =>
+			mailSchema.safeParse(body),
 		);
 
-	const {
-		data: { name, email, text: TextBody, consent, response },
-	} = result;
+		if (error) {
+			throw createError({
+				statusCode: 400,
+				statusMessage: "Bad request",
+				data: { detail: error.errors },
+			});
+		}
 
-	// biome-ignore lint/suspicious/noExplicitAny:
-	const { score }: any = await $fetch(
-		"https://www.google.com/recaptcha/api/siteverify",
-		{
-			method: "POST",
-			headers: {
-				"Content-Type": "application/x-www-form-urlencoded",
-			},
-			body: new URLSearchParams({
-				secret,
-				response,
-			}),
-		},
-	);
+		const { name, email, text: TextBody, consent } = data;
 
-	if (score > 0.5 && consent) {
+		if (!consent) {
+			throw createError({
+				statusCode: 400,
+				statusMessage: "Bad request",
+				data: { detail: "Data processing consent is missing" },
+			});
+		}
+
 		const client = new postmark.ServerClient(postmarkServerToken);
 
-		client.sendEmail({
+		const result = await client.sendEmail({
 			From,
 			To,
 			ReplyTo: `"${name}" <${email}>`,
@@ -62,25 +49,23 @@ export default defineEventHandler(async (event) => {
 			MessageStream: "outbound",
 		});
 
+		if (result.ErrorCode !== 0) {
+			throw createError({
+				statusCode: 500,
+				statusMessage: "Failed to send email",
+				data: { detail: result.Message },
+			});
+		}
+
 		event.node.res.statusCode = 202;
 		await send(event);
-	} else if (!consent) {
-		sendError(
-			event,
-			createError({
-				statusCode: 400,
-				statusMessage: "Bad request",
-				data: { detail: "data processing consent is missing" },
-			}),
-		);
-	} else {
-		sendError(
-			event,
-			createError({
-				statusCode: 400,
-				statusMessage: "Bad request",
-				data: { detail: "reCAPTCHA failed" },
-			}),
-		);
+	} catch (err) {
+		console.error("Error occurred: ", err);
+
+		throw createError({
+			statusCode: 500,
+			statusMessage: "Internal server error",
+			data: { detail: "Unknown error occurred" },
+		});
 	}
 });
