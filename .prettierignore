@@ -1,0 +1,5 @@
+.data/
+.nuxt/
+.output/
+.vscode/
+node-modules/
