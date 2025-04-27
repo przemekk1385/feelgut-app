@@ -1,8 +1,6 @@
 import { SESClient, SendEmailCommand } from "@aws-sdk/client-ses";
-import { AssumeRoleCommand, STSClient } from "@aws-sdk/client-sts";
+import { awsCredentialsProvider } from "@vercel/functions/oidc";
 import { z } from "zod";
-
-import type { AwsCredentialIdentity } from "@aws-sdk/types";
 
 const mailSchema = z.object({
 	name: z.string(),
@@ -10,38 +8,6 @@ const mailSchema = z.object({
 	text: z.string(),
 	consent: z.boolean(),
 });
-
-const getAWSCredentials = async (
-	roleArn: string,
-	region: string,
-): Promise<AwsCredentialIdentity> => {
-	const client = new STSClient({ region });
-	const command = new AssumeRoleCommand({
-		RoleArn: roleArn,
-		RoleSessionName: "VercelSession",
-	});
-
-	const result = await client.send(command);
-	const { Credentials } = result;
-
-	if (
-		!Credentials?.AccessKeyId ||
-		!Credentials?.SecretAccessKey ||
-		!Credentials?.SessionToken
-	) {
-		console.error("STS Error", result);
-		throw createError({
-			statusCode: 500,
-			statusMessage: "Failed to assume role",
-		});
-	}
-
-	return {
-		accessKeyId: Credentials.AccessKeyId,
-		secretAccessKey: Credentials.SecretAccessKey,
-		sessionToken: Credentials.SessionToken,
-	};
-};
 
 export default defineEventHandler(async (event) => {
 	const { awsDefaultRegion, awsRoleArn, mailTo } = useRuntimeConfig();
@@ -67,12 +33,11 @@ export default defineEventHandler(async (event) => {
 			});
 		}
 
-		const region = awsDefaultRegion as string;
-
-		const credentials = await getAWSCredentials(awsRoleArn as string, region);
 		const sesClient = new SESClient({
-			region,
-			credentials,
+			region: awsDefaultRegion as string,
+			credentials: awsCredentialsProvider({
+				roleArn: awsRoleArn as string,
+			}),
 		});
 
 		const sesCommand = new SendEmailCommand({
