@@ -84,9 +84,10 @@
 </template>
 
 <script setup lang="ts">
-import { Collapse } from "vue-collapsed";
-
-import type { Price } from "~~/types";
+interface Price {
+	time: number;
+	amount: number;
+}
 
 const props = withDefaults(
 	defineProps<{

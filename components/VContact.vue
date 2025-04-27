@@ -92,7 +92,6 @@
 
 <script setup lang="ts">
 import { reset } from "@formkit/core";
-import { nanoid } from "nanoid/non-secure";
 
 const token: Ref<string | undefined> = ref(undefined);
 
