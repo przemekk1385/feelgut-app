@@ -61,9 +61,10 @@ export default defineNuxtConfig({
 		public: {
 			gaMeasurmentId: "", // Google Analytics
 		},
+		awsDefaultRegion: "",
+		awsRoleArn: "",
 		mailFrom: "",
 		mailTo: "",
-		postmarkServerToken: "",
 		turnstile: {
 			secretKey: "",
 		},
