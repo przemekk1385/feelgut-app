@@ -39,7 +39,6 @@
 			"path": "./node_modules/cz-conventional-changelog"
 		}
 	},
-	"version": "0.0.3",
 	"engines": {
 		"node": "22.x"
 	}
