@@ -22,6 +22,9 @@
 			"recommended": true,
 			"nursery": {
 				"useSortedClasses": "error"
+			},
+			"correctness": {
+				"noUnusedImports": "error"
 			}
 		}
 	},

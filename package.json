@@ -17,14 +17,16 @@
 		"typescript": "^5.3.3"
 	},
 	"dependencies": {
+		"@aws-sdk/client-ses": "^3.797.0",
+		"@aws-sdk/client-sts": "^3.797.0",
 		"@formkit/nuxt": "^1.5.1",
 		"@nuxt/scripts": "^0.11.6",
 		"@nuxtjs/robots": "^5.2.2",
 		"@nuxtjs/turnstile": "^1.0.0",
 		"@tailwindcss/vite": "^4.0.6",
+		"@vercel/functions": "^2.0.0",
 		"nanoid": "^5.0.4",
 		"nuxt-gtag": "^3.0.2",
-		"postmark": "^4.0.2",
 		"prettier": "^3.5.3",
 		"prettier-plugin-tailwindcss": "^0.6.11",
 		"tailwindcss": "^4.0.6",

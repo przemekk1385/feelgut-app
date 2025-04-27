@@ -1,4 +1,5 @@
-import * as postmark from "postmark";
+import { SESClient, SendEmailCommand } from "@aws-sdk/client-ses";
+import { awsCredentialsProvider } from "@vercel/functions/oidc";
 import { z } from "zod";
 
 const mailSchema = z.object({
@@ -9,11 +10,7 @@ const mailSchema = z.object({
 });
 
 export default defineEventHandler(async (event) => {
-	const {
-		mailFrom: From,
-		mailTo: To,
-		postmarkServerToken,
-	} = useRuntimeConfig();
+	const { awsDefaultRegion, awsRoleArn, mailTo } = useRuntimeConfig();
 
 	try {
 		const { data, error } = await readValidatedBody(event, (body) =>
@@ -23,49 +20,70 @@ export default defineEventHandler(async (event) => {
 		if (error) {
 			throw createError({
 				statusCode: 400,
-				statusMessage: "Bad request",
-				data: { detail: error.errors },
+				statusMessage: "Bad Request",
 			});
 		}
 
-		const { name, email, text: TextBody, consent } = data;
+		const { name, email, text, consent } = data;
 
 		if (!consent) {
 			throw createError({
 				statusCode: 400,
-				statusMessage: "Bad request",
-				data: { detail: "Data processing consent is missing" },
+				statusMessage: "Consent required",
 			});
 		}
 
-		const client = new postmark.ServerClient(postmarkServerToken);
-
-		const result = await client.sendEmail({
-			From,
-			To,
-			ReplyTo: `"${name}" <${email}>`,
-			Subject: "Wiadomość z serwisu 'feelgut.pl'",
-			TextBody,
-			MessageStream: "outbound",
+		const sesClient = new SESClient({
+			region: awsDefaultRegion as string,
+			credentials: awsCredentialsProvider({
+				roleArn: awsRoleArn as string,
+			}),
 		});
 
-		if (result.ErrorCode !== 0) {
+		const sesCommand = new SendEmailCommand({
+			Destination: {
+				ToAddresses: [mailTo],
+			},
+			Message: {
+				Body: {
+					Text: { Data: text },
+				},
+				Subject: { Data: "Wiadomość z serwisu 'feelgut.pl'" },
+			},
+			Source: "feelgut-noreply@kalis.ovh",
+			ReplyToAddresses: [`"${name}" <${email}>`],
+		});
+
+		const result = await sesClient.send(sesCommand);
+		const { MessageId: messageId } = result;
+
+		if (!messageId) {
+			console.error("SES Error: ", result);
+
 			throw createError({
-				statusCode: 500,
+				statusCode: 502,
 				statusMessage: "Failed to send email",
-				data: { detail: result.Message },
 			});
 		}
 
-		event.node.res.statusCode = 202;
-		await send(event);
-	} catch (err) {
-		console.error("Error occurred: ", err);
+		console.info("Mail sent successfully", {
+			name,
+			email,
+			messageId,
+		});
 
+		event.node.res.statusCode = 202;
+		return null;
+	} catch (err) {
+		const { statusCode } = err as { statusCode?: number };
+		if (statusCode) {
+			throw err;
+		}
+
+		console.error("Error: ", err);
 		throw createError({
 			statusCode: 500,
 			statusMessage: "Internal server error",
-			data: { detail: "Unknown error occurred" },
 		});
 	}
 });
