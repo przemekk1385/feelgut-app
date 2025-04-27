@@ -11,15 +11,12 @@
             </template>
           </v-h>
         </div>
-        <div class="font-lato flex grow flex-col justify-around gap-4">
-          <div class="mt-6 text-center">
-            <NuxtTurnstile v-model="token" :options="{ size: 'flexible', theme: 'light' }" />
-          </div>
+        <div class="font-lato flex flex-col gap-4">
           <FormKit
             id="contact-form"
             :actions="false"
             type="form"
-            form-class="mt-6 flex grow flex-col gap-y-6"
+            form-class="mt-12 flex grow flex-col gap-y-6"
             @submit="handleSubmit"
           >
             <FormKit
@@ -75,6 +72,9 @@
               <span class="opacity-40">wyślij</span>
             </FormKit>
           </FormKit>
+          <div class="mt-6 text-center">
+            <NuxtTurnstile v-model="token" :options="{ size: 'flexible', theme: 'light' }" />
+          </div>
         </div>
       </div>
     </div>
