@@ -63,7 +63,8 @@ export default defineNuxtConfig({
 		},
 		awsDefaultRegion: "",
 		awsRoleArn: "",
-		mailFrom: "",
+		mailSource: "",
+		mailSubject: "",
 		mailTo: "",
 		turnstile: {
 			secretKey: "",
