@@ -16,9 +16,6 @@
 <script setup lang="ts">
 const { titleTemplate } = useTitle();
 
-definePageMeta({
-	documentDriven: false,
-});
 useHead({
 	meta: [
 		{ name: "title", content: "Masaż Kraków | FeelGUT | Gabinet masażu" },

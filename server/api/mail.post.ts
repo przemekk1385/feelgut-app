@@ -10,7 +10,8 @@ const mailSchema = z.object({
 });
 
 export default defineEventHandler(async (event) => {
-	const { awsDefaultRegion, awsRoleArn, mailTo } = useRuntimeConfig();
+	const { awsDefaultRegion, awsRoleArn, mailSource, mailSubject, mailTo } =
+		useRuntimeConfig();
 
 	try {
 		const { data, error } = await readValidatedBody(event, (body) =>
@@ -48,9 +49,9 @@ export default defineEventHandler(async (event) => {
 				Body: {
 					Text: { Data: text },
 				},
-				Subject: { Data: "Wiadomość z serwisu 'feelgut.pl'" },
+				Subject: { Data: mailSubject as string },
 			},
-			Source: "feelgut-noreply@kalis.ovh",
+			Source: mailSource as string,
 			ReplyToAddresses: [`"${name}" <${email}>`],
 		});
 
