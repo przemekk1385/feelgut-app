@@ -61,7 +61,7 @@
                 <div class="font-lato text-xs font-light">
                   Wyrażam zgodę na przetwarzanie danych osobowych -
                   <NuxtLink
-                    href="/polityka-prywatnosci"
+                    href="#"
                     class="uppercase underline"
                     >czytaj więcej</NuxtLink
                   >
