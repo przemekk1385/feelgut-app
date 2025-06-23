@@ -109,6 +109,7 @@ const items: Ref<{ description: string; to: string }[]> = ref([
 	{ description: "Usługi", to: "/?goto=uslugi" },
 	{ description: "Cennik", to: "/cennik?goto=cennik" },
 	{ description: "Masaż dla firm", to: "/masaz-dla-firm?goto=masaz-dla-firm" },
+	{ description: "Szkolenia", to: "/szkolenia?goto=szkolenia" },
 	{ description: "Umów wizytę", to: "/?goto=kontakt" },
 ]);
 </script>

@@ -84,7 +84,6 @@
 const items: Ref<{ description: string; to: string }[]> = ref([
 	{ description: "O mnie", to: "/?goto=o-mnie" },
 	{ description: "Usługi", to: "/?goto=uslugi" },
-	{ description: "Gabinet", to: "/?goto=moj-gabinet" },
 	{ description: "Umów wizytę", to: "/?goto=kontakt" },
 ]);
 </script>
