@@ -1,10 +1,10 @@
 <template>
   <div
     id="o-mnie"
-    class="bg-como flex flex-col-reverse text-white lg:max-h-[44.5rem] lg:flex-row"
+    class="bg-como flex flex-col-reverse text-white lg:max-h-[70rem] lg:flex-row"
   >
     <div class="lg:min-w-[32rem] lg:overflow-hidden xl:flex-1">
-      <div class="aspect-square lg:aspect-[3/4] xl:aspect-square">
+      <div class="aspect-square size-full lg:aspect-[3/4]">
         <img
           src="/images/about.jpg"
           alt="Dariusz Gut - zdjęcie"
@@ -24,21 +24,36 @@
         </div>
         <div class="font-lato flex grow flex-col justify-around gap-4">
           <p>
-            Cześć, nazywam się Darek Gut. Jestem dyplomowanym masażystą, a z
-            wykształcenia absolwentem Wydziału Wychowania Fizycznego AWF w
-            Krakowie. Od kilku lat pasjonuję się sztuką masażu, czego efektem są
-            licznie ukończone specjalistyczne szkolenia z wielu technik oraz
-            metod masażu.
+            Nazywam się Dariusz Gut i od ponad 6 lat z pasją zajmuję się masażem
+            oraz edukacją w zakresie pracy z ciałem.
           </p>
           <p>
-            Największą satysfakcję sprawia mi pomoc drugiemu człowiekowi w
-            dochodzeniu do pełni sprawności, likwidowaniu dolegliwości bólowych,
-            a także pozbywaniu się stresu, z którym zmagają się moi klienci.
+            Na co dzień prowadzę własną praktykę masażu, oferując masaże biurowe
+            dla firm oraz masaże relaksacyjne i terapeutyczne dla klientów
+            indywidualnych również z dojazdem do klienta. Specjalizuję się m.in.
+            w masażu klasycznym, powięziowym, balijskim oraz masażu fryzjerskim
+            głowy.
           </p>
           <p>
-            Wykonuję zarówno masaże terapeutyczne jak i relaksacyjne. Pracuję
-            również jako instruktor m.in. masażu klasycznego i balijskiego w
-            Akademii Sztuki Masażu Menos.
+            Od kilku lat dzielę się również swoim doświadczeniem jako
+            szkoleniowiec. Obecnie prowadzę autorskie szkolenia i warsztaty z
+            zakresu masażu oraz współpracuję jako instruktor z renomowanymi
+            placówkami szkoleniowymi: Soma Group w Krakowie oraz Centrum
+            Szkoleniowym Anatomic w Gdańsku.
+          </p>
+          <p>
+            Przez 5 lat byłem także związany z Akademią Sztuki Masażu Menos,
+            gdzie odpowiadałem za koordynację szkoleń, budowanie oferty
+            edukacyjnej oraz prowadzenie zajęć dla przyszłych masażystów. W tym
+            czasie przeszkoliłem ponad 400 kursantów, wielu z nich dziś z
+            powodzeniem pracuje w zawodzie i rozwija swoje pasje.
+          </p>
+          <p>
+            Jestem absolwentem Akademii Wychowania Fizycznego w Krakowie.
+            Ukończyłem liczne kursy zawodowe i nieustannie poszerzam swoją
+            wiedzę w obszarze pracy z ciałem, terapii manualnej i masażu. W
+            pracy stawiam na uważność, jakość i indywidualne podejście - zarówno
+            w gabinecie, jak i w sali szkoleniowej.
           </p>
           <p>
             Czas wolny lubię spędzać aktywnie m.in. na siłowni czy też startując
