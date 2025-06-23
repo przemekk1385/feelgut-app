@@ -1,9 +1,9 @@
 <template>
   <Transition
-  enter-active-class="transition-all duration-500 ease-out"
-          leave-active-class="transition-all duration-500 ease-out"
-          enter-from-class="opacity-0"
-          leave-to-class="opacity-0"
+    enter-active-class="transition-all duration-500 ease-out"
+    leave-active-class="transition-all duration-500 ease-out"
+    enter-from-class="opacity-0"
+    leave-to-class="opacity-0"
   >
     <div
       v-if="modelValue"

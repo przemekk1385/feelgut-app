@@ -60,9 +60,7 @@
               <template #label>
                 <div class="font-lato text-xs font-light">
                   Wyrażam zgodę na przetwarzanie danych osobowych -
-                  <NuxtLink
-                    href="#"
-                    class="uppercase underline"
+                  <NuxtLink href="#" class="uppercase underline"
                     >czytaj więcej</NuxtLink
                   >
                 </div>
@@ -73,7 +71,10 @@
             </FormKit>
           </FormKit>
           <div class="mt-6 text-center">
-            <NuxtTurnstile v-model="token" :options="{ size: 'flexible', theme: 'light' }" />
+            <NuxtTurnstile
+              v-model="token"
+              :options="{ size: 'flexible', theme: 'light' }"
+            />
           </div>
         </div>
       </div>
