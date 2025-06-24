@@ -12,6 +12,17 @@
 const { titleTemplate } = useTitle();
 
 useHead({
-	titleTemplate: titleTemplate("Cennik"),
+	meta: [
+		{
+			name: "description",
+			content:
+				"Chcesz zostać masażystą lub rozwinąć swój warsztat? Zapisz się na praktyczne kursy masażu - klasyczny, balijski, powięziowy i więcej.",
+		},
+		{
+			name: "title",
+			content: "Kursy masażu dla początkujących i profesjonalistów | Szkolenia praktyczne z masażu | FeelGUT",
+		},
+	],
+	titleTemplate: titleTemplate("Szkolenia"),
 });
 </script>

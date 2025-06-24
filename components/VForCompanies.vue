@@ -22,9 +22,9 @@
             </template>
           </v-h>
         </div>
-        <div class="font-lato flex grow flex-col justify-around gap-4">
-          <h3 class="text-2xl">Masaż w biurze</h3>
-          <p>
+        <div class="flex grow flex-col justify-around gap-4">
+          <h3 class="text-2xl font-bold">Masaż w biurze</h3>
+          <p class="font-lato">
             To najbardziej efektywna a zarazem możliwa do realizacji w miejscu
             pracy forma poprawy stanu zdrowia pracownika. Posiadam kilkuletnie
             doświadczenie w realizacji usług masażu biurowego dla pracowników
@@ -33,7 +33,7 @@
             pracy jest minimalne zaangażowanie pracownika, ponieważ masaż nie
             wymaga zmiany stroju ani specjalnego przygotowania.
           </p>
-          <p>
+          <p class="font-lato">
             Do masażu możemy wykorzystać oddzielne pomieszczenie aby nie
             rozpraszać i nie dezorganizować pracy pozostałych pracowników (np. w
             sali konferencyjnej, pokoju socjalnym). Sesja masażu trwa od 15 do
@@ -41,7 +41,7 @@
             pracy zajmuje niewiele miejsca, a odpowiednia konstrukcja krzesła
             zapewnia komfortową pozycję dla pracownika.
           </p>
-          <p>
+          <p class="font-lato">
             Dzięki regularnym masażom pracownicy będą bardziej skoncentrowani,
             naładowani energią i produktywni, co sprawi, że miejsce pracy stanie
             się bardziej wydajnym środowiskiem. Oferuję zarówno stałą współpracę
@@ -50,8 +50,8 @@
             klienta&nbsp;&#128578;
           </p>
 
-          <h3 class="text-2xl">Event masażu biurowego</h3>
-          <p>
+          <h3 class="text-2xl font-bold">Event masażu biurowego</h3>
+          <p class="font-lato">
             To oferta skierowana zarówno do pojedynczych firm jak i kompleksów
             wynajmujących powierzchnie biurowe. Dzięki współpracy z
             certyfikowanymi terapeutami oferuję organizację eventu masażu
@@ -60,18 +60,18 @@
             Twoi pracownicy bądź klienci będą mogli skorzystać z usług
             profesjonalnego masażysty.
           </p>
-          <p>
+          <p class="font-lato">
             Na czas eventu zapewniam aranżację przestrzeni, usługę wykonaną
             przez wykwalifikowaną kadrę masażystów na specjalistycznym sprzęcie,
             wyposażenie w środki higieniczne oraz podkład muzyczny.
           </p>
-          <p>
+          <p class="font-lato">
             Szczegóły oferty i formy współpracy ustalam indywidualnie według
             preferencji i potrzeb klienta&nbsp;&#128578;
           </p>
 
-          <h3 class="text-2xl">Masaż na stole</h3>
-          <p>
+          <h3 class="text-2xl font-bold">Masaż na stole</h3>
+          <p class="font-lato">
             Szczególną propozycją, która pozwoli w szerszym zakresie zadbać o
             dobrą kondycję i zdrowie Twojego pracownika jest masaż wykonywany na
             stole. Umożliwi wykonanie zabiegu w najbardziej komfortowym
