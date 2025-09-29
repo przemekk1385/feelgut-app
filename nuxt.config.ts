@@ -43,6 +43,20 @@ export default defineNuxtConfig({
 		compressPublicAssets: {
 			brotli: true,
 		},
+		routeRules: {
+			"/**": {
+				headers: {
+					// https://csp-evaluator.withgoogle.com
+					"Content-Security-Policy": [
+						"connect-src 'self' www.googletagmanager.com www.google.com;",
+						"frame-src https://challenges.cloudflare.com;",
+						"img-src 'self' www.googletagmanager.com;",
+						"script-src 'unsafe-inline' 'self' blob: https://challenges.cloudflare.com https://www.googletagmanager.com;",
+						"object-src 'none';",
+					].join(" "),
+				},
+			},
+		},
 	},
 	runtimeConfig: {
 		public: {
