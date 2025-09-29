@@ -1,5 +1,7 @@
 export default defineNuxtPlugin(() => {
-    const { public: { gtmId}} = useRuntimeConfig()
+	const {
+		public: { gtmId },
+	} = useRuntimeConfig();
 
 	useHead({
 		script: [
