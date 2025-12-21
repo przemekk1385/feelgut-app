@@ -47,6 +47,7 @@ export default defineNuxtConfig({
 	runtimeConfig: {
 		public: {
 			gtmId: "", // Google Analytics
+			vercelEnv: process.env.VERCEL_ENV,
 		},
 		awsDefaultRegion: "",
 		awsRoleArn: "",

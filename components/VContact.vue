@@ -3,7 +3,7 @@
     <VInfo v-model="show" :is-error="isError">{{ message }}</VInfo>
     <div class="flex">
       <div class="flex grow flex-col p-6 lg:grow-0 lg:pl-28 xl:pl-36">
-        <div class="mb-6 lg:min-w-[36.5rem]">
+        <div class="mb-6 lg:min-w-146">
           <v-h>
             <h2 class="text-como opacity-30">Umów wizytę</h2>
             <template #under>
@@ -80,7 +80,7 @@
       </div>
     </div>
     <div class="flex grow lg:overflow-hidden">
-      <div class="aspect-square size-full lg:aspect-[2/3]">
+      <div class="aspect-square size-full lg:aspect-2/3">
         <img
           src="/images/contact.jpg"
           alt="Kontakt - grafika ilustracyjna"
@@ -94,6 +94,11 @@
 <script setup lang="ts">
 import { reset } from "@formkit/core";
 
+const {
+	public: { vercelEnv },
+} = useRuntimeConfig();
+const isProduction = vercelEnv === "production";
+
 const token: Ref<string | undefined> = ref(undefined);
 
 const isError: Ref<boolean> = ref(false);
@@ -102,27 +107,28 @@ const show: Ref<boolean> = ref(false);
 
 const handleSubmit = async (body: object): Promise<void> => {
 	isError.value = false;
-
-	if (!token.value) {
-		isError.value = true;
-		message.value = "Nie można wysłać wiadomości.";
-		show.value = true;
-		return;
-	}
-
 	const method = "POST";
 
 	try {
-		const { success } = await $fetch<{ success: boolean }>(
-			"/_turnstile/validate",
-			{
-				body: { token: token.value },
-				method,
-			},
-		);
+		if (isProduction) {
+			if (!token.value) {
+				isError.value = true;
+				message.value = "Nie można wysłać wiadomości.";
+				show.value = true;
+				return;
+			}
 
-		if (!success) {
-			throw new Error("Turnstile validation error");
+			const { success } = await $fetch<{ success: boolean }>(
+				"/_turnstile/validate",
+				{
+					body: { token: token.value },
+					method,
+				},
+			);
+
+			if (!success) {
+				throw new Error("Turnstile validation error");
+			}
 		}
 
 		await $fetch("/api/mail", {

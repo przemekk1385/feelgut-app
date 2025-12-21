@@ -20,7 +20,8 @@ useHead({
 		},
 		{
 			name: "title",
-			content: "Kursy masażu dla początkujących i profesjonalistów | Szkolenia praktyczne z masażu | FeelGUT",
+			content:
+				"Kursy masażu dla początkujących i profesjonalistów | Szkolenia praktyczne z masażu | FeelGUT",
 		},
 	],
 	titleTemplate: titleTemplate("Szkolenia"),
