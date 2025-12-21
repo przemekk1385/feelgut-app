@@ -107,7 +107,6 @@ const show: Ref<boolean> = ref(false);
 
 const handleSubmit = async (body: object): Promise<void> => {
 	isError.value = false;
-
 	const method = "POST";
 
 	try {
