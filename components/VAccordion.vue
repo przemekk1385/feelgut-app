@@ -53,9 +53,9 @@
               </button>
             </div>
           </div>
-          <div class="max-w-full shrink xl:min-w-[28rem]">
+          <div class="max-w-full shrink xl:min-w-md">
             <div
-              class="relative aspect-[2/1] rounded-3xl drop-shadow-[5px_5px_10px_rgba(0,0,0,.25)] xl:aspect-[3/2]"
+              class="relative aspect-2/1 rounded-3xl drop-shadow-[5px_5px_10px_rgba(0,0,0,.25)] xl:aspect-3/2"
             >
               <v-img
                 :src="image"

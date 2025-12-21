@@ -3,7 +3,7 @@
     <VInfo v-model="show" :is-error="isError">{{ message }}</VInfo>
     <div class="flex">
       <div class="flex grow flex-col p-6 lg:grow-0 lg:pl-28 xl:pl-36">
-        <div class="mb-6 lg:min-w-[36.5rem]">
+        <div class="mb-6 lg:min-w-146">
           <v-h>
             <h2 class="text-como opacity-30">Umów wizytę</h2>
             <template #under>
@@ -80,7 +80,7 @@
       </div>
     </div>
     <div class="flex grow lg:overflow-hidden">
-      <div class="aspect-square size-full lg:aspect-[2/3]">
+      <div class="aspect-square size-full lg:aspect-2/3">
         <img
           src="/images/contact.jpg"
           alt="Kontakt - grafika ilustracyjna"
