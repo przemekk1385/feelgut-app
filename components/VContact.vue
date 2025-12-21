@@ -94,6 +94,11 @@
 <script setup lang="ts">
 import { reset } from "@formkit/core";
 
+const {
+	public: { vercelEnv },
+} = useRuntimeConfig();
+const isProduction = vercelEnv === "production";
+
 const token: Ref<string | undefined> = ref(undefined);
 
 const isError: Ref<boolean> = ref(false);
@@ -103,27 +108,29 @@ const show: Ref<boolean> = ref(false);
 const handleSubmit = async (body: object): Promise<void> => {
 	isError.value = false;
 
-	if (!token.value) {
-		isError.value = true;
-		message.value = "Nie można wysłać wiadomości.";
-		show.value = true;
-		return;
-	}
-
 	const method = "POST";
 
 	try {
-		const { success } = await $fetch<{ success: boolean }>(
-			"/_turnstile/validate",
-			{
-				body: { token: token.value },
-				method,
-			},
-		);
+		if (isProduction) {
+      if (!token.value) {
+        isError.value = true;
+        message.value = "Nie można wysłać wiadomości.";
+        show.value = true;
+        return;
+      }
 
-		if (!success) {
-			throw new Error("Turnstile validation error");
-		}
+      const { success } = await $fetch<{ success: boolean }>(
+        "/_turnstile/validate",
+        {
+          body: { token: token.value },
+          method,
+        },
+      );
+
+      if (!success) {
+        throw new Error("Turnstile validation error");
+      }
+    }
 
 		await $fetch("/api/mail", {
 			body,
