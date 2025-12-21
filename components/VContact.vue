@@ -112,25 +112,25 @@ const handleSubmit = async (body: object): Promise<void> => {
 
 	try {
 		if (isProduction) {
-      if (!token.value) {
-        isError.value = true;
-        message.value = "Nie można wysłać wiadomości.";
-        show.value = true;
-        return;
-      }
+			if (!token.value) {
+				isError.value = true;
+				message.value = "Nie można wysłać wiadomości.";
+				show.value = true;
+				return;
+			}
 
-      const { success } = await $fetch<{ success: boolean }>(
-        "/_turnstile/validate",
-        {
-          body: { token: token.value },
-          method,
-        },
-      );
+			const { success } = await $fetch<{ success: boolean }>(
+				"/_turnstile/validate",
+				{
+					body: { token: token.value },
+					method,
+				},
+			);
 
-      if (!success) {
-        throw new Error("Turnstile validation error");
-      }
-    }
+			if (!success) {
+				throw new Error("Turnstile validation error");
+			}
+		}
 
 		await $fetch("/api/mail", {
 			body,

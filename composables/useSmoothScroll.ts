@@ -1,7 +1,7 @@
+// biome-ignore-all lint/suspicious/noExplicitAny: real type unknown
 export function useSmoothScroll() {
 	const route = useRoute();
 
-	// biome-ignore lint/suspicious/noExplicitAny:
 	const smoothScroll: any = inject("smoothScroll");
 
 	const delay = (timeout: number): Promise<void> =>

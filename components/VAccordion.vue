@@ -84,7 +84,7 @@
 </template>
 
 <script setup lang="ts">
-// biome-ignore lint/correctness/noUnusedImports:
+// biome-ignore-all lint/correctness/noUnusedImports: false positive
 import { Collapse } from "vue-collapsed";
 
 interface Price {
