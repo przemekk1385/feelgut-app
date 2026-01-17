@@ -1,8 +1,8 @@
 title: Masaż balijski
 category: relaksacyjne
-price:
+rates:
   - time: 90
-    amount: 200
+    price: 200
 image: /images/offer/masaz-balijski.jpg
 text: >
   Masaż balijski to moja specjalność. Uwielbiam ten masaż przez jego urozmaicenie i połączenie 

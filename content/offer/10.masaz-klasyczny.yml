@@ -1,10 +1,10 @@
 title: Masaż klasyczny
 category: terapeutyczne
-price:
+rates:
   - time: 60
-    amount: 150
+    price: 150
   - time: 90
-    amount: 180
+    price: 180
 image: /images/offer/masaz-klasyczny.jpg
 text: >
   To najpopularniejsza forma masażu, która ma na celu poprawienie psychofizycznego stanu pacjenta. 

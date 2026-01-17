@@ -1,10 +1,10 @@
 title: Masaż gorącymi kamieniami
 category: relaksacyjne
-price:
+rates:
   - time: 60
-    amount: 150
+    price: 150
   - time: 90
-    amount: 180
+    price: 180
 image: /images/offer/masaz-goracymi-kamieniami.jpg
 text: >
   Wspaniały zabieg w szczególności dla ciepłolubnych. Specjalne kamienie wykorzystywane do tego 

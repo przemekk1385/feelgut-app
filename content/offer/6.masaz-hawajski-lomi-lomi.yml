@@ -1,8 +1,8 @@
 title: Masaż hawajski Lomi Lomi
 category: relaksacyjne
-price:
+rates:
   - time: 90
-    amount: 200
+    price: 200
 image: /images/offer/masaz-hawajski-lomi-lomi.jpg
 text: >
   Masaż ten powinien doświadczyć każdy choć raz w swoim życiu. Lomi Lomi daje jedyne w swoim 

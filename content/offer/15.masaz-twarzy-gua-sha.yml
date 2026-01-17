@@ -1,11 +1,11 @@
 title: Masaż twarzy Gua Sha
 category: terapeutyczne
-price:
+rates:
   - time: 60
-    amount: 120
+    price: 120
 image: /images/offer/masaz-twarzy-gua-sha.jpg
 text: >
-  Gua Sha to masaż terapeutyczny wykonywany przy pomocy kamieni, których kształt i budowa pozwala 
+  Gua Sha to masaż profilaktyczny wykonywany przy pomocy kamieni, których kształt i budowa pozwala 
   na uzyskanie efektów liftingu, drenażu i odmłodzenia skóry. Gua Sha ujędrnia, odmładza, poprawia 
   ukrwienie, stymuluje produkcję kolagenu, łagodzi napięcia mięśni twarzy i szyi.
 indications:

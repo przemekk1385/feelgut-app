@@ -10,11 +10,11 @@
       <div class="flex justify-end">
         <div class="font-lato flex flex-col gap-3 sm:flex-row">
           <div
-            v-for="{ time, amount } in props.price"
+            v-for="{ time, price } in props.rates"
             :key="time"
             class="min-w-32 rounded-full border border-black px-3 py-1 text-center text-sm"
           >
-            {{ time }} min - {{ amount }} zł
+            {{ time }} min - {{ price }} zł
           </div>
           <button
             type="button"
@@ -89,7 +89,7 @@ import { Collapse } from "vue-collapsed";
 
 interface Price {
 	time: number;
-	amount: number;
+	price: number;
 }
 
 const props = withDefaults(
@@ -97,7 +97,7 @@ const props = withDefaults(
 		dark: boolean;
 		image?: string;
 		title: string;
-		price: Price[];
+		rates: Price[];
 		modelValue: boolean;
 	}>(),
 	{

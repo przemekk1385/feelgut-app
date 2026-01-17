@@ -1,8 +1,8 @@
 title: Masaż bańkami
 category: terapeutyczne
-price:
+rates:
   - time: 60
-    amount: 120
+    price: 120
 image: /images/offer/masaz-bankami.jpg
 text: >
   Do tego zabiegu wykorzystuję bańki chińskie (gumowe), próżniowe oraz ogniowe (szklane). Masaż 

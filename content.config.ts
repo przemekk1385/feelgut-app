@@ -8,10 +8,12 @@ export default defineContentConfig({
 			schema: z.object({
 				title: z.string(),
 				category: z.string(),
-				price: z.object({
-					time: z.number(),
-					price: z.number(),
-				}),
+				rates: z.array(
+					z.object({
+						time: z.number(),
+						price: z.number(),
+					}),
+				),
 				image: z.string(),
 				text: z.string(),
 				indications: z.array(z.string()),

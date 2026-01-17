@@ -1,8 +1,8 @@
 title: Masaż i terapia blizny
 category: terapeutyczne
-price:
+rates:
   - time: 60
-    amount: 150
+    price: 150
 image:
 text: >
   Terapia blizny ma na celu mobilizację tkanki łącznej powstałej w miejscu rany oraz jak 
