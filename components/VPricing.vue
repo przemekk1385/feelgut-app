@@ -9,7 +9,18 @@
     <div class="mt-12 pl-0 lg:pl-16">
       <v-accordion
         v-for="(
-          { id, title, price, image, text, indications, contraindications }, i
+          {
+            offerItem: {
+              id,
+              title,
+              rates,
+              image,
+              text,
+              indications,
+              contraindications,
+            },
+          },
+          i
         ) in items"
         :id="id"
         :key="title"
@@ -17,7 +28,7 @@
         :dark="i % 2 === 1"
         :image="image"
         :title="title"
-        :price="price"
+        :rates="rates"
       >
         {{ text.replace("\\n", "") }}
         <template #indications>
@@ -36,15 +47,18 @@
 </template>
 
 <script setup lang="ts">
+import type { OfferCollectionItem } from "@nuxt/content";
+
 const route = useRoute();
 const { items: offerItems } = useOffer();
 
-const items = ref([]);
+const items = ref<{ offerItem: OfferCollectionItem; isExpanded: boolean }[]>(
+	[],
+);
 
 onMounted(() => {
-	console.log("xxx", offerItems);
-	items.value = offerItems.value.map((item) => ({
-		...item,
+	items.value = offerItems.value?.map((offerItem) => ({
+		offerItem,
 		isExpanded: false,
 	}));
 });
@@ -52,7 +66,9 @@ onMounted(() => {
 watch(
 	() => route.hash,
 	(hash) => {
-		const i = items.value.findIndex(({ id }) => `#${id}` === hash);
+		const i = items.value.findIndex(
+			({ offerItem: { id } }) => `#${id}` === hash,
+		);
 		if (i !== -1) {
 			items.value[i].isExpanded = true;
 		}
