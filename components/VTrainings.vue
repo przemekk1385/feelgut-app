@@ -23,7 +23,7 @@
               </template>
             </v-h>
           </div>
-          <div class="flex grow flex-col justify-around gap-4">
+          <div class="flex grow flex-col justify-around space-y-4">
             <p class="font-lato">
               Od kilku lat z pasją dzielę się swoją wiedzą i doświadczeniem,
               prowadząc szkolenia dla tych, którzy chcą rozwijać się w
@@ -109,24 +109,43 @@
     </div>
 
     <div class="bg-platinium">
-      <div class="mx-auto px-6 py-12 md:px-20 lg:px-28 xl:px-36">
-        <div class="mb-12 text-lg">
-          <p class="mt-6">
+      <div class="mx-auto space-y-12 px-6 py-12 md:px-20 lg:px-28 xl:px-36">
+        <div class="space-y-6 text-lg">
+          <p>
             Jeśli jesteś na początku swojej drogi lub chcesz pogłębić swój
             warsztat, zapraszam Cię do kontaktu.
           </p>
-          <p class="mt-6">
+          <p>
             Pomogę Ci wybrać szkolenie dopasowane do Twojego poziomu i celów
             zawodowych.
+          </p>
+          <p>
+            Zachęcam Cię również do pobrania mojego bezpłatnego E-booka pt.
+            <em>Jak rozpocząć swoją przygodę z masażem?</em>, w którym
+            znajdziesz konkretne wskazówki dla początkujących.
           </p>
         </div>
 
         <div
-          class="flex flex-col items-center justify-around gap-6 sm:flex-row"
+          class="flex flex-col items-center justify-around space-y-6 sm:flex-row"
         >
           <div class="text-xl font-medium sm:text-2xl lg:text-3xl">
             Chcesz dowiedzieć się więcej?
           </div>
+        </div>
+
+        <div
+          class="flex flex-col items-center justify-around space-y-6 sm:flex-row"
+        >
+          <div>
+            <v-offer-bar-button
+              bg-color="platinium"
+              to="https://kursy.feelgut.pl/e-book"
+            >
+              Pobierz E-booka
+            </v-offer-bar-button>
+          </div>
+          <div class="text-xl font-medium sm:text-2xl lg:text-3xl">lub</div>
           <div>
             <v-offer-bar-button bg-color="platinium" to="/?goto=kontakt">
               Napisz

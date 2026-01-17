@@ -34,6 +34,12 @@
           <li class="text-center md:text-left">
             Mail: <a href="mailto:kontakt@feelgut.pl">kontakt@feelgut.pl</a>
           </li>
+          <li>
+            <NuxtLink
+              href="https://drive.google.com/file/d/19zw3T73p627IqJTq_PCR-HalJD6s9WWZ/view?usp=sharing"
+              >Polityka prywatności</NuxtLink
+            >
+          </li>
         </ul>
 
         <div class="h-0.5 w-full bg-white md:h-auto md:w-0.5">&nbsp;</div>
@@ -43,7 +49,7 @@
           <li>
             <v-social-button
               class="size-12"
-              href="https://www.facebook.com/masazysta.feelgut"
+              href="https://www.facebook.com/FeelGut.szkolenia"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -77,7 +83,7 @@
           <li>
             <v-social-button
               class="size-12 drop-shadow-[5px_5px_10px_rgba(0,0,0,.25)]"
-              href="https://www.instagram.com/gut_darek/"
+              href="https://www.instagram.com/feelgut.pl/"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -102,5 +108,6 @@ const items: Ref<{ description: string; to: string }[]> = ref([
 	{ description: "O mnie", to: "/?goto=o-mnie" },
 	{ description: "Usługi", to: "/?goto=uslugi" },
 	{ description: "Umów wizytę", to: "/?goto=kontakt" },
+	{ description: "E-book", to: "https://kursy.feelgut.pl/e-book" },
 ]);
 </script>

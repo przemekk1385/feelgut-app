@@ -60,7 +60,9 @@
               <template #label>
                 <div class="font-lato text-xs font-light">
                   Wyrażam zgodę na przetwarzanie danych osobowych -
-                  <NuxtLink href="#" class="uppercase underline"
+                  <NuxtLink
+                    href="https://drive.google.com/file/d/19zw3T73p627IqJTq_PCR-HalJD6s9WWZ/view?usp=sharing"
+                    class="uppercase underline"
                     >czytaj więcej</NuxtLink
                   >
                 </div>
