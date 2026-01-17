@@ -11,11 +11,28 @@
     >
       <div
         :class="{ ['bg-teal-700']: !isError, ['bg-rose-700']: isError }"
-        class="rounded-b-3xl p-6 text-center drop-shadow-[5px_5px_10px_rgba(0,0,0,.25)]"
+        class="flex items-center rounded-b-3xl p-6 text-center text-white drop-shadow-[5px_5px_10px_rgba(0,0,0,.25)]"
       >
-        <div class="font-lato text-lg font-semibold text-white">
+        <div class="font-lato flex-1 text-lg font-semibold">
           <slot></slot>
         </div>
+
+        <button class="shrink" type="button" @click="close">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18 18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
       </div>
     </div>
   </Transition>
@@ -32,13 +49,5 @@ const props = withDefaults(
 	},
 );
 const emit = defineEmits(["update:modelValue"]);
-
-watch(
-	() => props.modelValue,
-	(val: boolean) => {
-		if (val) {
-			setTimeout(() => emit("update:modelValue", false), 5000);
-		}
-	},
-);
+const close = () => emit("update:modelValue", false);
 </script>
