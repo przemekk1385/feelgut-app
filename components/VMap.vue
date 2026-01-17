@@ -5,7 +5,11 @@
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"
       title="Mapa"
-      class="aspect-[2/1] size-full border-0 md:aspect-[4/1]"
+      class="aspect-2/1 size-full border-0 md:aspect-4/1"
     ></iframe>
   </div>
 </template>
+
+<script setup lang="ts">
+// ...
+</script>

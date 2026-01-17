@@ -14,7 +14,7 @@
         </div>
       </div>
       <div class="flex lg:flex-1">
-        <div class="flex grow flex-col p-6 lg:pr-28 xl:max-w-[45rem] xl:pr-36">
+        <div class="flex grow flex-col p-6 lg:pr-28 xl:max-w-180 xl:pr-36">
           <div class="mb-6">
             <v-h>
               <h2 class="text-white opacity-30">Szkolenia</h2>
@@ -137,3 +137,7 @@
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+// ...
+</script>

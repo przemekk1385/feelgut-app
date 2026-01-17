@@ -1,5 +1,5 @@
 <template>
-  <div class="font-playfair-display mx-auto max-w-[90rem] min-w-[23rem]">
+  <div class="font-playfair-display mx-auto max-w-360 min-w-92">
     <NuxtLayout>
       <div>
         <NuxtLoadingIndicator color="#FCCB00" :height="8" />

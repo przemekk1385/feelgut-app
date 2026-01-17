@@ -1,10 +1,10 @@
 <template>
   <div
     id="o-mnie"
-    class="bg-como flex flex-col-reverse text-white lg:max-h-[70rem] lg:flex-row"
+    class="bg-como flex flex-col-reverse text-white lg:max-h-280 lg:flex-row"
   >
-    <div class="lg:min-w-[32rem] lg:overflow-hidden xl:flex-1">
-      <div class="aspect-square size-full lg:aspect-[3/4]">
+    <div class="lg:min-w-lg lg:overflow-hidden xl:flex-1">
+      <div class="aspect-square size-full lg:aspect-3/4">
         <img
           src="/images/about.jpg"
           alt="Dariusz Gut - zdjęcie"
@@ -13,7 +13,7 @@
       </div>
     </div>
     <div class="flex xl:flex-1">
-      <div class="flex grow flex-col p-6 lg:pr-28 xl:max-w-[45rem] xl:pr-36">
+      <div class="flex grow flex-col p-6 lg:pr-28 xl:max-w-180 xl:pr-36">
         <div class="mb-6">
           <v-h>
             <h2 class="text-white opacity-30">O mnie</h2>
@@ -65,3 +65,7 @@
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+// ...
+</script>

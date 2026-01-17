@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative aspect-[3/2] overflow-hidden rounded-[10%/15%] drop-shadow-[5px_5px_10px_rgba(0,0,0,.25)]"
+    class="relative aspect-3/2 overflow-hidden rounded-[10%/15%] drop-shadow-[5px_5px_10px_rgba(0,0,0,.25)]"
   >
     <img :src="src" :alt="props.alt" class="size-full object-cover" />
 

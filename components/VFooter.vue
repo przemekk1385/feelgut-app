@@ -12,7 +12,7 @@
           </li>
         </ul>
 
-        <div class="h-[2px] w-full bg-white md:h-auto md:w-[2px]">&nbsp;</div>
+        <div class="h-0.5 w-full bg-white md:h-auto md:w-0.5">&nbsp;</div>
 
         <ul class="font-lato my-3 flex flex-col gap-y-4 self-center text-white">
           <li class="text-center md:text-left">
@@ -27,7 +27,7 @@
           </li>
         </ul>
 
-        <div class="h-[2px] w-full bg-white md:h-auto md:w-[2px]">&nbsp;</div>
+        <div class="h-0.5 w-full bg-white md:h-auto md:w-0.5">&nbsp;</div>
 
         <ul class="font-lato my-3 flex flex-col gap-y-4 self-center text-white">
           <li class="text-center md:text-left">Telefon: 788 139 475</li>
@@ -36,7 +36,7 @@
           </li>
         </ul>
 
-        <div class="h-[2px] w-full bg-white md:h-auto md:w-[2px]">&nbsp;</div>
+        <div class="h-0.5 w-full bg-white md:h-auto md:w-0.5">&nbsp;</div>
 
         <ul class="my-3 flex flex-row gap-4 self-center md:flex-col">
           <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->

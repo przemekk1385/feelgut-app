@@ -1,7 +1,7 @@
 <template>
   <NuxtLink
     :href="props.to"
-    class="from-supernova via-sahara to-mimosa mx-auto inline-block rounded-full bg-gradient-to-r p-[2px] font-medium"
+    class="from-supernova via-sahara to-mimosa mx-auto inline-block rounded-full bg-linear-to-r p-0.5 font-medium"
   >
     <div
       :class="`bg-${props.bgColor} text-${props.textColor}`"

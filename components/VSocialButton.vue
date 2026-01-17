@@ -1,7 +1,7 @@
 <template>
   <a
     :href="props.href"
-    class="from-supernova via-sahara to-mimosa block rounded-full bg-gradient-to-r p-[2px]"
+    class="from-supernova via-sahara to-mimosa block rounded-full bg-linear-to-r p-0.5"
   >
     <div
       class="bg-como flex size-full items-center justify-center rounded-full p-2 text-white"

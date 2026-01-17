@@ -9,15 +9,15 @@
       </v-h>
 
       <div class="flex flex-col gap-6 sm:flex-row">
-        <div class="flex grow-[4] basis-0 flex-col gap-6">
-          <div class="aspect-[9/10] overflow-hidden">
+        <div class="flex grow-4 basis-0 flex-col gap-6">
+          <div class="aspect-9/10 overflow-hidden">
             <img
               src="/images/my_massage_room/1.jpeg"
               alt="Zdjęcie ilustracyjne"
               class="size-full object-cover"
             />
           </div>
-          <div class="aspect-[2/1] overflow-hidden bg-red-100">
+          <div class="aspect-2/1 overflow-hidden bg-red-100">
             <img
               src="/images/my_massage_room/2.jpeg"
               alt="Zdjęcie ilustracyjne"
@@ -25,7 +25,7 @@
             />
           </div>
         </div>
-        <div class="flex grow-[5] basis-0 flex-col justify-end gap-6">
+        <div class="flex grow-5 basis-0 flex-col justify-end gap-6">
           <div class="hidden grow items-center md:flex">
             <v-h class="grow">
               <span class="text-white opacity-30">Mój gabinet</span>
@@ -37,14 +37,14 @@
             </v-h>
           </div>
 
-          <div class="aspect-[2/1] overflow-hidden">
+          <div class="aspect-2/1 overflow-hidden">
             <img
               src="/images/my_massage_room/2.jpeg"
               alt="Zdjęcie ilustracyjne"
               class="size-full object-cover"
             />
           </div>
-          <div class="aspect-[2/1] overflow-hidden">
+          <div class="aspect-2/1 overflow-hidden">
             <img
               src="/images/my_massage_room/3.jpeg"
               alt="Zdjęcie ilustracyjne"
@@ -56,3 +56,7 @@
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+// ...
+</script>

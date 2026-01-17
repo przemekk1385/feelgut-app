@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative aspect-[3/2] max-h-[60rem] w-full overflow-hidden xl:aspect-auto"
+    class="relative aspect-3/2 max-h-240 w-full overflow-hidden xl:aspect-auto"
   >
     <div class="size-full overflow-hidden">
       <img
@@ -27,3 +27,7 @@
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+// ...
+</script>
