@@ -29,7 +29,7 @@
           </p>
           <p>
             Na co dzień prowadzę własną praktykę masażu, oferując masaże biurowe
-            dla firm oraz masaże relaksacyjne i terapeutyczne dla klientów
+            dla firm oraz masaże relaksacyjne i profilaktyczne dla klientów
             indywidualnych również z dojazdem do klienta. Specjalizuję się m.in.
             w masażu klasycznym, powięziowym, balijskim oraz masażu fryzjerskim
             głowy.

@@ -24,8 +24,8 @@
             </v-offer-link>
           </li>
           <li>
-            <v-offer-link category="terapeutyczne">
-              Masaże terapeutyczne
+            <v-offer-link category="profilaktyczne">
+              Masaże profilaktyczne
             </v-offer-link>
           </li>
         </ul>

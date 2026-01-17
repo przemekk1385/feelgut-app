@@ -21,8 +21,8 @@
             >
           </li>
           <li class="text-center md:text-left">
-            <NuxtLink to="?goto=uslugi&category=terapeutyczne"
-              >Masaże terapeutyczne</NuxtLink
+            <NuxtLink to="?goto=uslugi&category=profilaktyczne"
+              >Masaże profilaktyczne</NuxtLink
             >
           </li>
         </ul>
