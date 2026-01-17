@@ -1,6 +1,6 @@
 <template>
   <div id="kontakt" class="flex flex-col-reverse gap-12 lg:flex-row">
-    <VInfo v-model="show" :is-error="isError">{{ message }}</VInfo>
+    <v-info v-model="show" :is-error="isError">{{ message }}</v-info>
     <div class="flex">
       <div class="flex grow flex-col p-6 lg:grow-0 lg:pl-28 xl:pl-36">
         <div class="mb-6 lg:min-w-146">
