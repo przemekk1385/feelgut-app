@@ -1,4 +1,3 @@
-// formkit.config.ts
 import { pl } from "@formkit/i18n";
 import { generateClasses } from "@formkit/themes";
 

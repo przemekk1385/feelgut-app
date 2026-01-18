@@ -5,6 +5,8 @@
 
 @import "tailwindcss";
 
+@source "../../../formkit.config.ts";
+
 @theme {
 	--color-como: #547a71;
 	--color-mimosa: #fffad2;
