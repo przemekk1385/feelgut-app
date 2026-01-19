@@ -21,7 +21,7 @@ const config: DefaultConfigOptions = {
 				input:
 					"text-dark cursor-pointer rounded-full bg-white px-12 py-2 text-xl font-medium",
 				wrapper:
-					"from-supernova via-sahara to-mimosa rounded-full bg-linear-to-r p-[2px]",
+					"from-supernova via-sahara to-mimosa rounded-full bg-linear-to-r p-0.5 duration-500 hover:scale-110",
 			},
 			text: {
 				input:

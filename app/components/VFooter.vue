@@ -4,11 +4,11 @@
       <div class="flex flex-col justify-center gap-6 md:flex-row md:flex-wrap">
         <ul class="font-lato my-3 flex flex-col gap-y-4 self-center text-white">
           <li
-            v-for="{ description, to } in items"
+            v-for="{ description, target, to } in items"
             :key="to"
             class="text-center md:text-left"
           >
-            <NuxtLink :to="to">{{ description }}</NuxtLink>
+            <NuxtLink :target="target" :to="to">{{ description }}</NuxtLink>
           </li>
         </ul>
 
@@ -16,12 +16,12 @@
 
         <ul class="font-lato my-3 flex flex-col gap-y-4 self-center text-white">
           <li class="text-center md:text-left">
-            <NuxtLink to="/?goto=uslugi&category=relaksacyjne"
+            <NuxtLink to="/#uslugi?category=relaksacyjne"
               >Masaże relaksacyjne</NuxtLink
             >
           </li>
           <li class="text-center md:text-left">
-            <NuxtLink to="?goto=uslugi&category=profilaktyczne"
+            <NuxtLink to="#uslugi?category=profilaktyczne"
               >Masaże profilaktyczne</NuxtLink
             >
           </li>
@@ -104,10 +104,14 @@
 </template>
 
 <script setup lang="ts">
-const items: Ref<{ description: string; to: string }[]> = ref([
-	{ description: "O mnie", to: "/?goto=o-mnie" },
-	{ description: "Usługi", to: "/?goto=uslugi" },
-	{ description: "Umów wizytę", to: "/?goto=kontakt" },
-	{ description: "E-book", to: "https://kursy.feelgut.pl/e-book" },
+const items: Ref<{ description: string; target?: string; to: string }[]> = ref([
+	{ description: "O mnie", to: "/#o-mnie" },
+	{ description: "Usługi", to: "/#uslugi" },
+	{ description: "Umów wizytę", to: "/#kontakt" },
+	{
+		description: "E-book",
+		target: "_blank",
+		to: "https://kursy.feelgut.pl/e-book",
+	},
 ]);
 </script>

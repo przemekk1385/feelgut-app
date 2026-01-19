@@ -1,11 +1,11 @@
 <template>
   <div class="z-10">
     <Transition>
-      <v-drawer-btn v-if="!show" @click="show = !show" />
+      <v-drawer-button v-if="!show" @click="show = !show" />
     </Transition>
     <Transition name="slide">
       <div v-if="show" class="absolute top-0 right-0 flex h-full">
-        <v-drawer-btn @click="show = !show" />
+        <v-drawer-button @click="show = !show" />
         <div
           class="relative flex h-full min-h-60 w-48 items-center justify-center sm:min-h-100"
         >

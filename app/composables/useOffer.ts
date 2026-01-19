@@ -6,18 +6,10 @@ export function useOffer() {
 
 	const items = computed(
 		() =>
-			allItems.value
-				?.filter(
-					({ category }) =>
-						!route.query.category || category === route.query.category,
-				)
-				.map((item) => {
-					const { id } = item;
-					return {
-						...item,
-						id: id.split(".").splice(1, 1)[0],
-					};
-				}) || [],
+			allItems.value?.filter(
+				({ category }) =>
+					!route.query.category || category === route.query.category,
+			) || [],
 	);
 
 	return { items };

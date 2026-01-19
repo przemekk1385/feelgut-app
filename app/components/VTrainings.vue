@@ -135,22 +135,19 @@
         </div>
 
         <div
-          class="flex flex-col items-center justify-around space-y-6 sm:flex-row"
+          class="flex flex-col items-center justify-center space-y-6 sm:flex-row sm:space-y-0 sm:space-x-6"
         >
-          <div>
-            <v-offer-bar-button
-              bg-color="platinium"
-              to="https://kursy.feelgut.pl/e-book"
-            >
-              Pobierz E-booka
-            </v-offer-bar-button>
-          </div>
+          <v-offer-bar-button
+            bg-color="platinium"
+            target="_blank"
+            to="https://kursy.feelgut.pl/e-book"
+          >
+            Pobierz E-booka
+          </v-offer-bar-button>
           <div class="text-xl font-medium sm:text-2xl lg:text-3xl">lub</div>
-          <div>
-            <v-offer-bar-button bg-color="platinium" to="/?goto=kontakt">
-              Napisz
-            </v-offer-bar-button>
-          </div>
+          <v-offer-bar-button bg-color="platinium" to="/#kontakt">
+            Napisz
+          </v-offer-bar-button>
         </div>
       </div>
     </div>

@@ -19,7 +19,7 @@
           <button
             type="button"
             :class="{ ['bg-[#ccd8d5]']: !props.dark, ['bg-white']: props.dark }"
-            class="min-w-32 rounded-full py-1 text-center text-sm"
+            class="min-w-32 cursor-pointer rounded-full py-1 text-center text-sm"
             @click="emit('update:modelValue', !modelValue)"
           >
             rozwiń szczegóły

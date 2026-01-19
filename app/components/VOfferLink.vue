@@ -1,6 +1,6 @@
 <template>
   <NuxtLink
-    :to="{ path: route.path, query: { category } }"
+    :to="{ hash: route.hash, path: route.path, query: { category } }"
     :class="{ ['text-como']: isActive, ['text-[#A6A6A6]']: !isActive }"
     class="font-lato text-lg sm:text-xl lg:text-2xl"
   >

@@ -1,7 +1,8 @@
 <template>
   <NuxtLink
+    class="from-supernova via-sahara to-mimosa mx-auto inline-block rounded-full bg-linear-to-r p-0.5 font-medium duration-500 hover:scale-110"
     :href="props.to"
-    class="from-supernova via-sahara to-mimosa mx-auto inline-block rounded-full bg-linear-to-r p-0.5 font-medium"
+    :target="props.target"
   >
     <div
       :class="`bg-${props.bgColor} text-${props.textColor}`"
@@ -18,6 +19,7 @@
 const props = withDefaults(
 	defineProps<{
 		bgColor: string;
+		target?: string;
 		textColor?: string;
 		to: string;
 	}>(),

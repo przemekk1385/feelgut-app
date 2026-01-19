@@ -3,7 +3,7 @@
     <v-offer-bar bg-color="platinium">
       Jak poprawnie przygotować się do masażu?
       <template #button>
-        <v-offer-bar-button bg-color="platinium" to="/cennik?goto=10-przykazan">
+        <v-offer-bar-button bg-color="platinium" to="/cennik#10-przykazan">
           Zobacz
         </v-offer-bar-button>
       </template>
@@ -34,7 +34,7 @@
       <div
         class="grid grid-cols-1 gap-12 pt-12 sm:grid-cols-2 lg:pb-24 xl:grid-cols-3"
       >
-        <div v-for="{ id, title, image } in items" :key="title">
+        <div v-for="{ id, title, image } in items" :key="id">
           <v-img :src="image" :alt="`${title} - grafika ilustracyjna`">
             <img
               src="/images/spine.svg"
@@ -48,7 +48,7 @@
             <div class="text-center">{{ title }}</div>
             <div>
               <NuxtLink
-                :to="`/cennik?goto=${id}`"
+                :to="`/cennik#${formatOfferItemId(id)}`"
                 class="inline-block rounded-full bg-[#55B99A] px-6 py-1 font-medium text-white uppercase"
               >
                 Sprawdź
@@ -65,7 +65,7 @@
         <v-offer-bar-button
           bg-color="como"
           text-color="white"
-          to="/cennik?goto=cennik"
+          to="/cennik#cennik"
         >
           Kliknij tutaj
         </v-offer-bar-button>

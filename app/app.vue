@@ -11,14 +11,13 @@
 
 <script setup lang="ts">
 useHead({
-  script: [
-    {
-      id: 'form-script-tag-22331163',
-      src: 'https://kursy.feelgut.pl/public/remote/page/369297059ebc0afbc813e9948c86aa96620cc176.js',
-      async: true,
-      defer: true
-    }
-  ]
-})
-useSmoothScroll();
+	script: [
+		{
+			id: "form-script-tag-22331163",
+			src: "https://kursy.feelgut.pl/public/remote/page/369297059ebc0afbc813e9948c86aa96620cc176.js",
+			async: true,
+			defer: true,
+		},
+	],
+});
 </script>

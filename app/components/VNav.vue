@@ -14,7 +14,7 @@
             <NuxtLink :to="to"> {{ description }} </NuxtLink>
           </li>
           <li>
-            <NuxtLink to="https://kursy.feelgut.pl/e-book">
+            <NuxtLink target="_blank" to="https://kursy.feelgut.pl/e-book">
               E-book
               <div
                 class="from-supernova via-sahara to-mimosa mt-0.5 h-0.5 w-3/4 bg-linear-to-r"
@@ -36,7 +36,7 @@
           </NuxtLink>
         </li>
         <li
-          class="transition-transform duration-500 hover:scale-125"
+          class="transition-transform duration-500 hover:scale-110"
           v-for="{ description, to } in items"
           :key="to"
         >
@@ -44,11 +44,12 @@
         </li>
         <li>
           <NuxtLink
-            class="from-supernova via-sahara to-mimosa block rounded-full bg-linear-to-r p-0.5 transition-transform duration-500 hover:scale-125"
+            class="from-supernova via-sahara to-mimosa block rounded-full bg-linear-to-r p-0.5 transition-transform duration-500 hover:scale-110"
+            target="_blank"
             to="https://kursy.feelgut.pl/e-book"
           >
             <div
-              class="flex size-full items-center justify-center rounded-full bg-white px-6 py-3 text-black"
+              class="flex size-full items-center justify-center rounded-full bg-white px-3 py-1 text-black"
             >
               E-book
             </div>
@@ -61,11 +62,11 @@
 
 <script setup lang="ts">
 const items: Ref<{ description: string; to: string }[]> = ref([
-	{ description: "O mnie", to: "/?goto=o-mnie" },
-	{ description: "Usługi", to: "/?goto=uslugi" },
-	{ description: "Cennik", to: "/cennik?goto=cennik" },
-	{ description: "Masaż dla firm", to: "/masaz-dla-firm?goto=masaz-dla-firm" },
-	{ description: "Szkolenia", to: "/szkolenia?goto=szkolenia" },
-	{ description: "Umów wizytę", to: "/?goto=kontakt" },
+	{ description: "O mnie", to: "/#o-mnie" },
+	{ description: "Usługi", to: "/#uslugi" },
+	{ description: "Cennik", to: "/cennik#cennik" },
+	{ description: "Masaż dla firm", to: "/masaz-dla-firm#masaz-dla-firm" },
+	{ description: "Szkolenia", to: "/szkolenia#szkolenia" },
+	{ description: "Umów wizytę", to: "/#kontakt" },
 ]);
 </script>
