@@ -1,10 +1,10 @@
 title: Masaż japoński twarzy Kobido
 category: relaksacyjne
-price:
+rates:
   - time: 60
-    amount: 150
+    price: 150
   - time: 90
-    amount: 200
+    price: 200
 image: /images/offer/masaz-japonski-twarzy-kobido.jpg
 text: >
   To masaż, który działa na wielu poziomach. Oprócz wyraźnej poprawy wyglądu i kondycji skóry 

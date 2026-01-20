@@ -1,8 +1,8 @@
 title: Masaż głęboki (MTG)
-category: terapeutyczne
-price:
+category: profilaktyczne
+rates:
   - time: 60
-    amount: 150
+    price: 150
 image: /images/offer/masaz-gleboki-mtg.jpg
 text: >
   Jest to terapia ukierunkowana na przywrócenie prawidłowego stanu głębokich warstw mięśni, 

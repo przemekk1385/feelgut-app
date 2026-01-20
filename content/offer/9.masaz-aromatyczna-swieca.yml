@@ -1,10 +1,10 @@
 title: Masaż aromatyczną świecą
 category: relaksacyjne
-price:
+rates:
   - time: 60
-    amount: 120
+    price: 120
   - time: 90
-    amount: 150
+    price: 150
 image: /images/offer/masaz-aromatyczna-swieca.jpg
 text: >
   Masaż ten łączy w sobie elementy ciepłolecznictwa oraz aromaterapii. To znakomity sposób na 
