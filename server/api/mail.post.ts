@@ -53,6 +53,10 @@ export default defineEventHandler(async (event) => {
 			},
 			Source: mailSource as string,
 			ReplyToAddresses: [`"${name}" <${email}>`],
+			Tags: [
+				{ Name: "project", Value: "web" },
+				{ Name: "lambda", Value: "feelgut-contact" },
+			],
 		});
 
 		const result = await sesClient.send(sesCommand);
