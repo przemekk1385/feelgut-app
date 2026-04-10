@@ -1,11 +1,11 @@
 <template>
   <div>
-    <v-nav />
+    <the-nav />
     <main>
       <v-commandments />
       <v-pricing />
     </main>
-    <v-footer />
+    <the-footer />
   </div>
 </template>
 

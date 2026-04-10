@@ -9,7 +9,7 @@
       <!-- <v-my-massage-room /> -->
       <!-- <v-map /> -->
     </main>
-    <v-footer />
+    <the-footer />
   </div>
 </template>
 

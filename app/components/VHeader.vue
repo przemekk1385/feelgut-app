@@ -11,7 +11,7 @@
     </div>
     <div class="absolute top-0 size-full">
       <div class="mx-auto h-full">
-        <v-nav class="h-full" />
+        <the-nav class="h-full" />
 
         <div
           class="absolute hidden md:top-40 md:block md:px-20 lg:top-48 lg:px-28 xl:top-56 xl:px-36"

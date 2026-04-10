@@ -22,7 +22,8 @@ Professional website for Dariusz Gut, a massage therapist in Kraków. Showcases 
 ```
 app/
 ├── assets/css/tailwind.css   # Tailwind theme (Como, Mimosa, Sahara, Supernova, Platinium, Dark)
-├── components/               # All prefixed with "V"
+├── components/               # The* = app singletony (TheNav, TheFooter), V* = pozostałe
+│   ├── The*.vue             # TheNav, TheFooter
 │   └── V*.vue               # VAbout, VAccordion, VContact, VHeader, VOffer, VPricing, VTrainings…
 ├── composables/
 │   ├── useOffer.ts          # Fetch/filter massage offers

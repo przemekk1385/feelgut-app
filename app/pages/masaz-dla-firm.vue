@@ -1,10 +1,10 @@
 <template>
   <div>
-    <v-nav />
+    <the-nav />
     <main>
       <v-for-companies />
     </main>
-    <v-footer />
+    <the-footer />
   </div>
 </template>
 
