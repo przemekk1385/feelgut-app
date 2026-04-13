@@ -6,7 +6,7 @@ Professional website for Dariusz Gut, a massage therapist in Kraków. Showcases 
 
 ## Tech Stack
 
-- **Nuxt 3** (v4.2.2) + **Vue 3** + **TypeScript** 5.8.3
+- **Nuxt 4** (v4.4.2) + **Vue 3** + **TypeScript** 5.8.3
 - **Tailwind CSS** v4 + **@tailwindcss/typography**
 - **@nuxt/content** v3.5.1 — file-based CMS (YAML service definitions)
 - **@formkit/nuxt** v1.6.9 — form handling (Polish locale)
@@ -69,5 +69,6 @@ NUXT_PUBLIC_GTM_ID=...
 - **Email**: server-side `/api/mail.post.ts` → Zod validation → AWS SES via Vercel OIDC
 - **CAPTCHA**: Turnstile active in production only (`vercelEnv` check)
 - **Custom theme**: CSS variables in `tailwind.css` — Como (`#547a71`), Sahara (`#c9961a`), Dark (`#161f36`)
+- **Offer YAML fields**: `title`, `category` (`relaksacyjne` | `profilaktyczne`), `rates` (list of `{time, price}`), `image` (path), `text`, `indications`, `contraindications`; files in `content/offer/` numbered (`N.slug.yml`)
 - **Disabled components**: VReviews, VMyMassageRoom, VMap — uncomment to enable
 - Deployed on **Vercel**; all UI text in **Polish**
